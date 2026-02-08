@@ -100,6 +100,18 @@ function stopTimer() {
     }
 }
 
+function submitMultipleResponse() {
+    const checked = Array.from(document.querySelectorAll('input[name="quiz-option"]:checked'))
+                         .map(el => el.value);
+    
+    if (checked.length === 0) {
+        alert("Please select at least one answer!");
+        return;
+    }
+    
+    handleAnswer(checked); // Pass the array of answers to your existing answer handler
+}
+
 // Display current question
 function displayQuestion() {
     const question = currentQuiz.getCurrentQuestion();
