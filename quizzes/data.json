@@ -1,0 +1,2342 @@
+[
+  {
+    "id": "programming-languages-reviewer",
+    "title": "Programming Languages Reviewer",
+    "description": "A comprehensive reviewer covering programming domains, paradigms, implementation, and institutional values.",
+    "icon": "💻",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "Debugging refers to:",
+        "options": {
+          "A": "Writing code",
+          "B": "Finding and fixing program errors",
+          "C": "Compiling programs",
+          "D": "Designing algorithms"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The mission of the institution focuses on preparing individuals with education that is:",
+        "options": {
+          "A": "Profit-driven",
+          "B": "Politically aligned",
+          "C": "Consistent with societal needs",
+          "D": "Globally competitive"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which programming domain emphasizes data processing and reporting?",
+        "options": {
+          "A": "Scientific",
+          "B": "Business",
+          "C": "Embedded",
+          "D": "Game development"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which core value reflects honesty and strong moral principles?",
+        "options": {
+          "A": "Unity",
+          "B": "Dynamism",
+          "C": "Integrity",
+          "D": "Dedication"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "High-level languages are preferred because they are:",
+        "options": {
+          "A": "Harder to learn",
+          "B": "Machine-dependent",
+          "C": "Easier to read and write",
+          "D": "Slower to execute"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A “Cancel” button placed near a “Submit” button may cause:",
+        "options": {
+          "A": "Better learnability",
+          "B": "User errors",
+          "C": "Improved feedback",
+          "D": "Faster interaction"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Language portability means:",
+        "options": {
+          "A": "It runs only on one machine",
+          "B": "It can run on different platforms",
+          "C": "It uses assembly code",
+          "D": "It is compiled only"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which programming paradigm focuses on procedures or functions?",
+        "options": {
+          "A": "Object-oriented",
+          "B": "Functional",
+          "C": "Procedural",
+          "D": "Declarative"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The vision of the institution emphasizes creating a community that is:",
+        "options": {
+          "A": "Technologically advanced",
+          "B": "Research-oriented",
+          "C": "Responsive to the challenges of a changing world",
+          "D": "Financially stable"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Source code is:",
+        "options": {
+          "A": "Machine-readable code",
+          "B": "Binary code",
+          "C": "Human-readable program code",
+          "D": "Executable file"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "An Integrated Development Environment (IDE) typically includes:",
+        "options": {
+          "A": "Compiler only",
+          "B": "Text editor only",
+          "C": "Editor, compiler, and debugger",
+          "D": "Operating system"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A programming language is best defined as:",
+        "options": {
+          "A": "A hardware component",
+          "B": "A set of rules for writing computer programs",
+          "C": "A computer application",
+          "D": "A database system"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which objective directly promotes higher-order thinking skills?",
+        "options": {
+          "A": "Provide competent human resources",
+          "B": "Promote discipline, justice, and equality",
+          "C": "Inculcate critical thinking",
+          "D": "Improve quality of life"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Visual Studio is an example of:",
+        "options": {
+          "A": "Compiler",
+          "B": "Debugger",
+          "C": "Programming environment",
+          "D": "Text editor"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which factor influences the design of programming languages?",
+        "options": {
+          "A": "Hardware architecture",
+          "B": "Application domain",
+          "C": "Programmer productivity",
+          "D": "All of the above"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Python is commonly described as:",
+        "options": {
+          "A": "Low-level and compiled",
+          "B": "High-level and interpreted",
+          "C": "Assembly-based",
+          "D": "Machine-dependent"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Improving quality of life through research and community service supports which institutional aim?",
+        "options": {
+          "A": "Administrative efficiency",
+          "B": "Social responsibility",
+          "C": "Academic ranking",
+          "D": "Economic growth"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Encapsulation is a concept commonly associated with:",
+        "options": {
+          "A": "Procedural programming",
+          "B": "Object-oriented programming",
+          "C": "Functional programming",
+          "D": "Assembly programming"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A compiler:",
+        "options": {
+          "A": "Translates code line by line during execution",
+          "B": "Translates the entire program before execution",
+          "C": "Executes code directly",
+          "D": "Does not generate machine code"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Working collaboratively to achieve shared institutional goals best represents:",
+        "options": {
+          "A": "Competence",
+          "B": "Unity",
+          "C": "Teamwork",
+          "D": "Dedication"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "An interpreter:",
+        "options": {
+          "A": "Produces an executable file",
+          "B": "Translates code one statement at a time",
+          "C": "Works faster than a compiler",
+          "D": "Does not report errors"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "C is an example of which programming paradigm?",
+        "options": {
+          "A": "Object-oriented",
+          "B": "Procedural",
+          "C": "Functional",
+          "D": "Logic-based"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Languages such as FORTRAN are mainly used in which domain?",
+        "options": {
+          "A": "Artificial intelligence",
+          "B": "Scientific computing",
+          "C": "Web development",
+          "D": "Mobile development"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which is an advantage of compilation?",
+        "options": {
+          "A": "Slower execution",
+          "B": "Faster program execution",
+          "C": "More runtime errors",
+          "D": "No error checking"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which programming paradigm is best suited for AI and rule-based systems?",
+        "options": {
+          "A": "Procedural",
+          "B": "Object-oriented",
+          "C": "Functional",
+          "D": "Logic programming"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "According to the philosophy, education leads to personal fulfillment and:",
+        "options": {
+          "A": "Academic excellence",
+          "B": "Career advancement",
+          "C": "Community uplift",
+          "D": "Global recognition"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Continuous improvement in instruction, research, extension, and administration aims to deliver:",
+        "options": {
+          "A": "Competitive advantage",
+          "B": "Excellent education responsive to a changing world",
+          "C": "Increased enrollment",
+          "D": "Institutional popularity"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Consistent icons across applications help users by:",
+        "options": {
+          "A": "Increasing memory load",
+          "B": "Reducing learning time",
+          "C": "Improving hardware speed",
+          "D": "Enhancing security"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which programming paradigm organizes programs around objects and classes?",
+        "options": {
+          "A": "Procedural",
+          "B": "Functional",
+          "C": "Object-oriented",
+          "D": "Logic"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A poorly contrasted text on a website mainly affects:",
+        "options": {
+          "A": "Learnability",
+          "B": "Accessibility",
+          "C": "Efficiency",
+          "D": "Security"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Java uses which type of implementation?",
+        "options": {
+          "A": "Pure compilation",
+          "B": "Pure interpretation",
+          "C": "Hybrid compilation and interpretation",
+          "D": "No translation"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Language implementation refers to:",
+        "options": {
+          "A": "Designing algorithms",
+          "B": "Translating source code into executable form",
+          "C": "Writing documentation",
+          "D": "Debugging programs"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Encapsulation, inheritance, and polymorphism are features of:",
+        "options": {
+          "A": "Procedural programming",
+          "B": "Functional programming",
+          "C": "Object-oriented programming",
+          "D": "Assembly language"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A programming environment provides tools for:",
+        "options": {
+          "A": "Hardware installation",
+          "B": "Writing, testing, and debugging programs",
+          "C": "Network security",
+          "D": "Data storage only"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which programming domain focuses on scientific and mathematical computations?",
+        "options": {
+          "A": "Web programming",
+          "B": "Business programming",
+          "C": "Scientific programming",
+          "D": "System programming"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which category of programming language uses English-like commands?",
+        "options": {
+          "A": "Assembly languages",
+          "B": "Machine languages",
+          "C": "Business-oriented languages",
+          "D": "Low-level languages"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The choice of programming language should primarily depend on:",
+        "options": {
+          "A": "Popularity only",
+          "B": "Application requirements",
+          "C": "Programmer preference alone",
+          "D": "Hardware brand"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A form that highlights errors immediately after submission demonstrates:",
+        "options": {
+          "A": "Constraint",
+          "B": "Feedback",
+          "C": "Mapping",
+          "D": "Affordance"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A programming language that runs inside a browser usually belongs to which category?",
+        "options": {
+          "A": "System language",
+          "B": "Scripting language",
+          "C": "Assembly language",
+          "D": "Machine language"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which field is most closely related to HCI?",
+        "options": {
+          "A": "Civil Engineering",
+          "B": "Human Factors",
+          "C": "Chemistry",
+          "D": "Accounting"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Source code is:",
+        "options": {
+          "A": "Machine-readable code",
+          "B": "Binary code",
+          "C": "Human-readable program code",
+          "D": "Executable file"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which tool helps identify runtime errors?",
+        "options": {
+          "A": "Compiler",
+          "B": "Debugger",
+          "C": "Text editor",
+          "D": "Loader"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Object-oriented programming mainly emphasizes:",
+        "options": {
+          "A": "Functions",
+          "B": "Data and objects",
+          "C": "Mathematical expressions",
+          "D": "Hardware access"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A programming language is primarily:",
+        "options": {
+          "A": "A hardware component",
+          "B": "A set of rules for writing computer programs",
+          "C": "A computer application",
+          "D": "A database system"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which objective directly supports higher-level thinking skills?",
+        "options": {
+          "A": "Provide competent human resources",
+          "B": "Promote discipline, justice, and equality",
+          "C": "Inculcate critical thinking",
+          "D": "Improve quality of life"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Placing commonly used buttons in the same location across screens improves:",
+        "options": {
+          "A": "Error rate",
+          "B": "Consistency",
+          "C": "Memorability",
+          "D": "Complexity"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which design decision BEST improves user trust?",
+        "options": {
+          "A": "Hiding system status",
+          "B": "Providing clear feedback and transparency",
+          "C": "Limiting user control",
+          "D": "Using technical language"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Python supports multiple programming paradigms. True or False?",
+        "options": {
+          "A": "True",
+          "B": "False",
+          "C": "Only procedural",
+          "D": "Only object-oriented"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which programming domain is mainly concerned with real-time constraints?",
+        "options": {
+          "A": "Business programming",
+          "B": "Scientific programming",
+          "C": "Embedded systems programming",
+          "D": "Web programming"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The EOMS Policy highlights continuous innovation and delivery of services that:",
+        "options": {
+          "A": "Focus only on profitability",
+          "B": "Ignore regulatory requirements",
+          "C": "Comply with applicable requirements aligned with developments",
+          "D": "Emphasize competition"
+        },
+        "correctAnswer": "C"
+      }
+    ]
+  },
+
+  {
+    "id": "software-engineering-reviewer",
+    "title": "Software Engineering & Institutional Values Reviewer",
+    "description": "A 50-item multiple choice reviewer covering software engineering concepts, development models, and institutional vision, mission, objectives, and values.",
+    "icon": "💻",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "The vision of the institution emphasizes:",
+        "options": {
+          "A": "Generating high profits",
+          "B": "Following strict routines without adaptation",
+          "C": "Creating a community responsive to the changing world",
+          "D": "Focusing only on local standards"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A software project using systematic design and testing is an example of:",
+        "options": {
+          "A": "Ignoring standards",
+          "B": "Applying software engineering principles",
+          "C": "Random coding",
+          "D": "Lack of collaboration"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The institution believes that through education, man's God-given gifts are:",
+        "options": {
+          "A": "Discovered and developed for personal fulfillment and community uplift",
+          "B": "Ignored for efficiency",
+          "C": "Only used for career advancement",
+          "D": "Primarily for research purposes"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Agile iteration is used to:",
+        "options": {
+          "A": "Freeze requirements",
+          "B": "Receive feedback and adjust design",
+          "C": "Ignore testing",
+          "D": "Avoid collaboration"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Code reuse is an advantage because it:",
+        "options": {
+          "A": "Reduces development time",
+          "B": "Increases errors",
+          "C": "Confuses developers",
+          "D": "Uses more memory"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Scheduling tasks in software development helps to:",
+        "options": {
+          "A": "Avoid deadlines",
+          "B": "Improve project management and efficiency",
+          "C": "Increase errors",
+          "D": "Skip testing"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which objective focuses on research and community service?",
+        "options": {
+          "A": "Inculcate critical thinking",
+          "B": "Provide competent human resources",
+          "C": "Improve quality of life through research & community service",
+          "D": "Promote discipline, justice, and equality"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The main focus of software engineering?",
+        "options": {
+          "A": "Hardware design",
+          "B": "Building software systematically",
+          "C": "Painting software interfaces",
+          "D": "Data storage"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Using automated testing tools demonstrates:",
+        "options": {
+          "A": "Disadvantage: more errors",
+          "B": "Advantage: faster and consistent testing",
+          "C": "Disadvantage: slower development",
+          "D": "Ignoring user requirements"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Following coding standards ensures:",
+        "options": {
+          "A": "Clean, readable, and maintainable code",
+          "B": "Faster bugs",
+          "C": "Unreadable programs",
+          "D": "Poor communication"
+        },
+        "correctAnswer": "A"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "Which core value emphasizes the ability to perform tasks effectively?",
+        "options": {
+          "A": "Competence",
+          "B": "Dynamism",
+          "C": "Teamwork",
+          "D": "Integrity"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Code reviews are an example of:",
+        "options": {
+          "A": "Disadvantage",
+          "B": "Applying software engineering principles to improve code quality",
+          "C": "Ignoring standards",
+          "D": "Random coding"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A software engineer primarily deals with:",
+        "options": {
+          "A": "Database hardware",
+          "B": "Efficient software solutions",
+          "C": "Office paperwork",
+          "D": "Printing documents"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Regular testing in software development helps to:",
+        "options": {
+          "A": "Identify errors early",
+          "B": "Make code longer",
+          "C": "Remove documentation",
+          "D": "Ignore requirements"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The mission of the institution is to:",
+        "options": {
+          "A": "Prepare individuals with the best that education can offer, consistent with societal needs",
+          "B": "Promote international ranking only",
+          "C": "Focus on financial gain",
+          "D": "Train only technology experts"
+        },
+        "correctAnswer": "A"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "A software project with poor requirements analysis may result in:",
+        "options": {
+          "A": "Perfect software",
+          "B": "Software that fails to meet user needs",
+          "C": "Faster development",
+          "D": "Lower maintenance costs"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Following a life-cycle model in software development ensures:",
+        "options": {
+          "A": "Systematic development process",
+          "B": "Ignoring requirements",
+          "C": "Random code",
+          "D": "More maintenance problems"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Agile methodology helps in software development by:",
+        "options": {
+          "A": "Ignoring client feedback",
+          "B": "Allowing iterative development and adjustments",
+          "C": "Freezing requirements forever",
+          "D": "Writing software without testing"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Iterative feedback improves software by:",
+        "options": {
+          "A": "Ignoring user needs",
+          "B": "Reducing errors and increasing satisfaction",
+          "C": "Confusing developers",
+          "D": "Adding random features"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The waterfall model is an example of:",
+        "options": {
+          "A": "A programming language",
+          "B": "A software development process",
+          "C": "A hardware tool",
+          "D": "A debugging tool"
+        },
+        "correctAnswer": "B"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "Clear communication among developers is:",
+        "options": {
+          "A": "Not needed",
+          "B": "Part of software engineering to ensure requirements are met",
+          "C": "Redundant",
+          "D": "Only for managers"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which objective is aimed at developing critical thinking?",
+        "options": {
+          "A": "Provide competent human resources",
+          "B": "Inculcate critical thinking",
+          "C": "Promote discipline, justice, and equality",
+          "D": "Improve quality of life through research"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "An example of software engineering disadvantage?",
+        "options": {
+          "A": "Increased collaboration",
+          "B": "High initial cost",
+          "C": "Easier maintenance",
+          "D": "Efficient code"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Using design patterns in software helps:",
+        "options": {
+          "A": "Create chaos",
+          "B": "Solve recurring problems efficiently",
+          "C": "Increase errors",
+          "D": "Confuse developers"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A well-designed software reduces:",
+        "options": {
+          "A": "Reliability",
+          "B": "Maintenance cost",
+          "C": "Documentation",
+          "D": "Collaboration"
+        },
+        "correctAnswer": "B"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "Proper requirement analysis ensures:",
+        "options": {
+          "A": "Software meets user needs",
+          "B": "Development becomes random",
+          "C": "Bugs increase",
+          "D": "Users are ignored"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Working collaboratively to achieve institutional goals represents which core value?",
+        "options": {
+          "A": "Competence",
+          "B": "Unity",
+          "C": "Teamwork",
+          "D": "Dedication"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The EOMS Policy emphasizes:",
+        "options": {
+          "A": "Continuous innovation, satisfactory service, and compliance with applicable requirements",
+          "B": "Reducing teacher involvement",
+          "C": "Focusing only on profits",
+          "D": "Ignoring technological developments"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Software documentation is important because it:",
+        "options": {
+          "A": "Makes the software look good",
+          "B": "Helps future maintenance and understanding",
+          "C": "Increases software bugs",
+          "D": "Slows down development"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A primary goal of software engineering is:",
+        "options": {
+          "A": "Create software only for fun",
+          "B": "Deliver high-quality software that meets requirements",
+          "C": "Write as many lines of code as possible",
+          "D": "Design hardware"
+        },
+        "correctAnswer": "B"
+      }
+    ]
+  },
+
+  {
+    "id": "ITP13",
+    "title": "QUIZ NI SIR POPOY 1",
+    "description": "Information Assurance & Security 1",
+    "icon": "shield-lock",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What is an example of a software vulnerability?",
+        "options": {
+          "A": "Proper authentication mechanisms",
+          "B": "An unpatched security flaw in an operating system",
+          "C": "Regular system backups",
+          "D": "A well-configured intrusion detection system"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which term refers to the process of identifying vulnerabilities in a system?",
+        "options": {
+          "A": "Exploit testing",
+          "B": "Data encryption",
+          "C": "Vulnerability assessment",
+          "D": "System backup"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What type of attack targets vulnerabilities in web applications by injecting malicious code?",
+        "options": {
+          "A": "Denial-of-service attack",
+          "B": "Man-in-the-middle attack",
+          "C": "Phishing",
+          "D": "SQL injection"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is NOT an example of a security vulnerability?",
+        "options": {
+          "A": "Weak passwords",
+          "B": "Misconfigured firewalls",
+          "C": "Unpatched software",
+          "D": "Regular security updates"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the role of a security patch?",
+        "options": {
+          "A": "To exploit system vulnerabilities",
+          "B": "To install new malware",
+          "C": "To fix a known vulnerability in software or hardware",
+          "D": "To monitor network traffic"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the most common method used by attackers to infiltrate a system?",
+        "options": {
+          "A": "Antivirus software",
+          "B": "Phishing",
+          "C": "Network monitoring",
+          "D": "Data encryption"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is an example of social engineering?",
+        "options": {
+          "A": "Tricking users into revealing their passwords",
+          "B": "Exploiting software vulnerabilities",
+          "C": "Writing secure code",
+          "D": "Upgrading hardware"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What type of infiltration method involves sending fake emails to trick users into sharing sensitive information?",
+        "options": {
+          "A": "Malware injection",
+          "B": "Phishing",
+          "C": "DDoS attack",
+          "D": "SQL injection"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which method of infiltration involves exploiting weaknesses in software?",
+        "options": {
+          "A": "Social engineering",
+          "B": "Network scanning",
+          "C": "Vulnerability exploitation",
+          "D": "Data encryption"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the purpose of a brute force attack?",
+        "options": {
+          "A": "To encrypt sensitive data",
+          "B": "To monitor network traffic",
+          "C": "To distribute advertisements",
+          "D": "To guess passwords by trying multiple combinations"
+        },
+        "correctAnswer": "D"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "What does SQL injection target?",
+        "options": {
+          "A": "Browser extensions",
+          "B": "Hardware components",
+          "C": "Password strength",
+          "D": "Databases by injecting malicious SQL queries"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which infiltration method involves capturing unencrypted network data packets?",
+        "options": {
+          "A": "Phishing",
+          "B": "Man-in-the-middle attack",
+          "C": "Rootkit installation",
+          "D": "Packet sniffing"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the primary goal of a man-in-the-middle (MITM) attack?",
+        "options": {
+          "A": "To disrupt network traffic",
+          "B": "To delete user accounts",
+          "C": "To intercept and manipulate communication between two parties",
+          "D": "To encrypt sensitive files"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which infiltration method involves tricking users into downloading malicious software?",
+        "options": {
+          "A": "Phishing",
+          "B": "Malware distribution",
+          "C": "Denial-of-Service attack",
+          "D": "Password cracking"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the primary method attackers use to infiltrate poorly secured Wi-Fi networks?",
+        "options": {
+          "A": "Exploiting weak or default passwords",
+          "B": "Phishing emails",
+          "C": "Using hardware keyloggers",
+          "D": "Deploying DDoS attacks"
+        },
+        "correctAnswer": "A"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is a type of malware?",
+        "options": {
+          "A": "Firewall",
+          "B": "Encryption algorithm",
+          "C": "Data backup software",
+          "D": "Virus"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What type of malware disguises itself as legitimate software?",
+        "options": {
+          "A": "Ransomware",
+          "B": "Keylogger",
+          "C": "Trojan horse",
+          "D": "Worm"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which malware spreads by replicating itself without requiring user interaction?",
+        "options": {
+          "A": "Virus",
+          "B": "Worm",
+          "C": "Spyware",
+          "D": "Rootkit"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the primary goal of ransomware?",
+        "options": {
+          "A": "To encrypt data and demand payment for its release",
+          "B": "To monitor user activity",
+          "C": "To slow down computer performance",
+          "D": "To send spam emails"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which malware type is designed to secretly monitor and collect user information?",
+        "options": {
+          "A": "Spyware",
+          "B": "Adware",
+          "C": "Worm",
+          "D": "Trojan"
+        },
+        "correctAnswer": "A"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "What type of malware is specifically designed to gain unauthorized access to a computer system?",
+        "options": {
+          "A": "Keylogger",
+          "B": "Rootkit",
+          "C": "Ransomware",
+          "D": "Adware"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is NOT a type of malware?",
+        "options": {
+          "A": "Adware",
+          "B": "Virus",
+          "C": "Firewall",
+          "D": "Ransomware"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What type of malware records the keys pressed on a keyboard?",
+        "options": {
+          "A": "Worm",
+          "B": "Trojan horse",
+          "C": "Rootkit",
+          "D": "Keylogger"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which type of malware bombards users with excessive and intrusive advertisements?",
+        "options": {
+          "A": "Ransomware",
+          "B": "Spyware",
+          "C": "Worm",
+          "D": "Adware"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the main characteristic of a virus?",
+        "options": {
+          "A": "It spreads via advertisements",
+          "B": "It operates entirely in the system’s background",
+          "C": "It attaches itself to a host file and requires user action to spread",
+          "D": "It encrypts data for ransom"
+        },
+        "correctAnswer": "C"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "What is the primary goal of cyberwarfare?",
+        "options": {
+          "A": "To protect personal data",
+          "B": "To disrupt or damage the digital infrastructure of another entity",
+          "C": "To assist in e-commerce transactions",
+          "D": "To educate people about online threats"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which term best describes state-sponsored cyber attacks against another nation?",
+        "options": {
+          "A": "Cyberwarfare",
+          "B": "Cybercrime",
+          "C": "Hacktivism",
+          "D": "Phishing"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a common target of cyberwarfare?",
+        "options": {
+          "A": "Social media profiles",
+          "B": "Personal email accounts",
+          "C": "Online shopping websites",
+          "D": "National critical infrastructure, such as power grids and transportation systems"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is NOT an example of cyberwarfare?",
+        "options": {
+          "A": "Disabling a nation’s power grid",
+          "B": "Spreading propaganda through social media",
+          "C": "Writing an anti-virus program",
+          "D": "Launching DDoS attacks on government websites"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the main characteristic of a DDoS attack used in cyberwarfare?",
+        "options": {
+          "A": "Encrypting files for ransom",
+          "B": "Overloading a server with traffic to make it unavailable",
+          "C": "Stealing personal data from individuals",
+          "D": "Sending phishing emails to employees"
+        },
+        "correctAnswer": "B"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following best describes cyber espionage?",
+        "options": {
+          "A": "Collecting intelligence through unauthorized access to another nation’s digital systems",
+          "B": "Blocking access to government websites",
+          "C": "Developing cybersecurity policies",
+          "D": "Destroying software programs on personal computers"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which term describes a malicious program that targets critical infrastructure systems like water supply or transportation?",
+        "options": {
+          "A": "Stuxnet",
+          "B": "Spyware",
+          "C": "Ransomware",
+          "D": "Adware"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the role of a nation-state actor in cyberwarfare?",
+        "options": {
+          "A": "To protect organizations from cyberattacks",
+          "B": "To launch or support cyberattacks against another nation for strategic goals",
+          "C": "To create social media campaigns",
+          "D": "To track online shopping trends"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is an example of cyberwarfare?",
+        "options": {
+          "A": "A data breach at a small business",
+          "B": "An individual stealing credit card details",
+          "C": "A government hacking another country’s defense system",
+          "D": "A school upgrading its firewall"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is one of the primary methods used in cyberwarfare?",
+        "options": {
+          "A": "Search engine optimization",
+          "B": "Data analytics for marketing",
+          "C": "Ethical hacking competitions",
+          "D": "Malware deployment and network exploitation"
+        },
+        "correctAnswer": "D"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "What is an internal threat?",
+        "options": {
+          "A": "A threat posed by individuals within an organization",
+          "B": "A threat that originates outside an organization",
+          "C": "A natural disaster affecting operations",
+          "D": "A software vulnerability"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is an external threat?",
+        "options": {
+          "A": "A threat caused by an employee mistake",
+          "B": "A threat originating from outside an organization, such as hackers or competitors",
+          "C": "A failure in internal network configurations",
+          "D": "A weakness in company policies"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is an example of an internal threat?",
+        "options": {
+          "A": "A phishing email sent by a hacker",
+          "B": "A ransomware attack",
+          "C": "An employee leaking sensitive data",
+          "D": "A distributed denial-of-service (DDoS) attack"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is an example of an external threat?",
+        "options": {
+          "A": "An employee accidentally deleting important files",
+          "B": "Misconfigured security settings in the internal system",
+          "C": "A disgruntled employee sabotaging data",
+          "D": "A hacker attempting to gain unauthorized access to the network"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a common cause of internal threats?",
+        "options": {
+          "A": "Employee negligence or malicious intent",
+          "B": "Malware distributed through spam emails",
+          "C": "Denial-of-service attacks from external sources",
+          "D": "Hackers exploiting system vulnerabilities"
+        },
+        "correctAnswer": "A"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "What is a common characteristic of external threats?",
+        "options": {
+          "A": "They originate from people or systems within the organization",
+          "B": "They involve deliberate attacks from outside actors like hackers or cybercriminals",
+          "C": "They involve hardware failures",
+          "D": "They are caused by unintentional actions of employees"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which term describes an employee who intentionally harms their organization’s systems?",
+        "options": {
+          "A": "External hacker",
+          "B": "Security analyst",
+          "C": "Insider threat",
+          "D": "Cybercriminal"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the role of phishing attacks in cybersecurity threats?",
+        "options": {
+          "A": "They are a form of internal threat",
+          "B": "They are a hardware vulnerability",
+          "C": "They are caused by accidental employee mistakes",
+          "D": "They are an external threat designed to trick users into sharing sensitive information"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What type of external threat targets an organization’s systems to disrupt services?",
+        "options": {
+          "A": "Distributed denial-of-service (DDoS) attack",
+          "B": "Insider threat",
+          "C": "Employee sabotage",
+          "D": "System misconfiguration"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a key difference between internal and external threats?",
+        "options": {
+          "A": "Internal threats involve phishing emails, while external threats involve employee errors",
+          "B": "Internal threats originate within the organization, while external threats come from outside actors",
+          "C": "Internal threats only affect hardware, while external threats only affect software",
+          "D": "Internal threats involve hackers, while external threats involve employees"
+        },
+        "correctAnswer": "B"
+      },
+
+      {
+        "type": "multiple_choice",
+        "question": "What is the primary goal of attackers in cybersecurity?",
+        "options": {
+          "A": "To secure data",
+          "B": "To develop security systems",
+          "C": "To exploit vulnerabilities for unauthorized access",
+          "D": "To educate employees about cybersecurity"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is a common type of cyber attacker?",
+        "options": {
+          "A": "Firewall operator",
+          "B": "Ethical hacker",
+          "C": "Network administrator",
+          "D": "Script kiddie"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the role of a cybersecurity professional?",
+        "options": {
+          "A": "To exploit systems for personal gain",
+          "B": "To create malware for testing systems",
+          "C": "To oversee software piracy",
+          "D": "To protect data and prevent cyber threats"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which term describes an attacker who hacks into systems to identify weaknesses but without malicious intent?",
+        "options": {
+          "A": "Black hat hacker",
+          "B": "Script kiddie",
+          "C": "White hat hacker",
+          "D": "Hacktivist"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What type of attacker is motivated by political or social causes?",
+        "options": {
+          "A": "Cybercriminal",
+          "B": "Hacktivist",
+          "C": "Insider threat",
+          "D": "Script kiddie"
+        },
+        "correctAnswer": "B"
+      }
+    ]
+  },
+
+  {
+    "id": "ITP13",
+    "title": "QUIZ NI SIR POPOY 2",
+    "description": "Information Assurance & Security 1",
+    "icon": "shield",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What is the term \"cybersecurity landscape\" commonly used to describe?",
+        "options": {
+          "A": "The evolving threats, technologies, and defenses in cybersecurity",
+          "B": "Physical security measures in an office",
+          "C": "A type of network configuration",
+          "D": "A hardware vulnerability"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the term \"cybersecurity landscape\" commonly used to describe?",
+        "options": {
+          "A": "The evolving threats, technologies, and defenses in cybersecurity",
+          "B": "Physical security measures in an office",
+          "C": "A type of network configuration",
+          "D": "A hardware vulnerability"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is a major component of the cybersecurity landscape?",
+        "options": {
+          "A": "Natural disasters",
+          "B": "Cyber threats, including malware and phishing",
+          "C": "Secure office furniture",
+          "D": "Industrial equipment"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a key focus of the cybersecurity landscape?",
+        "options": {
+          "A": "Monitoring user productivity",
+          "B": "Increasing internet speed",
+          "C": "Identifying and addressing digital threats and vulnerabilities",
+          "D": "Developing hardware devices"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which term refers to a type of attack where hackers disrupt services by overwhelming a system with traffic?",
+        "options": {
+          "A": "Vulnerability assessment",
+          "B": "Data encryption",
+          "C": "Software patching",
+          "D": "Distributed Denial-of-Service (DDoS) attack"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the primary goal of cybersecurity?",
+        "options": {
+          "A": "To provide faster internet",
+          "B": "To ensure hardware components are up-to-date",
+          "C": "To monitor user behavior at work",
+          "D": "To protect systems, networks, and data from unauthorized access or attacks"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is one of the most common cybersecurity threats?",
+        "options": {
+          "A": "Firewalls",
+          "B": "Strong passwords",
+          "C": "Phishing emails",
+          "D": "Proper software patches"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which organization plays a key role in shaping the global cybersecurity landscape?",
+        "options": {
+          "A": "WHO",
+          "B": "ISO (International Organization for Standardization)",
+          "C": "FAA",
+          "D": "UNESCO"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is an example of a cybersecurity defense tool?",
+        "options": {
+          "A": "Antivirus software",
+          "B": "Weak passwords",
+          "C": "Outdated software",
+          "D": "Public Wi-Fi networks"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What does the term \"threat actor\" mean in the cybersecurity landscape?",
+        "options": {
+          "A": "An individual or group that poses a cybersecurity threat",
+          "B": "A type of firewall",
+          "C": "A software vulnerability",
+          "D": "A security feature in a browser"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is one major factor influencing the modern cybersecurity landscape?",
+        "options": {
+          "A": "Increasing global population",
+          "B": "The rapid advancement of technology and interconnected devices",
+          "C": "Declining internet usage",
+          "D": "Reduction in cyber threats"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a hardware vulnerability?",
+        "options": {
+          "A": "A flaw in software code that leads to security breaches",
+          "B": "An encrypted network connection",
+          "C": "A weakness in physical components of a system that can be exploited",
+          "D": "A secure operating system"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a software vulnerability?",
+        "options": {
+          "A": "A properly updated operating system",
+          "B": "A misconfigured piece of hardware",
+          "C": "A secure web application",
+          "D": "A weakness in software code that can be exploited by attackers"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is an example of a hardware vulnerability?",
+        "options": {
+          "A": "A CPU flaw that allows unauthorized access to memory",
+          "B": "A bug in an application’s code",
+          "C": "Outdated antivirus software",
+          "D": "Weak password policies"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is an example of a software vulnerability?",
+        "options": {
+          "A": "A hardware device overheating",
+          "B": "An unpatched operating system with known security flaws",
+          "C": "A physically damaged network cable",
+          "D": "A malfunctioning hard drive"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What can cause hardware vulnerabilities?",
+        "options": {
+          "A": "Regular updates of firmware",
+          "B": "Secure configurations of hardware",
+          "C": "Poor manufacturing design or flaws in microchips",
+          "D": "Routine hardware testing"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What type of vulnerability is commonly targeted by malware such as ransomware?",
+        "options": {
+          "A": "Misconfigured hardware devices",
+          "B": "Encrypted file systems",
+          "C": "High-performance processors",
+          "D": "Unpatched software vulnerabilities"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the primary method to reduce software vulnerabilities?",
+        "options": {
+          "A": "Using stronger hardware components",
+          "B": "Encrypting hardware devices",
+          "C": "Increasing the power supply to the device",
+          "D": "Regularly applying security patches and updates"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a common attack that exploits hardware vulnerabilities?",
+        "options": {
+          "A": "Phishing emails",
+          "B": "SQL injection attacks",
+          "C": "Side-channel attacks that extract data from hardware devices",
+          "D": "Distributed Denial-of-Service (DDoS) attacks"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the primary reason software vulnerabilities exist?",
+        "options": {
+          "A": "Hardware malfunctions",
+          "B": "Errors or flaws in the programming code",
+          "C": "Secure development practices",
+          "D": "Proper system configuration"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following can mitigate both hardware and software vulnerabilities?",
+        "options": {
+          "A": "Regular system updates and monitoring",
+          "B": "Ignoring firmware updates",
+          "C": "Frequent hardware upgrades",
+          "D": "Disabling antivirus software"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a security vulnerability?",
+        "options": {
+          "A": "A strong password policy",
+          "B": "A backup of system data",
+          "C": "An encrypted file",
+          "D": "A weakness in a system that can be exploited by attackers"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is an exploit in cybersecurity?",
+        "options": {
+          "A": "A type of firewall",
+          "B": "A hardware device",
+          "C": "A method used by attackers to take advantage of a vulnerability",
+          "D": "A software update"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is an example of a security vulnerability?",
+        "options": {
+          "A": "A system with updated antivirus protection",
+          "B": "Outdated software with known weaknesses",
+          "C": "A properly configured firewall",
+          "D": "Strong password encryption"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What does a buffer overflow exploit target?",
+        "options": {
+          "A": "The memory of a system to execute unauthorized code",
+          "B": "The power supply of a computer",
+          "C": "The screen resolution settings",
+          "D": "The user's internet connection"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the purpose of a zero-day exploit?",
+        "options": {
+          "A": "To exploit a vulnerability before it is discovered or fixed",
+          "B": "To patch a security vulnerability immediately",
+          "C": "To test system performance under load",
+          "D": "To monitor network activity for anomalies"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is NOT a type of cyber attacker?",
+        "options": {
+          "A": "Network engineer",
+          "B": "Insider threat",
+          "C": "Nation-state actor",
+          "D": "Cybercriminal"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the primary responsibility of a penetration tester?",
+        "options": {
+          "A": "To exploit vulnerabilities maliciously",
+          "B": "To write malicious code for hackers",
+          "C": "To steal sensitive information",
+          "D": "To test and strengthen system security by simulating attacks"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which type of attacker uses pre-written tools or scripts without extensive technical knowledge?",
+        "options": {
+          "A": "Black hat hacker",
+          "B": "Nation-state actor",
+          "C": "Script kiddie",
+          "D": "Insider threat"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the main goal of a black hat hacker?",
+        "options": {
+          "A": "To secure systems",
+          "B": "To identify system vulnerabilities for malicious purposes",
+          "C": "To perform ethical penetration testing",
+          "D": "To develop security protocols"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is a typical tool used by cybersecurity professionals?",
+        "options": {
+          "A": "Firewall",
+          "B": "Phishing email",
+          "C": "Ransomware",
+          "D": "Keylogger"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following best defines organization data?",
+        "options": {
+          "A": "Data used for personal identification",
+          "B": "Random data from the internet",
+          "C": "Personal shopping history of employees",
+          "D": "Data related to an organization’s operations, processes, and assets"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is an example of organization data?",
+        "options": {
+          "A": "A customer's Social Security Number",
+          "B": "A weather report",
+          "C": "Employee salary records",
+          "D": "An individual’s bank account balance"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What type of organization data includes financial records?",
+        "options": {
+          "A": "Public data",
+          "B": "Confidential data",
+          "C": "Personal data",
+          "D": "Irrelevant data"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is NOT considered organization data?",
+        "options": {
+          "A": "Competitor's sensitive data",
+          "B": "Trade secrets",
+          "C": "Office equipment list",
+          "D": "Performance reports"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the purpose of securing organization data?",
+        "options": {
+          "A": "To protect the organization’s assets and reputation",
+          "B": "To make it inaccessible to employees",
+          "C": "To ensure it remains public",
+          "D": "To reduce operational costs"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is an example of intellectual property data for an organization?",
+        "options": {
+          "A": "Office phone numbers",
+          "B": "Patents and copyrights",
+          "C": "Monthly sales targets",
+          "D": "Employee attendance records"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a common threat to organization data?",
+        "options": {
+          "A": "Hardware malfunction",
+          "B": "Employee promotions",
+          "C": "Unauthorized access by external or internal actors",
+          "D": "Website upgrades"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What type of organization data is typically protected by NDAs (Non-Disclosure Agreements)?",
+        "options": {
+          "A": "Publicly available data",
+          "B": "Generic office policies",
+          "C": "Product catalog information",
+          "D": "Highly sensitive and proprietary data"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following terms refers to storing organization data in the cloud?",
+        "options": {
+          "A": "Cloud computing",
+          "B": "Local storage",
+          "C": "File shredding",
+          "D": "Offline encryption"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Who is primarily responsible for protecting an organization's data?",
+        "options": {
+          "A": "Only the IT department",
+          "B": "All employees and the organization",
+          "C": "External cybersecurity companies",
+          "D": "Competitors"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is considered personal data?",
+        "options": {
+          "A": "A random number",
+          "B": "A weather report",
+          "C": "An email address",
+          "D": "A company's annual revenue"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What does PII stand for in cybersecurity?",
+        "options": {
+          "A": "Public Internet Information",
+          "B": "Private Internal Insights",
+          "C": "Personal Identity Index",
+          "D": "Personal Identification Information"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is NOT an example of sensitive personal data?",
+        "options": {
+          "A": "Shopping preferences",
+          "B": "Medical records",
+          "C": "Bank account number",
+          "D": "Social Security Number"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the primary purpose of protecting personal data?",
+        "options": {
+          "A": "To prevent data storage",
+          "B": "To safeguard individual privacy",
+          "C": "To enhance business profits",
+          "D": "To reduce internet speed"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of these laws is designed to protect personal data in the European Union?",
+        "options": {
+          "A": "HIPAA",
+          "B": "PCI DSS",
+          "C": "GDPR",
+          "D": "CCPA"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Personal data includes information that can be used to:",
+        "options": {
+          "A": "Track weather patterns",
+          "B": "Store general statistics",
+          "C": "Develop software programs",
+          "D": "Identify a specific individual"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What type of information is considered part of biometric data?",
+        "options": {
+          "A": "Bank account details",
+          "B": "Email addresses",
+          "C": "Education history",
+          "D": "Fingerprint data"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following is an example of indirect personal data?",
+        "options": {
+          "A": "Name",
+          "B": "Passport number",
+          "C": "IP address",
+          "D": "Phone number"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What does the term \"data breach\" refer to?",
+        "options": {
+          "A": "Loss of an internet connection",
+          "B": "Unauthorized access to personal data",
+          "C": "A system upgrade failure",
+          "D": "Public release of software updates"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which organization is responsible for protecting personal data?",
+        "options": {
+          "A": "The individual only",
+          "B": "Only businesses",
+          "C": "Governments, businesses, and individuals",
+          "D": "Hackers"
+        },
+        "correctAnswer": "C"
+      }
+    ]
+  },
+  {
+    "id": "SN-M1",
+    "title": "Scaling Networks – Module 1: OSPF Fundamentals",
+    "description": "This quiz assesses knowledge of OSPF operation, packet types, neighbor relationships, areas, and scalability concepts.",
+    "icon": "network",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What is a function of OSPF hello packets?",
+        "options": {
+          "A": "to discover neighbors and build adjacencies between them",
+          "B": "to ensure database synchronization between routers",
+          "C": "to send specifically requested link-state records",
+          "D": "to request specific link-state records from neighbor routers"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which OSPF packet contains the different types of link-state advertisements?",
+        "options": {
+          "A": "LSU",
+          "B": "LSR",
+          "C": "Hello",
+          "D": "DBD",
+          "E": "LSAck"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which statements describe features of the OSPF topology table? (Choose three.)",
+        "options": {
+          "A": "After convergence, the table only contains the lowest cost route entries for all known networks",
+          "B": "The topology table contains feasible successor routes",
+          "C": "The table can be viewed via the show ip ospf database command",
+          "D": "Its contents are the result of running the SPF algorithm",
+          "E": "It is a link-state database that represents the network topology",
+          "F": "When converged, all routers in an area have identical topology tables"
+        },
+        "correctAnswer": ["C", "E", "F"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What does an OSPF area contain?",
+        "options": {
+          "A": "routers that share the same process ID",
+          "B": "routers that share the same router ID",
+          "C": "routers that have the same link-state information in their LSDBs",
+          "D": "routers whose SPF trees are identical"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "A router is participating in an OSPFv2 domain. What will always happen if the dead interval expires before the router receives a hello packet from an adjacent DROTHER OSPF router?",
+        "options": {
+          "A": "A new dead interval timer of 4 times the hello interval will start",
+          "B": "SPF will run and determine which neighbor router is down",
+          "C": "OSPF will run a new DR/BDR election",
+          "D": "OSPF will remove that neighbor from the router link-state database"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the order of packet types used by an OSPF router to establish convergence?",
+        "options": {
+          "A": "LSAck, Hello, DBD, LSU, LSR",
+          "B": "LSU, LSAck, Hello, DBD, LSR",
+          "C": "Hello, DBD, LSR, LSU, LSAck",
+          "D": "Hello, LSAck, LSU, LSR, DBD"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a feature of the OSPF routing protocol?",
+        "options": {
+          "A": "OSPF authentication is configured in the same way on IPv4 and IPv6 networks",
+          "B": "Routers can be grouped into autonomous systems to support a hierarchical system",
+          "C": "It scales well in both small and large networks",
+          "D": "The SPF algorithm chooses the best path based on 30-second updates"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is used to create the OSPF neighbor table?",
+        "options": {
+          "A": "Link-state database",
+          "B": "Forwarding database",
+          "C": "Routing table",
+          "D": "Adjacency database"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is identical on all OSPF routers within a single area?",
+        "options": {
+          "A": "Neighbor table",
+          "B": "Routing table",
+          "C": "Link-state database",
+          "D": "Static routes"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What function is performed by the OSPF designated router?",
+        "options": {
+          "A": "Summarizing routes between areas",
+          "B": "Maintaining the link-state database",
+          "C": "Redistribution of external routes into OSPF",
+          "D": "Dissemination of LSAs"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What are two reasons for creating an OSPF network with multiple areas? (Choose two.)",
+        "options": {
+          "A": "To simplify configuration",
+          "B": "To ensure that an area is used to connect the network to the Internet",
+          "C": "To reduce use of memory and processor resources",
+          "D": "To reduce SPF calculations",
+          "E": "To provide areas in the network for routers that are not running OSPF"
+        },
+        "correctAnswer": ["C", "D"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "At which OSPF state are neighbor routers converged and able to exchange routing updates?",
+        "options": {
+          "A": "Exchange",
+          "B": "Two-Way",
+          "C": "ExStart",
+          "D": "Full"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The OSPF hello timer has been set to 15 seconds on a router in a point-to-point network. By default, what is the dead interval on this router?",
+        "options": {
+          "A": "30 seconds",
+          "B": "60 seconds",
+          "C": "45 seconds",
+          "D": "15 seconds"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What happens immediately after two OSPF routers have exchanged hello packets and have formed a neighbor adjacency?",
+        "options": {
+          "A": "They exchange abbreviated lists of their LSDBs",
+          "B": "They negotiate the election process if they are on a multiaccess network",
+          "C": "They exchange DBD packets to advertise parameters",
+          "D": "They request more information about their databases"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which statement is correct about multiarea OSPF?",
+        "options": {
+          "A": "OSPF can consolidate a fragmented OSPF area into one large area",
+          "B": "Arranging routers into areas partitions a large autonomous system to reduce load",
+          "C": "All routers are in one area called the backbone area",
+          "D": "OSPF multiarea increases the frequency of SPF calculation"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which OSPF data structure is identical in all routers in an OSPF area after convergence?",
+        "options": {
+          "A": "Adjacency database",
+          "B": "Link-state database",
+          "C": "Routing table",
+          "D": "SPF tree"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What are the purposes of an OSPF router ID? (Choose two.)",
+        "options": {
+          "A": "To enable the SPF algorithm to determine the lowest-cost path",
+          "B": "To facilitate router participation in DR elections",
+          "C": "To facilitate network convergence",
+          "D": "To facilitate neighbor state transition to Full",
+          "E": "To uniquely identify the router within the OSPF domain"
+        },
+        "correctAnswer": ["B", "E"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which statement describes a multiarea OSPF network?",
+        "options": {
+          "A": "Multiple areas daisy-chained together",
+          "B": "A backbone area with other areas connected to it",
+          "C": "Multiple routing protocols each with its own area",
+          "D": "A required three-layer hierarchical design"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What are the advantages of using multiarea OSPF? (Choose two.)",
+        "options": {
+          "A": "A backbone area is not required",
+          "B": "Allows OSPFv2 and OSPFv3 to run together",
+          "C": "Improves routing efficiency by reducing overhead",
+          "D": "Improves routing performance by dividing neighbor tables",
+          "E": "Topology changes in one area do not affect other areas"
+        },
+        "correctAnswer": ["C", "E"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which command can be used to verify the contents of the LSDB in an OSPF area?",
+        "options": {
+          "A": "show ip ospf database",
+          "B": "show ip ospf interface",
+          "C": "show ip ospf neighbor",
+          "D": "show ip route ospf"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which of the following facilitates hierarchical routing in OSPF?",
+        "options": {
+          "A": "Auto-summarization",
+          "B": "Frequent SPF calculations",
+          "C": "The election of designated routers",
+          "D": "The use of multiple areas"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which step does an OSPF-enabled router take immediately after the topology table is built?",
+        "options": {
+          "A": "Chooses the best path",
+          "B": "Establishes adjacency",
+          "C": "Exchanges LSAs",
+          "D": "Executes the SPF algorithm"
+        },
+        "correctAnswer": "D"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which type of OSPFv2 packet contains an abbreviated list of the LSDB?",
+        "options": {
+          "A": "Database Description",
+          "B": "Link-State Acknowledgment",
+          "C": "Link-State Request",
+          "D": "Link-State Update"
+        },
+        "correctAnswer": "A"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which OSPF states occur before neighbor adjacency is formed? (Choose three.)",
+        "options": {
+          "A": "Down",
+          "B": "Exchange",
+          "C": "ExStart",
+          "D": "Init",
+          "E": "Loading",
+          "F": "Two-Way"
+        },
+        "correctAnswer": ["A", "D", "F"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "In an OSPF network, when are DR and BDR elections required?",
+        "options": {
+          "A": "When routers cannot form adjacencies",
+          "B": "When routers share a common Ethernet network",
+          "C": "When neighbors are in different networks",
+          "D": "When routers are connected point-to-point"
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "When an OSPF network is converged and no topology change occurs, how often are LSU packets sent?",
+        "options": {
+          "A": "Every 10 seconds",
+          "B": "Every 40 seconds",
+          "C": "Every 15 minutes",
+          "D": "Every 30 minutes"
+        },
+        "correctAnswer": "D"
+      }
+    ]
+  }
+]
