@@ -6,14 +6,12 @@ let startTime = null;
 let timerInterval = null;
 let userAnswers = [];
 let quizData = null;
+let allQuizzes = []; // Store quiz metadata
 
-// Load quizzes from external file
+// Load quiz index
 async function loadQuizzes() {
     try {
-        // 1. Fetch the .json file instead of .js
-        const response = await fetch('quizzes/data.json');
-        
-        // 2. Parse the JSON data directly
+        const response = await fetch('quizzes/index.json');
         allQuizzes = await response.json();
         
         if (allQuizzes && allQuizzes.length > 0) {
@@ -22,7 +20,7 @@ async function loadQuizzes() {
             showEmptyState();
         }
     } catch (error) {
-        console.error('Error loading quizzes:', error);
+        console.error('Error loading quiz index:', error);
         showEmptyState();
     }
 }
@@ -32,7 +30,7 @@ function displayQuizList(quizzes) {
     const quizList = document.getElementById('quiz-list');
     
     quizList.innerHTML = quizzes.map(quiz => `
-    <button class="quiz-card" onclick="selectQuiz('${quiz.id}')" type="button">
+        <button class="quiz-card" onclick="selectQuiz('${quiz.id}')" type="button">
             <div class="quiz-card-header">
                 <div class="quiz-icon">${quiz.icon}</div>
                 <div>
@@ -41,9 +39,9 @@ function displayQuizList(quizzes) {
             </div>
             <p>${quiz.description}</p>
             <div class="quiz-meta">
-                <span>📝 ${quiz.questions.length} question${quiz.questions.length !== 1 ? 's' : ''}</span>
+                <span class="quiz-badge">Click to start</span>
             </div>
-        </div>
+        </button>
     `).join('');
 }
 
@@ -54,29 +52,53 @@ function showEmptyState() {
         <div class="empty-state">
             <div class="empty-icon">📚</div>
             <h3>No Quizzes Available</h3>
-            <p>Add quizzes to <code>quizzes/data.js</code> to get started!</p>
+            <p>Add quiz files to <code>quizzes/</code> folder and update <code>index.json</code></p>
         </div>
     `;
 }
 
-function selectQuiz(quizId) {
-    // 3. Reference the global allQuizzes variable we just populated
-    const quiz = allQuizzes.find(q => q.id === quizId);
-    if (!quiz) return;
+// Select and load quiz
+async function selectQuiz(quizId) {
+    const quizMeta = allQuizzes.find(q => q.id === quizId);
+    if (!quizMeta) return;
     
-    quizData = JSON.parse(JSON.stringify(quiz));
-    currentQuestionIndex = 0;
-    userAnswers = new Array(quizData.questions.length).fill(null);
-    
-    currentQuiz = new Quiz(quizData.questions, quizData.title);
-    document.getElementById('quiz-title').textContent = quizData.title;
-    
-    showScreen('quiz-screen');
-    
-    startTime = new Date();
-    startTimer();
-    currentQuiz.start();
-    displayQuestion();
+    try {
+        // Show loading
+        showLoadingOverlay('Loading quiz...');
+        
+        // Load the specific quiz file
+        const response = await fetch(`quizzes/${quizMeta.file}`);
+        const quizContent = await response.json();
+        
+        hideLoadingOverlay();
+        
+        // Initialize quiz
+        quizData = {
+            id: quizMeta.id,
+            title: quizMeta.title,
+            description: quizMeta.description,
+            icon: quizMeta.icon,
+            questions: quizContent.questions
+        };
+        
+        currentQuestionIndex = 0;
+        userAnswers = new Array(quizData.questions.length).fill(null);
+        
+        currentQuiz = new Quiz(quizData.questions, quizData.title);
+        document.getElementById('quiz-title').textContent = quizData.title;
+        
+        showScreen('quiz-screen');
+        
+        startTime = new Date();
+        startTimer();
+        currentQuiz.start();
+        displayQuestion();
+        
+    } catch (error) {
+        hideLoadingOverlay();
+        console.error('Error loading quiz:', error);
+        alert('Failed to load quiz. Please try again.');
+    }
 }
 
 // Start timer
@@ -100,48 +122,77 @@ function stopTimer() {
     }
 }
 
-function submitMultipleResponse() {
-    const checked = Array.from(document.querySelectorAll('input[name="quiz-option"]:checked'))
-                         .map(el => el.value);
-    
-    if (checked.length === 0) {
-        alert("Please select at least one answer!");
-        return;
-    }
-    
-    handleAnswer(checked); // Pass the array of answers to your existing answer handler
-}
-
 // Display current question
 function displayQuestion() {
     const question = currentQuiz.getCurrentQuestion();
-    const optionsContainer = document.getElementById('options-container');
-    optionsContainer.innerHTML = '';
-
+    const container = document.getElementById('options');
+    
+    // Update question info
+    const questionNum = currentQuestionIndex + 1;
+    const totalQuestions = currentQuiz.questions.length;
+    document.getElementById('question-number').textContent = `Question ${questionNum} of ${totalQuestions}`;
+    document.getElementById('question-text').textContent = question.question;
+    document.getElementById('question-indicator').textContent = `${questionNum} / ${totalQuestions}`;
+    
+    // Update progress bar
+    const progress = (questionNum / totalQuestions) * 100;
+    document.getElementById('progress-fill').style.width = `${progress}%`;
+    
+    // Clear previous content
+    container.innerHTML = '';
+    
+    // Render based on question type
     if (question.type === 'multiple_response') {
-        // Render Checkboxes
-        Object.entries(question.options).forEach(([key, value]) => {
-            const optionId = `option-${key}`;
-            optionsContainer.innerHTML += `
-                <div class="option-item">
-                    <input type="checkbox" name="quiz-option" value="${key}" id="${optionId}">
-                    <label for="${optionId}"><strong>${key}:</strong> ${value}</label>
+        // Multiple response with checkboxes
+        const userAnswer = userAnswers[currentQuestionIndex] || [];
+        
+        container.innerHTML = `
+            <div class="question-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 16v-4M12 8h.01"/>
+                </svg>
+                Select all that apply
+            </div>
+            ${Object.keys(question.options).map(letter => {
+                const isChecked = userAnswer.includes(letter);
+                return `
+                    <label class="option checkbox-option ${isChecked ? 'selected' : ''}" for="option-${letter}">
+                        <input type="checkbox" 
+                               id="option-${letter}" 
+                               name="quiz-option" 
+                               value="${letter}"
+                               ${isChecked ? 'checked' : ''}
+                               onchange="toggleMultipleAnswer('${letter}')">
+                        <div class="checkbox-custom">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <div class="option-content">
+                            <span class="option-label">${letter}</span>
+                            <span class="option-text">${question.options[letter]}</span>
+                        </div>
+                    </label>
+                `;
+            }).join('')}
+        `;
+        
+    } else if (question.type === 'multiple_choice') {
+        // Single choice with radio buttons
+        container.innerHTML = Object.keys(question.options).map(letter => {
+            const isSelected = userAnswers[currentQuestionIndex] === letter;
+            return `
+                <div class="option ${isSelected ? 'selected' : ''}" 
+                     onclick="selectAnswer('${letter}')">
+                    <div class="option-label">${letter}</div>
+                    <div class="option-text">${question.options[letter]}</div>
                 </div>
             `;
-        });
-        // Add a "Confirm Selection" button for checkboxes
-        optionsContainer.innerHTML += `<button onclick="submitMultipleResponse()" class="btn-primary">Confirm Answer</button>`;
-    } else if (question.type === 'multiple_choice') {
-        // ... existing radio-style logic ...
-        optionsContainer.innerHTML = Object.keys(question.options).map(letter => `
-            <div class="option ${userAnswers[currentQuestionIndex] === letter ? 'selected' : ''}" 
-                 onclick="selectAnswer('${letter}')">
-                <div class="option-label">${letter}</div>
-                <div class="option-text">${question.options[letter]}</div>
-            </div>
-        `).join('');
+        }).join('');
+        
     } else if (question.type === 'true_false') {
-        optionsContainer.innerHTML = `
+        container.innerHTML = `
             <div class="option ${userAnswers[currentQuestionIndex] === 'true' ? 'selected' : ''}" 
                  onclick="selectAnswer('true')">
                 <div class="option-label">T</div>
@@ -153,12 +204,15 @@ function displayQuestion() {
                 <div class="option-text">False</div>
             </div>
         `;
+        
     } else if (question.type === 'short_answer' || question.type === 'fill_in_blank') {
         const value = userAnswers[currentQuestionIndex] || '';
-        optionsContainer.innerHTML = `
+        const placeholder = question.type === 'fill_in_blank' ? 
+            'Fill in the blank...' : 'Type your answer...';
+        container.innerHTML = `
             <input type="text" 
                    class="text-input" 
-                   placeholder="Type your answer here..."
+                   placeholder="${placeholder}"
                    value="${value}"
                    oninput="selectAnswer(this.value)"
                    autofocus>
@@ -169,33 +223,38 @@ function displayQuestion() {
     updateNavigationButtons();
 }
 
-// Select answer
+// Select answer for single choice questions
 function selectAnswer(answer) {
     userAnswers[currentQuestionIndex] = answer;
     currentQuiz.answerQuestion(answer);
     
-    // Re-render to show selection (for multiple choice and true/false)
+    // Re-render for visual feedback
     const question = currentQuiz.getCurrentQuestion();
     if (question.type === 'multiple_choice' || question.type === 'true_false') {
         displayQuestion();
     }
 }
 
-// Add this new helper for checkboxes
+// Toggle answer for multiple response questions
 function toggleMultipleAnswer(letter) {
     if (!Array.isArray(userAnswers[currentQuestionIndex])) {
         userAnswers[currentQuestionIndex] = [];
     }
     
-    const index = userAnswers[currentQuestionIndex].indexOf(letter);
+    const answers = userAnswers[currentQuestionIndex];
+    const index = answers.indexOf(letter);
+    
     if (index === -1) {
-        userAnswers[currentQuestionIndex].push(letter);
+        answers.push(letter);
     } else {
-        userAnswers[currentQuestionIndex].splice(index, 1);
+        answers.splice(index, 1);
     }
     
-    currentQuiz.answerQuestion(userAnswers[currentQuestionIndex]);
-    displayQuestion(); // Refresh UI
+    // Sort to maintain consistent order
+    answers.sort();
+    
+    currentQuiz.answerQuestion(answers);
+    displayQuestion();
 }
 
 // Update navigation buttons
@@ -210,7 +269,7 @@ function updateNavigationButtons() {
     const isLastQuestion = currentQuestionIndex === currentQuiz.questions.length - 1;
     if (isLastQuestion) {
         nextBtn.innerHTML = `
-            Finish
+            Finish Quiz
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="9 11 12 14 22 4"/>
                 <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
@@ -234,6 +293,9 @@ function nextQuestion() {
         currentQuestionIndex++;
         currentQuiz.currentQuestionIndex = currentQuestionIndex;
         displayQuestion();
+        
+        // Smooth scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 }
 
@@ -243,17 +305,22 @@ function previousQuestion() {
         currentQuestionIndex--;
         currentQuiz.currentQuestionIndex = currentQuestionIndex;
         displayQuestion();
+        
+        // Smooth scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 }
 
 // Finish quiz
 function finishQuiz() {
     // Check for unanswered questions
-    const unanswered = userAnswers.filter(a => a === null || a === '').length;
+    const unanswered = userAnswers.filter(a => 
+        a === null || a === '' || (Array.isArray(a) && a.length === 0)
+    ).length;
     
     if (unanswered > 0) {
         const confirmed = confirm(
-            `You have ${unanswered} unanswered question${unanswered > 1 ? 's' : ''}. Submit anyway?`
+            `⚠️ You have ${unanswered} unanswered question${unanswered > 1 ? 's' : ''}.\n\nSubmit quiz anyway?`
         );
         if (!confirmed) return;
     }
@@ -273,7 +340,8 @@ function displayResults(results) {
     showScreen('results-screen');
     
     // Update score
-    document.getElementById('score-percent').textContent = `${Math.round(results.percentage)}%`;
+    const percentage = Math.round(results.percentage);
+    document.getElementById('score-percent').textContent = `${percentage}%`;
     
     // Animate score circle
     const circumference = 2 * Math.PI * 85;
@@ -293,14 +361,29 @@ function displayResults(results) {
         const icon = q.isCorrect ? '✓' : '✗';
         const statusClass = q.isCorrect ? 'correct' : 'incorrect';
         
-        let userAnswerText = q.userAnswer || 'Not answered';
-        if (q.type === 'multiple_choice' && q.userAnswer) {
+        // Format user answer
+        let userAnswerText = 'Not answered';
+        if (q.type === 'multiple_response' && Array.isArray(q.userAnswer)) {
+            if (q.userAnswer.length > 0) {
+                userAnswerText = q.userAnswer.map(letter => 
+                    `${letter}. ${q.options[letter]}`
+                ).join(', ');
+            }
+        } else if (q.type === 'multiple_choice' && q.userAnswer) {
             userAnswerText = `${q.userAnswer}. ${q.options[q.userAnswer]}`;
+        } else if (q.userAnswer) {
+            userAnswerText = q.userAnswer;
         }
         
-        let correctAnswerText = '';
+        // Format correct answer for incorrect questions
+        let correctAnswerHTML = '';
         if (!q.isCorrect) {
-            if (q.type === 'multiple_choice') {
+            let correctAnswerText = '';
+            if (q.type === 'multiple_response' && Array.isArray(q.correctAnswer)) {
+                correctAnswerText = q.correctAnswer.map(letter => 
+                    `${letter}. ${q.options[letter]}`
+                ).join(', ');
+            } else if (q.type === 'multiple_choice') {
                 const correct = q.correctAnswer;
                 correctAnswerText = `${correct}. ${q.options[correct]}`;
             } else if (q.type === 'true_false') {
@@ -308,6 +391,7 @@ function displayResults(results) {
             } else {
                 correctAnswerText = q.correctAnswers ? q.correctAnswers.join(', ') : 'N/A';
             }
+            correctAnswerHTML = `<div class="result-correct">Correct answer: ${correctAnswerText}</div>`;
         }
         
         return `
@@ -317,23 +401,27 @@ function displayResults(results) {
                     <div class="result-question">${idx + 1}. ${q.question}</div>
                 </div>
                 <div class="result-answer">Your answer: <strong>${userAnswerText}</strong></div>
+                ${correctAnswerHTML}
             </div>
         `;
     }).join('');
+    
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Retake quiz
 function retakeQuiz() {
     if (!quizData) return;
     
-    if (confirm('Retake this quiz? Your current results will be lost.')) {
+    if (confirm('🔄 Retake this quiz?\n\nYour current results will be lost.')) {
         selectQuiz(quizData.id);
     }
 }
 
 // Back to selection
 function backToSelection() {
-    if (confirm('Go back to quiz selection?')) {
+    if (confirm('🏠 Return to quiz selection?\n\nYour results will be cleared.')) {
         stopTimer();
         currentQuiz = null;
         quizData = null;
@@ -345,7 +433,7 @@ function backToSelection() {
 
 // Exit quiz
 function exitQuiz() {
-    if (confirm('Exit quiz? Your progress will be lost.')) {
+    if (confirm('⚠️ Exit quiz?\n\nYour progress will be lost.')) {
         stopTimer();
         currentQuiz = null;
         quizData = null;
@@ -363,7 +451,27 @@ function showScreen(screenId) {
     document.getElementById(screenId).classList.remove('hidden');
     
     // Scroll to top
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Loading overlay
+function showLoadingOverlay(message = 'Loading...') {
+    const overlay = document.createElement('div');
+    overlay.id = 'loading-overlay';
+    overlay.innerHTML = `
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>${message}</p>
+        </div>
+    `;
+    document.body.appendChild(overlay);
+}
+
+function hideLoadingOverlay() {
+    const overlay = document.getElementById('loading-overlay');
+    if (overlay) {
+        overlay.remove();
+    }
 }
 
 // Setup SVG gradient for score ring
@@ -392,6 +500,22 @@ function setupSVGGradient() {
     defs.appendChild(gradient);
     svg.insertBefore(defs, svg.firstChild);
 }
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+    // Only in quiz screen
+    if (!document.getElementById('quiz-screen').classList.contains('hidden')) {
+        if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            if (!document.getElementById('prev-btn').disabled) {
+                previousQuestion();
+            }
+        } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            nextQuestion();
+        }
+    }
+});
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {

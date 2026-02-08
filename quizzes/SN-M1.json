@@ -1,0 +1,315 @@
+{
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "What is a function of OSPF hello packets?",
+      "options": {
+        "A": "to discover neighbors and build adjacencies between them",
+        "B": "to ensure database synchronization between routers",
+        "C": "to send specifically requested link-state records",
+        "D": "to request specific link-state records from neighbor routers"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which OSPF packet contains the different types of link-state advertisements?",
+      "options": {
+        "A": "LSU",
+        "B": "LSR",
+        "C": "Hello",
+        "D": "DBD",
+        "E": "LSAck"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which statements describe features of the OSPF topology table? (Choose three.)",
+      "options": {
+        "A": "After convergence, the table only contains the lowest cost route entries for all known networks",
+        "B": "The topology table contains feasible successor routes",
+        "C": "The table can be viewed via the show ip ospf database command",
+        "D": "Its contents are the result of running the SPF algorithm",
+        "E": "It is a link-state database that represents the network topology",
+        "F": "When converged, all routers in an area have identical topology tables"
+      },
+      "correctAnswer": [
+        "C",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does an OSPF area contain?",
+      "options": {
+        "A": "routers that share the same process ID",
+        "B": "routers that share the same router ID",
+        "C": "routers that have the same link-state information in their LSDBs",
+        "D": "routers whose SPF trees are identical"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A router is participating in an OSPFv2 domain. What will always happen if the dead interval expires before the router receives a hello packet from an adjacent DROTHER OSPF router?",
+      "options": {
+        "A": "A new dead interval timer of 4 times the hello interval will start",
+        "B": "SPF will run and determine which neighbor router is down",
+        "C": "OSPF will run a new DR/BDR election",
+        "D": "OSPF will remove that neighbor from the router link-state database"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the order of packet types used by an OSPF router to establish convergence?",
+      "options": {
+        "A": "LSAck, Hello, DBD, LSU, LSR",
+        "B": "LSU, LSAck, Hello, DBD, LSR",
+        "C": "Hello, DBD, LSR, LSU, LSAck",
+        "D": "Hello, LSAck, LSU, LSR, DBD"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a feature of the OSPF routing protocol?",
+      "options": {
+        "A": "OSPF authentication is configured in the same way on IPv4 and IPv6 networks",
+        "B": "Routers can be grouped into autonomous systems to support a hierarchical system",
+        "C": "It scales well in both small and large networks",
+        "D": "The SPF algorithm chooses the best path based on 30-second updates"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is used to create the OSPF neighbor table?",
+      "options": {
+        "A": "Link-state database",
+        "B": "Forwarding database",
+        "C": "Routing table",
+        "D": "Adjacency database"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is identical on all OSPF routers within a single area?",
+      "options": {
+        "A": "Neighbor table",
+        "B": "Routing table",
+        "C": "Link-state database",
+        "D": "Static routes"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What function is performed by the OSPF designated router?",
+      "options": {
+        "A": "Summarizing routes between areas",
+        "B": "Maintaining the link-state database",
+        "C": "Redistribution of external routes into OSPF",
+        "D": "Dissemination of LSAs"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_response",
+      "question": "What are two reasons for creating an OSPF network with multiple areas? (Choose two.)",
+      "options": {
+        "A": "To simplify configuration",
+        "B": "To ensure that an area is used to connect the network to the Internet",
+        "C": "To reduce use of memory and processor resources",
+        "D": "To reduce SPF calculations",
+        "E": "To provide areas in the network for routers that are not running OSPF"
+      },
+      "correctAnswer": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "At which OSPF state are neighbor routers converged and able to exchange routing updates?",
+      "options": {
+        "A": "Exchange",
+        "B": "Two-Way",
+        "C": "ExStart",
+        "D": "Full"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The OSPF hello timer has been set to 15 seconds on a router in a point-to-point network. By default, what is the dead interval on this router?",
+      "options": {
+        "A": "30 seconds",
+        "B": "60 seconds",
+        "C": "45 seconds",
+        "D": "15 seconds"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What happens immediately after two OSPF routers have exchanged hello packets and have formed a neighbor adjacency?",
+      "options": {
+        "A": "They exchange abbreviated lists of their LSDBs",
+        "B": "They negotiate the election process if they are on a multiaccess network",
+        "C": "They exchange DBD packets to advertise parameters",
+        "D": "They request more information about their databases"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which statement is correct about multiarea OSPF?",
+      "options": {
+        "A": "OSPF can consolidate a fragmented OSPF area into one large area",
+        "B": "Arranging routers into areas partitions a large autonomous system to reduce load",
+        "C": "All routers are in one area called the backbone area",
+        "D": "OSPF multiarea increases the frequency of SPF calculation"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which OSPF data structure is identical in all routers in an OSPF area after convergence?",
+      "options": {
+        "A": "Adjacency database",
+        "B": "Link-state database",
+        "C": "Routing table",
+        "D": "SPF tree"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_response",
+      "question": "What are the purposes of an OSPF router ID? (Choose two.)",
+      "options": {
+        "A": "To enable the SPF algorithm to determine the lowest-cost path",
+        "B": "To facilitate router participation in DR elections",
+        "C": "To facilitate network convergence",
+        "D": "To facilitate neighbor state transition to Full",
+        "E": "To uniquely identify the router within the OSPF domain"
+      },
+      "correctAnswer": [
+        "B",
+        "E"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which statement describes a multiarea OSPF network?",
+      "options": {
+        "A": "Multiple areas daisy-chained together",
+        "B": "A backbone area with other areas connected to it",
+        "C": "Multiple routing protocols each with its own area",
+        "D": "A required three-layer hierarchical design"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_response",
+      "question": "What are the advantages of using multiarea OSPF? (Choose two.)",
+      "options": {
+        "A": "A backbone area is not required",
+        "B": "Allows OSPFv2 and OSPFv3 to run together",
+        "C": "Improves routing efficiency by reducing overhead",
+        "D": "Improves routing performance by dividing neighbor tables",
+        "E": "Topology changes in one area do not affect other areas"
+      },
+      "correctAnswer": [
+        "C",
+        "E"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which command can be used to verify the contents of the LSDB in an OSPF area?",
+      "options": {
+        "A": "show ip ospf database",
+        "B": "show ip ospf interface",
+        "C": "show ip ospf neighbor",
+        "D": "show ip route ospf"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following facilitates hierarchical routing in OSPF?",
+      "options": {
+        "A": "Auto-summarization",
+        "B": "Frequent SPF calculations",
+        "C": "The election of designated routers",
+        "D": "The use of multiple areas"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which step does an OSPF-enabled router take immediately after the topology table is built?",
+      "options": {
+        "A": "Chooses the best path",
+        "B": "Establishes adjacency",
+        "C": "Exchanges LSAs",
+        "D": "Executes the SPF algorithm"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which type of OSPFv2 packet contains an abbreviated list of the LSDB?",
+      "options": {
+        "A": "Database Description",
+        "B": "Link-State Acknowledgment",
+        "C": "Link-State Request",
+        "D": "Link-State Update"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which OSPF states occur before neighbor adjacency is formed? (Choose three.)",
+      "options": {
+        "A": "Down",
+        "B": "Exchange",
+        "C": "ExStart",
+        "D": "Init",
+        "E": "Loading",
+        "F": "Two-Way"
+      },
+      "correctAnswer": [
+        "A",
+        "D",
+        "F"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In an OSPF network, when are DR and BDR elections required?",
+      "options": {
+        "A": "When routers cannot form adjacencies",
+        "B": "When routers share a common Ethernet network",
+        "C": "When neighbors are in different networks",
+        "D": "When routers are connected point-to-point"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "When an OSPF network is converged and no topology change occurs, how often are LSU packets sent?",
+      "options": {
+        "A": "Every 10 seconds",
+        "B": "Every 40 seconds",
+        "C": "Every 15 minutes",
+        "D": "Every 30 minutes"
+      },
+      "correctAnswer": "D"
+    }
+  ]
+}

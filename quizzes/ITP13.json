@@ -1,0 +1,565 @@
+{
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "What is the term \"cybersecurity landscape\" commonly used to describe?",
+      "options": {
+        "A": "The evolving threats, technologies, and defenses in cybersecurity",
+        "B": "Physical security measures in an office",
+        "C": "A type of network configuration",
+        "D": "A hardware vulnerability"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the term \"cybersecurity landscape\" commonly used to describe?",
+      "options": {
+        "A": "The evolving threats, technologies, and defenses in cybersecurity",
+        "B": "Physical security measures in an office",
+        "C": "A type of network configuration",
+        "D": "A hardware vulnerability"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is a major component of the cybersecurity landscape?",
+      "options": {
+        "A": "Natural disasters",
+        "B": "Cyber threats, including malware and phishing",
+        "C": "Secure office furniture",
+        "D": "Industrial equipment"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a key focus of the cybersecurity landscape?",
+      "options": {
+        "A": "Monitoring user productivity",
+        "B": "Increasing internet speed",
+        "C": "Identifying and addressing digital threats and vulnerabilities",
+        "D": "Developing hardware devices"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which term refers to a type of attack where hackers disrupt services by overwhelming a system with traffic?",
+      "options": {
+        "A": "Vulnerability assessment",
+        "B": "Data encryption",
+        "C": "Software patching",
+        "D": "Distributed Denial-of-Service (DDoS) attack"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the primary goal of cybersecurity?",
+      "options": {
+        "A": "To provide faster internet",
+        "B": "To ensure hardware components are up-to-date",
+        "C": "To monitor user behavior at work",
+        "D": "To protect systems, networks, and data from unauthorized access or attacks"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is one of the most common cybersecurity threats?",
+      "options": {
+        "A": "Firewalls",
+        "B": "Strong passwords",
+        "C": "Phishing emails",
+        "D": "Proper software patches"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which organization plays a key role in shaping the global cybersecurity landscape?",
+      "options": {
+        "A": "WHO",
+        "B": "ISO (International Organization for Standardization)",
+        "C": "FAA",
+        "D": "UNESCO"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is an example of a cybersecurity defense tool?",
+      "options": {
+        "A": "Antivirus software",
+        "B": "Weak passwords",
+        "C": "Outdated software",
+        "D": "Public Wi-Fi networks"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the term \"threat actor\" mean in the cybersecurity landscape?",
+      "options": {
+        "A": "An individual or group that poses a cybersecurity threat",
+        "B": "A type of firewall",
+        "C": "A software vulnerability",
+        "D": "A security feature in a browser"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is one major factor influencing the modern cybersecurity landscape?",
+      "options": {
+        "A": "Increasing global population",
+        "B": "The rapid advancement of technology and interconnected devices",
+        "C": "Declining internet usage",
+        "D": "Reduction in cyber threats"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a hardware vulnerability?",
+      "options": {
+        "A": "A flaw in software code that leads to security breaches",
+        "B": "An encrypted network connection",
+        "C": "A weakness in physical components of a system that can be exploited",
+        "D": "A secure operating system"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a software vulnerability?",
+      "options": {
+        "A": "A properly updated operating system",
+        "B": "A misconfigured piece of hardware",
+        "C": "A secure web application",
+        "D": "A weakness in software code that can be exploited by attackers"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is an example of a hardware vulnerability?",
+      "options": {
+        "A": "A CPU flaw that allows unauthorized access to memory",
+        "B": "A bug in an application\u2019s code",
+        "C": "Outdated antivirus software",
+        "D": "Weak password policies"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is an example of a software vulnerability?",
+      "options": {
+        "A": "A hardware device overheating",
+        "B": "An unpatched operating system with known security flaws",
+        "C": "A physically damaged network cable",
+        "D": "A malfunctioning hard drive"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What can cause hardware vulnerabilities?",
+      "options": {
+        "A": "Regular updates of firmware",
+        "B": "Secure configurations of hardware",
+        "C": "Poor manufacturing design or flaws in microchips",
+        "D": "Routine hardware testing"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What type of vulnerability is commonly targeted by malware such as ransomware?",
+      "options": {
+        "A": "Misconfigured hardware devices",
+        "B": "Encrypted file systems",
+        "C": "High-performance processors",
+        "D": "Unpatched software vulnerabilities"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the primary method to reduce software vulnerabilities?",
+      "options": {
+        "A": "Using stronger hardware components",
+        "B": "Encrypting hardware devices",
+        "C": "Increasing the power supply to the device",
+        "D": "Regularly applying security patches and updates"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a common attack that exploits hardware vulnerabilities?",
+      "options": {
+        "A": "Phishing emails",
+        "B": "SQL injection attacks",
+        "C": "Side-channel attacks that extract data from hardware devices",
+        "D": "Distributed Denial-of-Service (DDoS) attacks"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the primary reason software vulnerabilities exist?",
+      "options": {
+        "A": "Hardware malfunctions",
+        "B": "Errors or flaws in the programming code",
+        "C": "Secure development practices",
+        "D": "Proper system configuration"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following can mitigate both hardware and software vulnerabilities?",
+      "options": {
+        "A": "Regular system updates and monitoring",
+        "B": "Ignoring firmware updates",
+        "C": "Frequent hardware upgrades",
+        "D": "Disabling antivirus software"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a security vulnerability?",
+      "options": {
+        "A": "A strong password policy",
+        "B": "A backup of system data",
+        "C": "An encrypted file",
+        "D": "A weakness in a system that can be exploited by attackers"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is an exploit in cybersecurity?",
+      "options": {
+        "A": "A type of firewall",
+        "B": "A hardware device",
+        "C": "A method used by attackers to take advantage of a vulnerability",
+        "D": "A software update"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is an example of a security vulnerability?",
+      "options": {
+        "A": "A system with updated antivirus protection",
+        "B": "Outdated software with known weaknesses",
+        "C": "A properly configured firewall",
+        "D": "Strong password encryption"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does a buffer overflow exploit target?",
+      "options": {
+        "A": "The memory of a system to execute unauthorized code",
+        "B": "The power supply of a computer",
+        "C": "The screen resolution settings",
+        "D": "The user's internet connection"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the purpose of a zero-day exploit?",
+      "options": {
+        "A": "To exploit a vulnerability before it is discovered or fixed",
+        "B": "To patch a security vulnerability immediately",
+        "C": "To test system performance under load",
+        "D": "To monitor network activity for anomalies"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is NOT a type of cyber attacker?",
+      "options": {
+        "A": "Network engineer",
+        "B": "Insider threat",
+        "C": "Nation-state actor",
+        "D": "Cybercriminal"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the primary responsibility of a penetration tester?",
+      "options": {
+        "A": "To exploit vulnerabilities maliciously",
+        "B": "To write malicious code for hackers",
+        "C": "To steal sensitive information",
+        "D": "To test and strengthen system security by simulating attacks"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which type of attacker uses pre-written tools or scripts without extensive technical knowledge?",
+      "options": {
+        "A": "Black hat hacker",
+        "B": "Nation-state actor",
+        "C": "Script kiddie",
+        "D": "Insider threat"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the main goal of a black hat hacker?",
+      "options": {
+        "A": "To secure systems",
+        "B": "To identify system vulnerabilities for malicious purposes",
+        "C": "To perform ethical penetration testing",
+        "D": "To develop security protocols"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is a typical tool used by cybersecurity professionals?",
+      "options": {
+        "A": "Firewall",
+        "B": "Phishing email",
+        "C": "Ransomware",
+        "D": "Keylogger"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following best defines organization data?",
+      "options": {
+        "A": "Data used for personal identification",
+        "B": "Random data from the internet",
+        "C": "Personal shopping history of employees",
+        "D": "Data related to an organization\u2019s operations, processes, and assets"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is an example of organization data?",
+      "options": {
+        "A": "A customer's Social Security Number",
+        "B": "A weather report",
+        "C": "Employee salary records",
+        "D": "An individual\u2019s bank account balance"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What type of organization data includes financial records?",
+      "options": {
+        "A": "Public data",
+        "B": "Confidential data",
+        "C": "Personal data",
+        "D": "Irrelevant data"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is NOT considered organization data?",
+      "options": {
+        "A": "Competitor's sensitive data",
+        "B": "Trade secrets",
+        "C": "Office equipment list",
+        "D": "Performance reports"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the purpose of securing organization data?",
+      "options": {
+        "A": "To protect the organization\u2019s assets and reputation",
+        "B": "To make it inaccessible to employees",
+        "C": "To ensure it remains public",
+        "D": "To reduce operational costs"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is an example of intellectual property data for an organization?",
+      "options": {
+        "A": "Office phone numbers",
+        "B": "Patents and copyrights",
+        "C": "Monthly sales targets",
+        "D": "Employee attendance records"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a common threat to organization data?",
+      "options": {
+        "A": "Hardware malfunction",
+        "B": "Employee promotions",
+        "C": "Unauthorized access by external or internal actors",
+        "D": "Website upgrades"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What type of organization data is typically protected by NDAs (Non-Disclosure Agreements)?",
+      "options": {
+        "A": "Publicly available data",
+        "B": "Generic office policies",
+        "C": "Product catalog information",
+        "D": "Highly sensitive and proprietary data"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following terms refers to storing organization data in the cloud?",
+      "options": {
+        "A": "Cloud computing",
+        "B": "Local storage",
+        "C": "File shredding",
+        "D": "Offline encryption"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Who is primarily responsible for protecting an organization's data?",
+      "options": {
+        "A": "Only the IT department",
+        "B": "All employees and the organization",
+        "C": "External cybersecurity companies",
+        "D": "Competitors"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is considered personal data?",
+      "options": {
+        "A": "A random number",
+        "B": "A weather report",
+        "C": "An email address",
+        "D": "A company's annual revenue"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does PII stand for in cybersecurity?",
+      "options": {
+        "A": "Public Internet Information",
+        "B": "Private Internal Insights",
+        "C": "Personal Identity Index",
+        "D": "Personal Identification Information"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is NOT an example of sensitive personal data?",
+      "options": {
+        "A": "Shopping preferences",
+        "B": "Medical records",
+        "C": "Bank account number",
+        "D": "Social Security Number"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the primary purpose of protecting personal data?",
+      "options": {
+        "A": "To prevent data storage",
+        "B": "To safeguard individual privacy",
+        "C": "To enhance business profits",
+        "D": "To reduce internet speed"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of these laws is designed to protect personal data in the European Union?",
+      "options": {
+        "A": "HIPAA",
+        "B": "PCI DSS",
+        "C": "GDPR",
+        "D": "CCPA"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Personal data includes information that can be used to:",
+      "options": {
+        "A": "Track weather patterns",
+        "B": "Store general statistics",
+        "C": "Develop software programs",
+        "D": "Identify a specific individual"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What type of information is considered part of biometric data?",
+      "options": {
+        "A": "Bank account details",
+        "B": "Email addresses",
+        "C": "Education history",
+        "D": "Fingerprint data"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is an example of indirect personal data?",
+      "options": {
+        "A": "Name",
+        "B": "Passport number",
+        "C": "IP address",
+        "D": "Phone number"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the term \"data breach\" refer to?",
+      "options": {
+        "A": "Loss of an internet connection",
+        "B": "Unauthorized access to personal data",
+        "C": "A system upgrade failure",
+        "D": "Public release of software updates"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which organization is responsible for protecting personal data?",
+      "options": {
+        "A": "The individual only",
+        "B": "Only businesses",
+        "C": "Governments, businesses, and individuals",
+        "D": "Hackers"
+      },
+      "correctAnswer": "C"
+    }
+  ]
+}
