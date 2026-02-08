@@ -2,14 +2,14 @@
   {
     "id": "programming-languages-reviewer",
     "title": "prog lang",
-    "description": "A comprehensive reviewer covering programming domains, paradigms, implementation, and institutional values.",
+    "description": "T-T",
     "icon": "\ud83d\udcbb",
     "file": "programming-languages-reviewer.json"
   },
   {
     "id": "software-engineering-reviewer",
-    "title": "what an nice",
-    "description": "A 50-item multiple choice reviewer covering software engineering concepts, development models, and institutional vision, mission, objectives, and values.",
+    "title": "Sof eng",
+    "description": "what an nice.",
     "icon": "\ud83d\udcbb",
     "file": "software-engineering-reviewer.json"
   },
