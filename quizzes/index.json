@@ -33,5 +33,12 @@
     "description": "This quiz assesses knowledge of OSPF operation, packet types, neighbor relationships, areas, and scalability concepts.",
     "icon": "n",
     "file": "SN-M1.json"
+  },
+  {
+    "id": "elective2",
+    "title": "Elective 2 - Graphics n shi",
+    "description": "Deep Learning and Computer Vision fundamentals",
+    "icon": "🤖",
+    "file": "graphics.json"
   }
 ]

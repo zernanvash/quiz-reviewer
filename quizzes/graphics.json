@@ -1,0 +1,451 @@
+{
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "What does Artificial Intelligence primarily aim to do?",
+      "options": {
+        "A": "Replace all human jobs",
+        "B": "Mimic human capabilities using computers",
+        "C": "Improve computer hardware",
+        "D": "Store large amounts of data"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which field is a subfield of Artificial Intelligence?",
+      "options": {
+        "A": "Computer Graphics",
+        "B": "Machine Learning",
+        "C": "Networking",
+        "D": "Database Systems"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What do Expert Systems primarily mimic?",
+      "options": {
+        "A": "Human vision",
+        "B": "Human motor skills",
+        "C": "Human decision-making",
+        "D": "Human emotions"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What acts as sensors in the human visual system?",
+      "options": {
+        "A": "Brain",
+        "B": "Eyes",
+        "C": "Nerves",
+        "D": "Muscles"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In computer vision, what mimics the human eye?",
+      "options": {
+        "A": "CPU",
+        "B": "Camera or image sensor",
+        "C": "Algorithm",
+        "D": "Database"
+      },
+      "correctAnswer": "B"
+    },
+
+    {
+      "type": "multiple_choice",
+      "question": "How does a computer perceive visual information?",
+      "options": {
+        "A": "Using expert systems",
+        "B": "Using computer graphics",
+        "C": "Using machine learning",
+        "D": "Using databases"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Machine Learning?",
+      "options": {
+        "A": "Manual programming of rules",
+        "B": "Learning without data",
+        "C": "Teaching computers using large amounts of data",
+        "D": "A type of hardware"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Before deep learning, what technique was commonly used in image analysis?",
+      "options": {
+        "A": "Neural networks",
+        "B": "Image processing",
+        "C": "Natural language processing",
+        "D": "Expert systems"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is NOT an image processing technique?",
+      "options": {
+        "A": "Edge detection",
+        "B": "Texture detection",
+        "C": "Morphological operations",
+        "D": "Backpropagation"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which neural network architecture changed computer vision in 2012?",
+      "options": {
+        "A": "LeNet",
+        "B": "VGGNet",
+        "C": "AlexNet",
+        "D": "ResNet"
+      },
+      "correctAnswer": "C"
+    },
+
+    {
+      "type": "multiple_choice",
+      "question": "Who introduced the idea of Convolutional Neural Networks in 1989?",
+      "options": {
+        "A": "Geoffrey Hinton",
+        "B": "Yann LeCun",
+        "C": "Alex Krizhevsky",
+        "D": "Andrew Ng"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What dataset was used by AlexNet to demonstrate its performance?",
+      "options": {
+        "A": "MNIST",
+        "B": "COCO",
+        "C": "ImageNet",
+        "D": "CIFAR-10"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What hardware significantly sped up CNN training in AlexNet?",
+      "options": {
+        "A": "CPU",
+        "B": "TPU",
+        "C": "GPU",
+        "D": "RAM"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does ReLU stand for?",
+      "options": {
+        "A": "Rectified Linear Unit",
+        "B": "Recursive Learning Unit",
+        "C": "Random Linear Unit",
+        "D": "Regularized Learning Unit"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the purpose of ReLU in neural networks?",
+      "options": {
+        "A": "Store data",
+        "B": "Prevent overfitting",
+        "C": "Decide which information passes forward",
+        "D": "Increase image resolution"
+      },
+      "correctAnswer": "C"
+    },
+
+    {
+      "type": "multiple_choice",
+      "question": "What problem does regularization help prevent?",
+      "options": {
+        "A": "Underfitting",
+        "B": "Overfitting",
+        "C": "Low resolution",
+        "D": "Data labeling"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does depth in deep learning refer to?",
+      "options": {
+        "A": "Image resolution",
+        "B": "Number of datasets",
+        "C": "Number of layers",
+        "D": "Training speed"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Deep learning is a branch of which field?",
+      "options": {
+        "A": "Artificial Intelligence",
+        "B": "Computer Graphics",
+        "C": "Databases",
+        "D": "Operating Systems"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which data type is commonly used in deep learning?",
+      "options": {
+        "A": "Structured tables only",
+        "B": "Unstructured data",
+        "C": "Encrypted data",
+        "D": "Compressed data"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which is NOT a deep learning use case?",
+      "options": {
+        "A": "Self-driving cars",
+        "B": "Face detection",
+        "C": "Sorting files manually",
+        "D": "Medical image analysis"
+      },
+      "correctAnswer": "C"
+    },
+
+    {
+      "type": "multiple_choice",
+      "question": "What is an image in computer vision?",
+      "options": {
+        "A": "A text file",
+        "B": "A digital representation of visual information",
+        "C": "A database record",
+        "D": "A neural network"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a pixel?",
+      "options": {
+        "A": "A group of images",
+        "B": "The smallest unit of an image",
+        "C": "A neural layer",
+        "D": "A file format"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does image resolution describe?",
+      "options": {
+        "A": "Image color",
+        "B": "Image brightness",
+        "C": "Number of pixels",
+        "D": "File size only"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is image classification?",
+      "options": {
+        "A": "Locating objects",
+        "B": "Assigning a label to an entire image",
+        "C": "Dividing an image into regions",
+        "D": "Enhancing image quality"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which task uses bounding boxes?",
+      "options": {
+        "A": "Image classification",
+        "B": "Image segmentation",
+        "C": "Object detection",
+        "D": "Image denoising"
+      },
+      "correctAnswer": "C"
+    },
+
+    {
+      "type": "multiple_choice",
+      "question": "What is image segmentation?",
+      "options": {
+        "A": "Labeling the whole image",
+        "B": "Dividing an image into meaningful regions",
+        "C": "Removing noise",
+        "D": "Detecting edges only"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is annotation?",
+      "options": {
+        "A": "Training a model",
+        "B": "Labeling images with information",
+        "C": "Compressing images",
+        "D": "Deploying models"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Supervised learning requires what type of data?",
+      "options": {
+        "A": "Unlabeled data",
+        "B": "Encrypted data",
+        "C": "Labeled data",
+        "D": "Random data"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What dataset is used to train a model?",
+      "options": {
+        "A": "Testing dataset",
+        "B": "Validation dataset",
+        "C": "Training dataset",
+        "D": "Production dataset"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which dataset fine-tunes the model during training?",
+      "options": {
+        "A": "Training dataset",
+        "B": "Validation dataset",
+        "C": "Testing dataset",
+        "D": "Deployment dataset"
+      },
+      "correctAnswer": "B"
+    },
+
+    {
+      "type": "multiple_choice",
+      "question": "Which dataset evaluates final model performance?",
+      "options": {
+        "A": "Training",
+        "B": "Validation",
+        "C": "Testing",
+        "D": "Annotation"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does accuracy measure?",
+      "options": {
+        "A": "Speed of training",
+        "B": "Correct predictions ratio",
+        "C": "Loss value",
+        "D": "Dataset size"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Precision measures:",
+      "options": {
+        "A": "All actual positives found",
+        "B": "Correct positive predictions",
+        "C": "Training time",
+        "D": "Model size"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Recall measures:",
+      "options": {
+        "A": "Correct negative predictions",
+        "B": "Actual positives identified",
+        "C": "Image quality",
+        "D": "Loss reduction"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is an epoch?",
+      "options": {
+        "A": "One batch",
+        "B": "One full pass of the dataset",
+        "C": "One prediction",
+        "D": "One annotation"
+      },
+      "correctAnswer": "B"
+    },
+
+    {
+      "type": "multiple_choice",
+      "question": "What is batch size?",
+      "options": {
+        "A": "Total dataset size",
+        "B": "Number of samples processed at once",
+        "C": "Number of epochs",
+        "D": "Model depth"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is an iteration?",
+      "options": {
+        "A": "One epoch",
+        "B": "One batch weight update",
+        "C": "One dataset split",
+        "D": "One deployment"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does a loss function measure?",
+      "options": {
+        "A": "Training speed",
+        "B": "Prediction error",
+        "C": "Dataset size",
+        "D": "Image quality"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which is a no-code computer vision platform?",
+      "options": {
+        "A": "TensorFlow",
+        "B": "PyTorch",
+        "C": "Roboflow",
+        "D": "NumPy"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which platform is integrated into Google Cloud Vertex AI?",
+      "options": {
+        "A": "MediaPipe",
+        "B": "Create ML",
+        "C": "Google AutoML Vision",
+        "D": "Intel Geti"
+      },
+      "correctAnswer": "C"
+    }
+  ]
+}
