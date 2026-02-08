@@ -2067,7 +2067,7 @@
         "correctAnswer": "A"
       },
       {
-        "type": "multiple_choice",
+        "type": "multiple_response",
         "question": "Which statements describe features of the OSPF topology table? (Choose three.)",
         "options": {
           "A": "After convergence, the table only contains the lowest cost route entries for all known networks",
@@ -2157,7 +2157,7 @@
         "correctAnswer": "D"
       },
       {
-        "type": "multiple_choice",
+        "type": "multiple_response",
         "question": "What are two reasons for creating an OSPF network with multiple areas? (Choose two.)",
         "options": {
           "A": "To simplify configuration",
@@ -2224,7 +2224,7 @@
         "correctAnswer": "B"
       },
       {
-        "type": "multiple_choice",
+        "type": "multiple_response",
         "question": "What are the purposes of an OSPF router ID? (Choose two.)",
         "options": {
           "A": "To enable the SPF algorithm to determine the lowest-cost path",
@@ -2247,7 +2247,7 @@
         "correctAnswer": "B"
       },
       {
-        "type": "multiple_choice",
+        "type": "multiple_response",
         "question": "What are the advantages of using multiarea OSPF? (Choose two.)",
         "options": {
           "A": "A backbone area is not required",
@@ -2303,7 +2303,7 @@
         "correctAnswer": "A"
       },
       {
-        "type": "multiple_choice",
+        "type": "multiple_response",
         "question": "Which OSPF states occur before neighbor adjacency is formed? (Choose three.)",
         "options": {
           "A": "Down",
