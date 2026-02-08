@@ -1,0 +1,16 @@
+[
+  {
+    "id": "programming-languages-reviewer",
+    "title": "Programming Languages Reviewer",
+    "description": "A comprehensive reviewer covering programming domains, paradigms, implementation, and institutional values.",
+    "icon": "💻",
+    "file": "programming-languages.json"
+  },
+  {
+    "id": "networking-ospf",
+    "title": "Networking - OSPF Protocol",
+    "description": "Master OSPF routing protocol concepts, states, and network design principles.",
+    "icon": "🌐",
+    "file": "networking-ospf.json"
+  }
+]
