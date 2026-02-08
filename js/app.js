@@ -106,25 +106,26 @@ function displayQuestion() {
     const questionNumber = currentQuestionIndex + 1;
     const totalQuestions = currentQuiz.questions.length;
     
-    // Update progress
-    const progress = (questionNumber / totalQuestions) * 100;
-    document.getElementById('progress-fill').style.width = `${progress}%`;
-    
-    // Update question number
-    document.getElementById('question-number').textContent = 
-        `Question ${questionNumber} of ${totalQuestions}`;
-    
-    // Update question indicator
+    document.getElementById('progress-fill').style.width = `${(questionNumber / totalQuestions) * 100}%`;
+    document.getElementById('question-number').textContent = `Question ${questionNumber} of ${totalQuestions}`;
     document.getElementById('question-indicator').textContent = `${questionNumber} / ${totalQuestions}`;
-    
-    // Update question text
     document.getElementById('question-text').textContent = question.question;
     
-    // Render options based on question type
     const optionsContainer = document.getElementById('options');
     
-    if (question.type === 'multiple_choice') {
-        optionsContainer.innerHTML = ['A', 'B', 'C', 'D'].map(letter => `
+    if (question.type === 'multiple_response') {
+        // Multi-select Checkbox Logic
+        const currentSelection = userAnswers[currentQuestionIndex] || [];
+        optionsContainer.innerHTML = Object.keys(question.options).map(letter => `
+            <div class="option ${currentSelection.includes(letter) ? 'selected' : ''}" 
+                 onclick="toggleMultipleAnswer('${letter}')">
+                <div class="option-label" style="border-radius: 4px;">${letter}</div>
+                <div class="option-text">${question.options[letter]}</div>
+            </div>
+        `).join('');
+    } else if (question.type === 'multiple_choice') {
+        // ... existing radio-style logic ...
+        optionsContainer.innerHTML = Object.keys(question.options).map(letter => `
             <div class="option ${userAnswers[currentQuestionIndex] === letter ? 'selected' : ''}" 
                  onclick="selectAnswer('${letter}')">
                 <div class="option-label">${letter}</div>
@@ -170,6 +171,23 @@ function selectAnswer(answer) {
     if (question.type === 'multiple_choice' || question.type === 'true_false') {
         displayQuestion();
     }
+}
+
+// Add this new helper for checkboxes
+function toggleMultipleAnswer(letter) {
+    if (!Array.isArray(userAnswers[currentQuestionIndex])) {
+        userAnswers[currentQuestionIndex] = [];
+    }
+    
+    const index = userAnswers[currentQuestionIndex].indexOf(letter);
+    if (index === -1) {
+        userAnswers[currentQuestionIndex].push(letter);
+    } else {
+        userAnswers[currentQuestionIndex].splice(index, 1);
+    }
+    
+    currentQuiz.answerQuestion(userAnswers[currentQuestionIndex]);
+    displayQuestion(); // Refresh UI
 }
 
 // Update navigation buttons
