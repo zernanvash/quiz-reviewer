@@ -1,14 +1,14 @@
 [
   {
     "id": "programming-languages-reviewer",
-    "title": "Programming Languages Reviewer",
+    "title": "prog lang",
     "description": "A comprehensive reviewer covering programming domains, paradigms, implementation, and institutional values.",
     "icon": "\ud83d\udcbb",
     "file": "programming-languages-reviewer.json"
   },
   {
     "id": "software-engineering-reviewer",
-    "title": "Software Engineering & Institutional Values Reviewer",
+    "title": "what an nice",
     "description": "A 50-item multiple choice reviewer covering software engineering concepts, development models, and institutional vision, mission, objectives, and values.",
     "icon": "\ud83d\udcbb",
     "file": "software-engineering-reviewer.json"
@@ -28,7 +28,7 @@
     "file": "ITP13.json"
   },
   {
-    "id": "SN-M1",
+    "id": "Ssscaling Netwoks",
     "title": "Scaling Networks \u2013 Module 1: OSPF Fundamentals",
     "description": "This quiz assesses knowledge of OSPF operation, packet types, neighbor relationships, areas, and scalability concepts.",
     "icon": "n",
