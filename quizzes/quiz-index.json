@@ -17,21 +17,21 @@
     "id": "ITP13",
     "title": "QUIZ NI SIR POPOY 1",
     "description": "Information Assurance & Security 1",
-    "icon": "shield-lock",
+    "icon": "",
     "file": "ITP13.json"
   },
   {
     "id": "ITP13",
     "title": "QUIZ NI SIR POPOY 2",
     "description": "Information Assurance & Security 1",
-    "icon": "shield",
+    "icon": "",
     "file": "ITP13.json"
   },
   {
     "id": "SN-M1",
     "title": "Scaling Networks \u2013 Module 1: OSPF Fundamentals",
     "description": "This quiz assesses knowledge of OSPF operation, packet types, neighbor relationships, areas, and scalability concepts.",
-    "icon": "network",
+    "icon": "n",
     "file": "SN-M1.json"
   }
 ]
