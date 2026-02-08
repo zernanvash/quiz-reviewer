@@ -103,26 +103,22 @@ function stopTimer() {
 // Display current question
 function displayQuestion() {
     const question = currentQuiz.getCurrentQuestion();
-    const questionNumber = currentQuestionIndex + 1;
-    const totalQuestions = currentQuiz.questions.length;
-    
-    document.getElementById('progress-fill').style.width = `${(questionNumber / totalQuestions) * 100}%`;
-    document.getElementById('question-number').textContent = `Question ${questionNumber} of ${totalQuestions}`;
-    document.getElementById('question-indicator').textContent = `${questionNumber} / ${totalQuestions}`;
-    document.getElementById('question-text').textContent = question.question;
-    
-    const optionsContainer = document.getElementById('options');
-    
+    const optionsContainer = document.getElementById('options-container');
+    optionsContainer.innerHTML = '';
+
     if (question.type === 'multiple_response') {
-        // Multi-select Checkbox Logic
-        const currentSelection = userAnswers[currentQuestionIndex] || [];
-        optionsContainer.innerHTML = Object.keys(question.options).map(letter => `
-            <div class="option ${currentSelection.includes(letter) ? 'selected' : ''}" 
-                 onclick="toggleMultipleAnswer('${letter}')">
-                <div class="option-label" style="border-radius: 4px;">${letter}</div>
-                <div class="option-text">${question.options[letter]}</div>
-            </div>
-        `).join('');
+        // Render Checkboxes
+        Object.entries(question.options).forEach(([key, value]) => {
+            const optionId = `option-${key}`;
+            optionsContainer.innerHTML += `
+                <div class="option-item">
+                    <input type="checkbox" name="quiz-option" value="${key}" id="${optionId}">
+                    <label for="${optionId}"><strong>${key}:</strong> ${value}</label>
+                </div>
+            `;
+        });
+        // Add a "Confirm Selection" button for checkboxes
+        optionsContainer.innerHTML += `<button onclick="submitMultipleResponse()" class="btn-primary">Confirm Answer</button>`;
     } else if (question.type === 'multiple_choice') {
         // ... existing radio-style logic ...
         optionsContainer.innerHTML = Object.keys(question.options).map(letter => `
