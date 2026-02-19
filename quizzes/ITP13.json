@@ -148,7 +148,7 @@
       "question": "Which of the following is an example of a hardware vulnerability?",
       "options": {
         "A": "A CPU flaw that allows unauthorized access to memory",
-        "B": "A bug in an application\u2019s code",
+        "B": "A bug in an application’s code",
         "C": "Outdated antivirus software",
         "D": "Weak password policies"
       },
@@ -348,7 +348,7 @@
         "A": "Data used for personal identification",
         "B": "Random data from the internet",
         "C": "Personal shopping history of employees",
-        "D": "Data related to an organization\u2019s operations, processes, and assets"
+        "D": "Data related to an organization’s operations, processes, and assets"
       },
       "correctAnswer": "D"
     },
@@ -359,7 +359,7 @@
         "A": "A customer's Social Security Number",
         "B": "A weather report",
         "C": "Employee salary records",
-        "D": "An individual\u2019s bank account balance"
+        "D": "An individual’s bank account balance"
       },
       "correctAnswer": "C"
     },
@@ -389,7 +389,7 @@
       "type": "multiple_choice",
       "question": "What is the purpose of securing organization data?",
       "options": {
-        "A": "To protect the organization\u2019s assets and reputation",
+        "A": "To protect the organization’s assets and reputation",
         "B": "To make it inaccessible to employees",
         "C": "To ensure it remains public",
         "D": "To reduce operational costs"
