@@ -1,0 +1,410 @@
+{
+  "questions": [
+    {
+      "type": "short_answer_ai",
+      "question": "Explain what a network protocol is and why it is essential for communication between devices.",
+      "expectedConcepts": [
+        "It ensures data is transmitted in a structured",
+        "understandable format",
+        "different systems can exchange information reliably"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why are standardized communication rules necessary in computer networks?",
+      "expectedConcepts": [
+        "Standardized rules ensure compatibility between different devices",
+        "prevent communication errors",
+        "enable reliable",
+        "efficient data transmission"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Describe the concept of data encapsulation in networking.",
+      "expectedConcepts": [
+        "Data encapsulation is the process of wrapping data with protocol-specific headers",
+        "trailers as it moves",
+        "network layers to ensure proper delivery"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why is data encapsulation important for reliable data transmission?",
+      "expectedConcepts": [
+        "It provides addressing",
+        "error detection",
+        "control information that ensures data reaches the correct destination",
+        "can be properly reconstructed"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the role of Ethernet in network communication.",
+      "expectedConcepts": [
+        "Ethernet defines how devices communicate over a local area network",
+        "including framing",
+        "addressing using MAC addresses",
+        "physical transmission of data"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What is the main function of the Internet Protocol (IP)?",
+      "expectedConcepts": [
+        "IP provides logical addressing",
+        "routing to ensure data packets travel across networks to reach the correct destination"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Differentiate between MAC address and IP address.",
+      "expectedConcepts": [
+        "A MAC address is a physical hardware identifier used in local networks",
+        "an IP address is a logical address used for routing across networks"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the primary function of the transport layer.",
+      "expectedConcepts": [
+        "The transport layer ensures end-to-end communication",
+        "manages data flow",
+        "error recovery",
+        "segmentation of data"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Compare TCP and UDP in terms of reliability and speed.",
+      "expectedConcepts": [
+        "TCP is reliable",
+        "ensures delivery with error checking",
+        "UDP is faster but does not guarantee delivery"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What are network services and why are they important?",
+      "expectedConcepts": [
+        "Network services provide functions like web access",
+        "file transfer",
+        "They enable users",
+        "systems to perform network-based tasks"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain why Windows security is critical in organizations.",
+      "expectedConcepts": [
+        "Many organizations rely on Windows systems",
+        "a compromise can affect operations",
+        "data confidentiality",
+        "system availability"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What is the purpose of User Account Control (UAC)?",
+      "expectedConcepts": [
+        "UAC prevents unauthorized system changes",
+        "requiring administrative approval before performing high-privilege actions"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "How does UAC support the principle of least privilege?",
+      "expectedConcepts": [
+        "It ensures users run with limited permissions",
+        "must explicitly approve administrative actions"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the purpose of Windows authentication mechanisms.",
+      "expectedConcepts": [
+        "They verify user identity before granting access to system resources"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why is authentication important in governance?",
+      "expectedConcepts": [
+        "It ensures only authorized users access systems",
+        "supporting accountability"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What are NTFS permissions?",
+      "expectedConcepts": [
+        "They control access to files",
+        "defining what users can read",
+        "or modify"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain Access Control Lists (ACLs).",
+      "expectedConcepts": [
+        "ACLs are lists that specify which users or groups have permissions to access specific resources"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why is least privilege important in file access control?",
+      "expectedConcepts": [
+        "It minimizes risk",
+        "allowing users only the access necessary to perform their tasks"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What is the main purpose of Windows Firewall?",
+      "expectedConcepts": [
+        "It controls incoming",
+        "outgoing network traffic based on security rules"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "How does firewall segmentation improve security?",
+      "expectedConcepts": [
+        "It isolates network segments to prevent attackers from spreading across systems"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What is Group Policy (GPO)?",
+      "expectedConcepts": [
+        "A centralized system used to configure",
+        "enforce security settings across Windows systems"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why is centralized policy enforcement important in governance?",
+      "expectedConcepts": [
+        "It ensures consistent security controls across the organization"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the importance of audit policy and event logging.",
+      "expectedConcepts": [
+        "They record system activities to support monitoring"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why is logging essential for incident investigation?",
+      "expectedConcepts": [
+        "It provides evidence of system activity",
+        "potential security events"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the importance of Windows updates and patch management.",
+      "expectedConcepts": [
+        "They fix vulnerabilities",
+        "reduce security risks"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What risks occur when systems are not patched?",
+      "expectedConcepts": [
+        "Attackers can exploit known vulnerabilities"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain how Windows security supports the CIA triad.",
+      "expectedConcepts": [
+        "It protects confidentiality",
+        "access control",
+        "system protection"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Describe how authentication, authorization, and accountability relate to governance.",
+      "expectedConcepts": [
+        "They control access",
+        "enforce permissions",
+        "track actions to ensure secure",
+        "responsible system use"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What is Zero Trust architecture?",
+      "expectedConcepts": [
+        "A security model that assumes no entity is trusted",
+        "requires continuous verification"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the role of multi-factor authentication.",
+      "expectedConcepts": [
+        "It strengthens security",
+        "requiring multiple verification methods"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What is AI-powered threat detection?",
+      "expectedConcepts": [
+        "Security monitoring that uses machine learning to identify suspicious behavior"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why is encryption important in governance?",
+      "expectedConcepts": [
+        "It protects sensitive data from unauthorized access"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain how security tools support governance strategy.",
+      "expectedConcepts": [
+        "Tools enforce policies",
+        "monitor activity",
+        "protect resources"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Describe the importance of monitoring in security management.",
+      "expectedConcepts": [
+        "Monitoring detects threats",
+        "ensures policy compliance"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What happens when governance is weak even if security tools exist?",
+      "expectedConcepts": [
+        "Security becomes ineffective",
+        "policies are not enforced"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why is centralized security management more effective than user-based control?",
+      "expectedConcepts": [
+        "It ensures consistent enforcement",
+        "reduces human error"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the relationship between risk management and patch management.",
+      "expectedConcepts": [
+        "Patching reduces vulnerabilities",
+        "lowering overall risk"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why must organizations align security with compliance requirements?",
+      "expectedConcepts": [
+        "To meet legal obligations",
+        "protect sensitive information"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the importance of accountability in cybersecurity governance.",
+      "expectedConcepts": [
+        "It ensures actions can be traced to individuals"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Describe how security policies protect institutional data.",
+      "expectedConcepts": [
+        "They define rules for access"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why is continuous security improvement necessary?",
+      "expectedConcepts": [
+        "Threats evolve",
+        "defenses must adapt"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain why monitoring and auditing are critical components of governance.",
+      "expectedConcepts": [
+        "They detect violations",
+        "support accountability"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "What is the relationship between technology and governance in cybersecurity?",
+      "expectedConcepts": [
+        "Technology provides tools",
+        "governance provides strategy"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain how access control supports data confidentiality.",
+      "expectedConcepts": [
+        "It restricts access to authorized users only"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why must organizations enforce security policies consistently?",
+      "expectedConcepts": [
+        "Inconsistent enforcement creates vulnerabilities"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the role of security governance in organizational risk reduction.",
+      "expectedConcepts": [
+        "It establishes policies",
+        "controls to minimize threats"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why is proactive security better than reactive security?",
+      "expectedConcepts": [
+        "It prevents attacks before damage occurs"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the importance of protecting system integrity.",
+      "expectedConcepts": [
+        "It ensures systems operate correctly",
+        "are not altered maliciously"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Describe how emerging technologies change security strategies.",
+      "expectedConcepts": [
+        "They introduce new risks",
+        "require updated controls"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Why is security considered a strategic organizational responsibility?",
+      "expectedConcepts": [
+        "It protects operations"
+      ]
+    }
+  ]
+}

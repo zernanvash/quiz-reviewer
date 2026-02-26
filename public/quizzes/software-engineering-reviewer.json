@@ -1,0 +1,334 @@
+{
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "The vision of the institution emphasizes:",
+      "options": {
+        "A": "Generating high profits",
+        "B": "Following strict routines without adaptation",
+        "C": "Creating a community responsive to the changing world",
+        "D": "Focusing only on local standards"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A software project using systematic design and testing is an example of:",
+      "options": {
+        "A": "Ignoring standards",
+        "B": "Applying software engineering principles",
+        "C": "Random coding",
+        "D": "Lack of collaboration"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The institution believes that through education, man's God-given gifts are:",
+      "options": {
+        "A": "Discovered and developed for personal fulfillment and community uplift",
+        "B": "Ignored for efficiency",
+        "C": "Only used for career advancement",
+        "D": "Primarily for research purposes"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Agile iteration is used to:",
+      "options": {
+        "A": "Freeze requirements",
+        "B": "Receive feedback and adjust design",
+        "C": "Ignore testing",
+        "D": "Avoid collaboration"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Code reuse is an advantage because it:",
+      "options": {
+        "A": "Reduces development time",
+        "B": "Increases errors",
+        "C": "Confuses developers",
+        "D": "Uses more memory"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Scheduling tasks in software development helps to:",
+      "options": {
+        "A": "Avoid deadlines",
+        "B": "Improve project management and efficiency",
+        "C": "Increase errors",
+        "D": "Skip testing"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which objective focuses on research and community service?",
+      "options": {
+        "A": "Inculcate critical thinking",
+        "B": "Provide competent human resources",
+        "C": "Improve quality of life through research & community service",
+        "D": "Promote discipline, justice, and equality"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The main focus of software engineering?",
+      "options": {
+        "A": "Hardware design",
+        "B": "Building software systematically",
+        "C": "Painting software interfaces",
+        "D": "Data storage"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Using automated testing tools demonstrates:",
+      "options": {
+        "A": "Disadvantage: more errors",
+        "B": "Advantage: faster and consistent testing",
+        "C": "Disadvantage: slower development",
+        "D": "Ignoring user requirements"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Following coding standards ensures:",
+      "options": {
+        "A": "Clean, readable, and maintainable code",
+        "B": "Faster bugs",
+        "C": "Unreadable programs",
+        "D": "Poor communication"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which core value emphasizes the ability to perform tasks effectively?",
+      "options": {
+        "A": "Competence",
+        "B": "Dynamism",
+        "C": "Teamwork",
+        "D": "Integrity"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Code reviews are an example of:",
+      "options": {
+        "A": "Disadvantage",
+        "B": "Applying software engineering principles to improve code quality",
+        "C": "Ignoring standards",
+        "D": "Random coding"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A software engineer primarily deals with:",
+      "options": {
+        "A": "Database hardware",
+        "B": "Efficient software solutions",
+        "C": "Office paperwork",
+        "D": "Printing documents"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Regular testing in software development helps to:",
+      "options": {
+        "A": "Identify errors early",
+        "B": "Make code longer",
+        "C": "Remove documentation",
+        "D": "Ignore requirements"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The mission of the institution is to:",
+      "options": {
+        "A": "Prepare individuals with the best that education can offer, consistent with societal needs",
+        "B": "Promote international ranking only",
+        "C": "Focus on financial gain",
+        "D": "Train only technology experts"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A software project with poor requirements analysis may result in:",
+      "options": {
+        "A": "Perfect software",
+        "B": "Software that fails to meet user needs",
+        "C": "Faster development",
+        "D": "Lower maintenance costs"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Following a life-cycle model in software development ensures:",
+      "options": {
+        "A": "Systematic development process",
+        "B": "Ignoring requirements",
+        "C": "Random code",
+        "D": "More maintenance problems"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Agile methodology helps in software development by:",
+      "options": {
+        "A": "Ignoring client feedback",
+        "B": "Allowing iterative development and adjustments",
+        "C": "Freezing requirements forever",
+        "D": "Writing software without testing"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Iterative feedback improves software by:",
+      "options": {
+        "A": "Ignoring user needs",
+        "B": "Reducing errors and increasing satisfaction",
+        "C": "Confusing developers",
+        "D": "Adding random features"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The waterfall model is an example of:",
+      "options": {
+        "A": "A programming language",
+        "B": "A software development process",
+        "C": "A hardware tool",
+        "D": "A debugging tool"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Clear communication among developers is:",
+      "options": {
+        "A": "Not needed",
+        "B": "Part of software engineering to ensure requirements are met",
+        "C": "Redundant",
+        "D": "Only for managers"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which objective is aimed at developing critical thinking?",
+      "options": {
+        "A": "Provide competent human resources",
+        "B": "Inculcate critical thinking",
+        "C": "Promote discipline, justice, and equality",
+        "D": "Improve quality of life through research"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "An example of software engineering disadvantage?",
+      "options": {
+        "A": "Increased collaboration",
+        "B": "High initial cost",
+        "C": "Easier maintenance",
+        "D": "Efficient code"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Using design patterns in software helps:",
+      "options": {
+        "A": "Create chaos",
+        "B": "Solve recurring problems efficiently",
+        "C": "Increase errors",
+        "D": "Confuse developers"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A well-designed software reduces:",
+      "options": {
+        "A": "Reliability",
+        "B": "Maintenance cost",
+        "C": "Documentation",
+        "D": "Collaboration"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Proper requirement analysis ensures:",
+      "options": {
+        "A": "Software meets user needs",
+        "B": "Development becomes random",
+        "C": "Bugs increase",
+        "D": "Users are ignored"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Working collaboratively to achieve institutional goals represents which core value?",
+      "options": {
+        "A": "Competence",
+        "B": "Unity",
+        "C": "Teamwork",
+        "D": "Dedication"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The EOMS Policy emphasizes:",
+      "options": {
+        "A": "Continuous innovation, satisfactory service, and compliance with applicable requirements",
+        "B": "Reducing teacher involvement",
+        "C": "Focusing only on profits",
+        "D": "Ignoring technological developments"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Software documentation is important because it:",
+      "options": {
+        "A": "Makes the software look good",
+        "B": "Helps future maintenance and understanding",
+        "C": "Increases software bugs",
+        "D": "Slows down development"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A primary goal of software engineering is:",
+      "options": {
+        "A": "Create software only for fun",
+        "B": "Deliver high-quality software that meets requirements",
+        "C": "Write as many lines of code as possible",
+        "D": "Design hardware"
+      },
+      "correctAnswer": "B"
+    }
+  ]
+}

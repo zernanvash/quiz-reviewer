@@ -1,0 +1,554 @@
+{
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "Debugging refers to:",
+      "options": {
+        "A": "Writing code",
+        "B": "Finding and fixing program errors",
+        "C": "Compiling programs",
+        "D": "Designing algorithms"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The mission of the institution focuses on preparing individuals with education that is:",
+      "options": {
+        "A": "Profit-driven",
+        "B": "Politically aligned",
+        "C": "Consistent with societal needs",
+        "D": "Globally competitive"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which programming domain emphasizes data processing and reporting?",
+      "options": {
+        "A": "Scientific",
+        "B": "Business",
+        "C": "Embedded",
+        "D": "Game development"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which core value reflects honesty and strong moral principles?",
+      "options": {
+        "A": "Unity",
+        "B": "Dynamism",
+        "C": "Integrity",
+        "D": "Dedication"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "High-level languages are preferred because they are:",
+      "options": {
+        "A": "Harder to learn",
+        "B": "Machine-dependent",
+        "C": "Easier to read and write",
+        "D": "Slower to execute"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A \u201cCancel\u201d button placed near a \u201cSubmit\u201d button may cause:",
+      "options": {
+        "A": "Better learnability",
+        "B": "User errors",
+        "C": "Improved feedback",
+        "D": "Faster interaction"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Language portability means:",
+      "options": {
+        "A": "It runs only on one machine",
+        "B": "It can run on different platforms",
+        "C": "It uses assembly code",
+        "D": "It is compiled only"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which programming paradigm focuses on procedures or functions?",
+      "options": {
+        "A": "Object-oriented",
+        "B": "Functional",
+        "C": "Procedural",
+        "D": "Declarative"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The vision of the institution emphasizes creating a community that is:",
+      "options": {
+        "A": "Technologically advanced",
+        "B": "Research-oriented",
+        "C": "Responsive to the challenges of a changing world",
+        "D": "Financially stable"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Source code is:",
+      "options": {
+        "A": "Machine-readable code",
+        "B": "Binary code",
+        "C": "Human-readable program code",
+        "D": "Executable file"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "An Integrated Development Environment (IDE) typically includes:",
+      "options": {
+        "A": "Compiler only",
+        "B": "Text editor only",
+        "C": "Editor, compiler, and debugger",
+        "D": "Operating system"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A programming language is best defined as:",
+      "options": {
+        "A": "A hardware component",
+        "B": "A set of rules for writing computer programs",
+        "C": "A computer application",
+        "D": "A database system"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which objective directly promotes higher-order thinking skills?",
+      "options": {
+        "A": "Provide competent human resources",
+        "B": "Promote discipline, justice, and equality",
+        "C": "Inculcate critical thinking",
+        "D": "Improve quality of life"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Visual Studio is an example of:",
+      "options": {
+        "A": "Compiler",
+        "B": "Debugger",
+        "C": "Programming environment",
+        "D": "Text editor"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which factor influences the design of programming languages?",
+      "options": {
+        "A": "Hardware architecture",
+        "B": "Application domain",
+        "C": "Programmer productivity",
+        "D": "All of the above"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Python is commonly described as:",
+      "options": {
+        "A": "Low-level and compiled",
+        "B": "High-level and interpreted",
+        "C": "Assembly-based",
+        "D": "Machine-dependent"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Improving quality of life through research and community service supports which institutional aim?",
+      "options": {
+        "A": "Administrative efficiency",
+        "B": "Social responsibility",
+        "C": "Academic ranking",
+        "D": "Economic growth"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Encapsulation is a concept commonly associated with:",
+      "options": {
+        "A": "Procedural programming",
+        "B": "Object-oriented programming",
+        "C": "Functional programming",
+        "D": "Assembly programming"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A compiler:",
+      "options": {
+        "A": "Translates code line by line during execution",
+        "B": "Translates the entire program before execution",
+        "C": "Executes code directly",
+        "D": "Does not generate machine code"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Working collaboratively to achieve shared institutional goals best represents:",
+      "options": {
+        "A": "Competence",
+        "B": "Unity",
+        "C": "Teamwork",
+        "D": "Dedication"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "An interpreter:",
+      "options": {
+        "A": "Produces an executable file",
+        "B": "Translates code one statement at a time",
+        "C": "Works faster than a compiler",
+        "D": "Does not report errors"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "C is an example of which programming paradigm?",
+      "options": {
+        "A": "Object-oriented",
+        "B": "Procedural",
+        "C": "Functional",
+        "D": "Logic-based"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Languages such as FORTRAN are mainly used in which domain?",
+      "options": {
+        "A": "Artificial intelligence",
+        "B": "Scientific computing",
+        "C": "Web development",
+        "D": "Mobile development"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which is an advantage of compilation?",
+      "options": {
+        "A": "Slower execution",
+        "B": "Faster program execution",
+        "C": "More runtime errors",
+        "D": "No error checking"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which programming paradigm is best suited for AI and rule-based systems?",
+      "options": {
+        "A": "Procedural",
+        "B": "Object-oriented",
+        "C": "Functional",
+        "D": "Logic programming"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "According to the philosophy, education leads to personal fulfillment and:",
+      "options": {
+        "A": "Academic excellence",
+        "B": "Career advancement",
+        "C": "Community uplift",
+        "D": "Global recognition"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Continuous improvement in instruction, research, extension, and administration aims to deliver:",
+      "options": {
+        "A": "Competitive advantage",
+        "B": "Excellent education responsive to a changing world",
+        "C": "Increased enrollment",
+        "D": "Institutional popularity"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Consistent icons across applications help users by:",
+      "options": {
+        "A": "Increasing memory load",
+        "B": "Reducing learning time",
+        "C": "Improving hardware speed",
+        "D": "Enhancing security"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which programming paradigm organizes programs around objects and classes?",
+      "options": {
+        "A": "Procedural",
+        "B": "Functional",
+        "C": "Object-oriented",
+        "D": "Logic"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A poorly contrasted text on a website mainly affects:",
+      "options": {
+        "A": "Learnability",
+        "B": "Accessibility",
+        "C": "Efficiency",
+        "D": "Security"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Java uses which type of implementation?",
+      "options": {
+        "A": "Pure compilation",
+        "B": "Pure interpretation",
+        "C": "Hybrid compilation and interpretation",
+        "D": "No translation"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Language implementation refers to:",
+      "options": {
+        "A": "Designing algorithms",
+        "B": "Translating source code into executable form",
+        "C": "Writing documentation",
+        "D": "Debugging programs"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Encapsulation, inheritance, and polymorphism are features of:",
+      "options": {
+        "A": "Procedural programming",
+        "B": "Functional programming",
+        "C": "Object-oriented programming",
+        "D": "Assembly language"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A programming environment provides tools for:",
+      "options": {
+        "A": "Hardware installation",
+        "B": "Writing, testing, and debugging programs",
+        "C": "Network security",
+        "D": "Data storage only"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which programming domain focuses on scientific and mathematical computations?",
+      "options": {
+        "A": "Web programming",
+        "B": "Business programming",
+        "C": "Scientific programming",
+        "D": "System programming"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which category of programming language uses English-like commands?",
+      "options": {
+        "A": "Assembly languages",
+        "B": "Machine languages",
+        "C": "Business-oriented languages",
+        "D": "Low-level languages"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The choice of programming language should primarily depend on:",
+      "options": {
+        "A": "Popularity only",
+        "B": "Application requirements",
+        "C": "Programmer preference alone",
+        "D": "Hardware brand"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A form that highlights errors immediately after submission demonstrates:",
+      "options": {
+        "A": "Constraint",
+        "B": "Feedback",
+        "C": "Mapping",
+        "D": "Affordance"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A programming language that runs inside a browser usually belongs to which category?",
+      "options": {
+        "A": "System language",
+        "B": "Scripting language",
+        "C": "Assembly language",
+        "D": "Machine language"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which field is most closely related to HCI?",
+      "options": {
+        "A": "Civil Engineering",
+        "B": "Human Factors",
+        "C": "Chemistry",
+        "D": "Accounting"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Source code is:",
+      "options": {
+        "A": "Machine-readable code",
+        "B": "Binary code",
+        "C": "Human-readable program code",
+        "D": "Executable file"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which tool helps identify runtime errors?",
+      "options": {
+        "A": "Compiler",
+        "B": "Debugger",
+        "C": "Text editor",
+        "D": "Loader"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Object-oriented programming mainly emphasizes:",
+      "options": {
+        "A": "Functions",
+        "B": "Data and objects",
+        "C": "Mathematical expressions",
+        "D": "Hardware access"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A programming language is primarily:",
+      "options": {
+        "A": "A hardware component",
+        "B": "A set of rules for writing computer programs",
+        "C": "A computer application",
+        "D": "A database system"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which objective directly supports higher-level thinking skills?",
+      "options": {
+        "A": "Provide competent human resources",
+        "B": "Promote discipline, justice, and equality",
+        "C": "Inculcate critical thinking",
+        "D": "Improve quality of life"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Placing commonly used buttons in the same location across screens improves:",
+      "options": {
+        "A": "Error rate",
+        "B": "Consistency",
+        "C": "Memorability",
+        "D": "Complexity"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which design decision BEST improves user trust?",
+      "options": {
+        "A": "Hiding system status",
+        "B": "Providing clear feedback and transparency",
+        "C": "Limiting user control",
+        "D": "Using technical language"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Python supports multiple programming paradigms. True or False?",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "Only procedural",
+        "D": "Only object-oriented"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which programming domain is mainly concerned with real-time constraints?",
+      "options": {
+        "A": "Business programming",
+        "B": "Scientific programming",
+        "C": "Embedded systems programming",
+        "D": "Web programming"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The EOMS Policy highlights continuous innovation and delivery of services that:",
+      "options": {
+        "A": "Focus only on profitability",
+        "B": "Ignore regulatory requirements",
+        "C": "Comply with applicable requirements aligned with developments",
+        "D": "Emphasize competition"
+      },
+      "correctAnswer": "C"
+    }
+  ]
+}

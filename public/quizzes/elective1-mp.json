@@ -1,0 +1,554 @@
+{
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "Why does cybersecurity matter in modern organizations?",
+      "options": {
+        "A": "Because computers are faster than before",
+        "B": "Because most systems are internet-connected and data is valuable",
+        "C": "Because hardware is expensive",
+        "D": "Because software updates are frequent"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is a common motivation behind cyber attacks?",
+      "options": {
+        "A": "Improving network speed",
+        "B": "Financial gain",
+        "C": "Upgrading operating systems",
+        "D": "Testing software performance"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the primary role of a Security Operations Center (SOC)?",
+      "options": {
+        "A": "Develop new software applications",
+        "B": "Monitor, detect, analyze, and respond to cyber threats",
+        "C": "Design computer hardware",
+        "D": "Train employees in programming"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is NOT a core function of a SOC?",
+      "options": {
+        "A": "Monitoring",
+        "B": "Detection",
+        "C": "Marketing strategy",
+        "D": "Incident response"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the CIA triad stand for?",
+      "options": {
+        "A": "Control, Investigation, Analysis",
+        "B": "Confidentiality, Integrity, Availability",
+        "C": "Cybersecurity, Intelligence, Access",
+        "D": "Centralization, Identification, Authorization"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the purpose of User Account Control (UAC)?",
+      "options": {
+        "A": "Speed up system performance",
+        "B": "Prevent unauthorized system changes by requiring admin approval",
+        "C": "Automatically install updates",
+        "D": "Disable antivirus software"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which governance principle is enforced by UAC?",
+      "options": {
+        "A": "Least privilege",
+        "B": "Open access",
+        "C": "Full administrative rights",
+        "D": "Shared credentials"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What do NTFS permissions primarily control?",
+      "options": {
+        "A": "Network speed",
+        "B": "File and folder access",
+        "C": "Internet connectivity",
+        "D": "Hardware installation"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the main purpose of BitLocker?",
+      "options": {
+        "A": "Increase CPU performance",
+        "B": "Encrypt entire drives to protect data",
+        "C": "Block phishing emails",
+        "D": "Manage user passwords"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Windows Firewall is primarily used to:",
+      "options": {
+        "A": "Control inbound and outbound network traffic",
+        "B": "Encrypt files",
+        "C": "Manage disk partitions",
+        "D": "Install drivers"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the main advantage of Group Policy (GPO)?",
+      "options": {
+        "A": "It allows users to change their own security settings",
+        "B": "It provides centralized enforcement of security policies",
+        "C": "It removes the need for authentication",
+        "D": "It disables logging"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why is audit logging important in governance?",
+      "options": {
+        "A": "It increases system speed",
+        "B": "It provides accountability and supports investigations",
+        "C": "It replaces antivirus software",
+        "D": "It prevents hardware failure"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Secure Boot and TPM primarily protect:",
+      "options": {
+        "A": "Email accounts",
+        "B": "System startup integrity",
+        "C": "Wi-Fi speed",
+        "D": "Printer configurations"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the risk of not applying Windows updates?",
+      "options": {
+        "A": "Improved performance",
+        "B": "Exposure to known vulnerabilities",
+        "C": "Better compatibility",
+        "D": "Reduced storage usage"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which Windows feature supports centralized identity management?",
+      "options": {
+        "A": "Disk Cleanup",
+        "B": "Active Directory",
+        "C": "Task Manager",
+        "D": "Paint"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Zero Trust architecture is based on the principle that:",
+      "options": {
+        "A": "All internal users are trusted",
+        "B": "No user or device is trusted by default",
+        "C": "Firewalls are unnecessary",
+        "D": "Passwords are optional"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Multi-Factor Authentication (MFA) improves security by:",
+      "options": {
+        "A": "Removing passwords",
+        "B": "Requiring multiple forms of verification",
+        "C": "Allowing shared accounts",
+        "D": "Disabling encryption"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which governance principle is violated if all users have admin rights?",
+      "options": {
+        "A": "Least privilege",
+        "B": "Availability",
+        "C": "Encryption",
+        "D": "Logging"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the relationship between technology and governance?",
+      "options": {
+        "A": "Technology replaces governance",
+        "B": "Governance provides strategy, technology provides tools",
+        "C": "They are unrelated",
+        "D": "Governance only applies to hardware"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why is patch management considered part of risk management?",
+      "options": {
+        "A": "It increases internet speed",
+        "B": "It reduces vulnerabilities and lowers risk exposure",
+        "C": "It removes user accounts",
+        "D": "It disables firewalls"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the process of adding headers to data as it moves down the network layers?",
+      "options": {
+        "A": "De-encapsulation",
+        "B": "Data Encapsulation",
+        "C": "Data Compression",
+        "D": "Packet Filtering"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which protocol is responsible for logical addressing and routing packets across networks?",
+      "options": {
+        "A": "Ethernet",
+        "B": "IP (Internet Protocol)",
+        "C": "TCP",
+        "D": "UDP"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which layer of the OSI model ensures reliable, error-free delivery of data (e.g., TCP)?",
+      "options": {
+        "A": "Physical",
+        "B": "Network",
+        "C": "Transport",
+        "D": "Application"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the primary role of a 'Security Analyst'?",
+      "options": {
+        "A": "Repairing hardware components",
+        "B": "Analyzing data to identify and mitigate threats",
+        "C": "Designing marketing brochures",
+        "D": "Writing financial audits"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which tool is used in a SOC to centralize and analyze logs from various sources?",
+      "options": {
+        "A": "GPO",
+        "B": "SIEM",
+        "C": "NTFS",
+        "D": "UAC"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In a SOC, 'Monitoring' refers to:",
+      "options": {
+        "A": "Installing new hardware",
+        "B": "Observing network activity for anomalies",
+        "C": "Writing code for new apps",
+        "D": "Interviewing employees"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What motivation is characterized by an individual or group attacking for political or ideological reasons?",
+      "options": {
+        "A": "Espionage",
+        "B": "Hacktivism",
+        "C": "Financial Gain",
+        "D": "Personal Fame"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which authentication mechanism involves hardware-based identity such as fingerprints or face recognition?",
+      "options": {
+        "A": "Kerberos",
+        "B": "Windows Hello",
+        "C": "NTLM",
+        "D": "Local Password"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the function of 'Access Control Lists' (ACLs)?",
+      "options": {
+        "A": "Listing all installed software",
+        "B": "Defining who can access specific resources and what they can do",
+        "C": "Recording internet browsing history",
+        "D": "Managing power settings"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of these is a core responsibility of an 'Incident Responder'?",
+      "options": {
+        "A": "Developing new hardware",
+        "B": "Reacting to and containing a security breach",
+        "C": "Managing company payroll",
+        "D": "Designing the company logo"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which network layer deals with physical addressing (MAC addresses)?",
+      "options": {
+        "A": "Network Layer",
+        "B": "Data Link Layer",
+        "C": "Transport Layer",
+        "D": "Session Layer"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the primary goal of the 'Analysis' phase in a SOC?",
+      "options": {
+        "A": "Documenting the cost of a laptop",
+        "B": "Determining if a detected event is a real attack or a false alarm",
+        "C": "Replacing a broken switch",
+        "D": "Updating the company website"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which feature ensures that data on a stolen laptop remains encrypted and unreadable?",
+      "options": {
+        "A": "Windows Firewall",
+        "B": "BitLocker",
+        "C": "UAC",
+        "D": "GPO"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the 'I' in CIA Triad stand for?",
+      "options": {
+        "A": "Intelligence",
+        "B": "Integrity",
+        "C": "Identification",
+        "D": "Infrastructure"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which protocol provides a connectionless, low-overhead transport service?",
+      "options": {
+        "A": "TCP",
+        "B": "UDP",
+        "C": "IP",
+        "D": "Ethernet"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A Domain Controller is used for:",
+      "options": {
+        "A": "Editing video files",
+        "B": "Centralized identity and security management",
+        "C": "Hosting simple web pages",
+        "D": "Storing printer drivers only"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which type of firewall looks at packet headers to allow or block traffic?",
+      "options": {
+        "A": "Application Gateway",
+        "B": "Packet Filter",
+        "C": "Proxy Server",
+        "D": "Encryption Engine"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What happens during 'De-encapsulation'?",
+      "options": {
+        "A": "Data is compressed",
+        "B": "Headers are removed as data moves up the layers",
+        "C": "A file is deleted",
+        "D": "A password is changed"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which command-line tool can be used to check network connectivity in Windows?",
+      "options": {
+        "A": "calc",
+        "B": "ping",
+        "C": "notepad",
+        "D": "paint"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is 'Accountability' in the context of Windows Security?",
+      "options": {
+        "A": "Calculating the budget",
+        "B": "Ensuring actions can be traced to a specific user via logs",
+        "C": "Giving everyone admin rights",
+        "D": "Sharing passwords for convenience"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which SOC core function involves containment and mitigation?",
+      "options": {
+        "A": "Monitoring",
+        "B": "Response",
+        "C": "Reporting",
+        "D": "Detection"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Active Directory uses which protocol for its directory services?",
+      "options": {
+        "A": "FTP",
+        "B": "LDAP",
+        "C": "SMTP",
+        "D": "POP3"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the risk of using an 'End-of-Life' (EOL) operating system?",
+      "options": {
+        "A": "It becomes too fast",
+        "B": "It no longer receives security patches",
+        "C": "It consumes less power",
+        "D": "It has too many features"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which layer of the OSI model is responsible for routing?",
+      "options": {
+        "A": "Layer 2 (Data Link)",
+        "B": "Layer 3 (Network)",
+        "C": "Layer 4 (Transport)",
+        "D": "Layer 7 (Application)"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which feature protects against unauthorized software modifying protected folders?",
+      "options": {
+        "A": "Disk Defragmenter",
+        "B": "Controlled Folder Access",
+        "C": "Internet Explorer",
+        "D": "WordPad"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In Windows, where are events like failed logins recorded?",
+      "options": {
+        "A": "Task Manager",
+        "B": "Event Viewer",
+        "C": "File Explorer",
+        "D": "Control Panel"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of these is an example of 'something you are' in MFA?",
+      "options": {
+        "A": "Password",
+        "B": "Fingerprint",
+        "C": "Security Token",
+        "D": "PIN"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is 'Conditional Access'?",
+      "options": {
+        "A": "Access granted only if certain security criteria are met",
+        "B": "Unlimited access for all users",
+        "C": "Access that never expires",
+        "D": "Access granted without a password"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the main goal of 'Ethical Hacking'?",
+      "options": {
+        "A": "To steal data for profit",
+        "B": "To find and fix vulnerabilities before malicious actors do",
+        "C": "To slow down competitor networks",
+        "D": "To avoid paying for software"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is true about Windows Firewall?",
+      "options": {
+        "A": "It only blocks outgoing traffic",
+        "B": "It can be configured with inbound and outbound rules",
+        "C": "It replaces the need for an antivirus",
+        "D": "It is a hardware-only device"
+      },
+      "correctAnswer": "B"
+    }
+  ]
+}

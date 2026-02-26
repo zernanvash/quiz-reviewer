@@ -1,0 +1,58 @@
+[
+  {
+    "id": "SEC_GOV_ESSAY_01",
+    "title": "Essay elective1",
+    "description": "Master all core concepts of network and Windows security governance through short-answer analysis.",
+    "icon": "🛡️",
+    "file": "elective1-essay.json"
+  },
+  {
+    "id": "SEC_GOV_MP_02",
+    "title": "MultiChoice elective1",
+    "description": "Master all core concepts of network and Windows security governance through short-answer analysis.",
+    "icon": "🛡️",
+    "file": "elective1-mp.json"
+  },
+  {
+    "id": "programming-languages-reviewer",
+    "title": "prog lang",
+    "description": "T-T",
+    "icon": "\ud83d\udcbb",
+    "file": "programming-languages-reviewer.json"
+  },
+  {
+    "id": "software-engineering-reviewer",
+    "title": "Sof eng",
+    "description": "what an nice.",
+    "icon": "\ud83d\udcbb",
+    "file": "software-engineering-reviewer.json"
+  },
+  {
+    "id": "ITP13",
+    "title": "QUIZ NI SIR POPOY 1",
+    "description": "Information Assurance & Security 1",
+    "icon": "",
+    "file": "ITP13.json"
+  },
+  {
+    "id": "ITP13-2",
+    "title": "QUIZ NI SIR POPOY 2",
+    "description": "Information Assurance & Security 2",
+    "icon": "",
+    "file": "ITP13-2.json"
+  },
+  {
+    "id": "Ssscaling Netwoks",
+    "title": "Scaling Networks \u2013 Module 1: OSPF Fundamentals",
+    "description": "This quiz assesses knowledge of OSPF operation, packet types, neighbor relationships, areas, and scalability concepts.",
+    "icon": "n",
+    "file": "SN-M1.json"
+  },
+  {
+    "id": "elective2",
+    "title": "Elective 2 - Graphics n shi",
+    "description": "Deep Learning and Computer Vision fundamentals",
+    "icon": "🤖",
+    "file": "graphics.json"
+  }
+]
