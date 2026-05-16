@@ -157,6 +157,12 @@ export default function App() {
     }
   }
 
+  function goToQuestion(index) {
+    const nextIndex = Math.max(0, Math.min(index, questions.length - 1));
+    setCurrentIndex(nextIndex);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   function moveChoiceSelection(direction) {
     const q = questions[currentIndex];
     if (!q) return false;
@@ -341,6 +347,7 @@ export default function App() {
           onToggleMulti={toggleMultiAnswer}
           onNext={goNext}
           onPrev={goPrev}
+          onJump={goToQuestion}
           onFinish={finishQuiz}
           onExit={exitQuiz}
         />
@@ -402,13 +409,61 @@ function SelectionScreen({ quizzes, onSelect }) {
 }
 
 // ─── Quiz Screen ─────────────────────────────────────────────────────────────
+function getQuestionSection(question) {
+  switch (question?.type) {
+    case "multiple_choice":
+    case "multiple_response":
+    case "true_false":
+      return "Multiple Choice";
+    case "fill_in_blank":
+    case "short_answer":
+      return "Identification / Matching";
+    case "short_answer_ai":
+      return "Reasoning / Essay";
+    default:
+      return "Questions";
+  }
+}
+
+function getSectionMarkers(questions) {
+  return questions.reduce((sections, question, index) => {
+    const label = getQuestionSection(question);
+    const last = sections[sections.length - 1];
+
+    if (!last || last.label !== label) {
+      sections.push({ label, start: index, end: index });
+    } else {
+      last.end = index;
+    }
+
+    return sections;
+  }, []);
+}
+
 function QuizScreen({ questions, currentIndex, userAnswers, timerDisplay, quizTitle,
-  onAnswer, onToggleMulti, onNext, onPrev, onFinish, onExit }) {
+  onAnswer, onToggleMulti, onNext, onPrev, onJump, onFinish, onExit }) {
 
   const question = questions[currentIndex];
   const total = questions.length;
   const progress = ((currentIndex + 1) / total) * 100;
   const isLast = currentIndex === total - 1;
+  const [jumpValue, setJumpValue] = useState(String(currentIndex + 1));
+  const currentSection = getQuestionSection(question);
+  const sectionMarkers = getSectionMarkers(questions);
+
+  useEffect(() => {
+    setJumpValue(String(currentIndex + 1));
+  }, [currentIndex]);
+
+  function submitJump() {
+    const parsed = Number.parseInt(jumpValue, 10);
+    if (Number.isNaN(parsed)) {
+      setJumpValue(String(currentIndex + 1));
+      return;
+    }
+
+    onJump(parsed - 1);
+  }
 
   return (
     <div className="screen" id="quiz-screen">
@@ -435,10 +490,27 @@ function QuizScreen({ questions, currentIndex, userAnswers, timerDisplay, quizTi
       <div className="progress-bar">
         <div className="progress-fill" style={{ width: `${progress}%` }} />
       </div>
+      <div className="section-markers">
+        {sectionMarkers.map((section) => {
+          const active = currentIndex >= section.start && currentIndex <= section.end;
+          return (
+            <button
+              key={`${section.label}-${section.start}`}
+              className={`section-marker ${active ? "active" : ""}`}
+              onClick={() => onJump(section.start)}
+              type="button"
+            >
+              <span>{section.label}</span>
+              <strong>{section.start + 1}-{section.end + 1}</strong>
+            </button>
+          );
+        })}
+      </div>
 
       <div className="question-container">
         <div className="question-header">
           <div className="question-number">Question {currentIndex + 1} of {total}</div>
+          <div className="section-pill">{currentSection}</div>
         </div>
         <div className="question-text">{question.question}</div>
         <div className="options-list">
@@ -451,26 +523,39 @@ function QuizScreen({ questions, currentIndex, userAnswers, timerDisplay, quizTi
         </div>
       </div>
 
+      <div className="keyboard-hint">
+        <span>Tip: Left/Right changes questions, Up/Down changes choices, click the number to jump</span>
+      </div>
+
       <div className="quiz-controls">
-        <button className="btn btn-secondary" onClick={onPrev} disabled={currentIndex === 0}>
+        <button className="btn btn-secondary nav-btn nav-btn-prev" onClick={onPrev} disabled={currentIndex === 0}>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M19 12H5M12 19l-7-7 7-7" />
           </svg>
-          Previous
+          <span>Previous</span>
         </button>
-        <span className="question-indicator">{currentIndex + 1} / {total}</span>
-        <button className="btn btn-primary" onClick={isLast ? onFinish : onNext}>
-          {isLast ? "Finish Quiz" : "Next"}
+        <form className="question-jump" onSubmit={(e) => { e.preventDefault(); submitJump(); }}>
+          <input
+            aria-label="Jump to question number"
+            inputMode="numeric"
+            type="number"
+            min="1"
+            max={total}
+            value={jumpValue}
+            onChange={(e) => setJumpValue(e.target.value)}
+            onFocus={(e) => e.target.select()}
+            onBlur={submitJump}
+          />
+          <span>/ {total}</span>
+        </form>
+        <button className="btn btn-primary nav-btn nav-btn-next" onClick={isLast ? onFinish : onNext}>
+          <span>{isLast ? "Finish Quiz" : "Next"}</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             {isLast
               ? <><polyline points="9 11 12 14 22 4" /><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" /></>
               : <path d="M5 12h14M12 5l7 7-7 7" />}
           </svg>
         </button>
-      </div>
-
-      <div className="keyboard-hint">
-        <span>💡 Tip: Use ← → arrow keys to navigate</span>
       </div>
     </div>
   );
@@ -537,6 +622,14 @@ function QuestionInput({ question, userAnswer, onAnswer, onToggleMulti }) {
 
     return (
       <>
+        {question.hint && (
+          <div className="question-hint">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" />
+            </svg>
+            {question.hint}
+          </div>
+        )}
         <textarea
           className="short-answer-input"
           placeholder="Type your explanation here..."
@@ -571,14 +664,24 @@ function QuestionInput({ question, userAnswer, onAnswer, onToggleMulti }) {
 
   // short_answer / fill_in_blank
   return (
-    <input
-      type="text"
-      className="text-input"
-      placeholder={question.type === "fill_in_blank" ? "Fill in the blank..." : "Type your answer..."}
-      value={userAnswer || ""}
-      onChange={(e) => onAnswer(e.target.value)}
-      autoFocus
-    />
+    <>
+      {question.hint && (
+        <div className="question-hint">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" />
+          </svg>
+          {question.hint}
+        </div>
+      )}
+      <input
+        type="text"
+        className="text-input"
+        placeholder={question.type === "fill_in_blank" ? "Fill in the blank..." : "Type your answer..."}
+        value={userAnswer || ""}
+        onChange={(e) => onAnswer(e.target.value)}
+        autoFocus
+      />
+    </>
   );
 }
 

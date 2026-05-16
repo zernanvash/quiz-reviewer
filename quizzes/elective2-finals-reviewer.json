@@ -1,0 +1,893 @@
+{
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "What is image annotation in computer vision?",
+      "options": {
+        "A": "Compressing images to reduce file size",
+        "B": "Labeling, tagging, or outlining objects or regions to create ground truth data",
+        "C": "Uploading images directly to a website",
+        "D": "Deleting low quality images from a dataset"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the main purpose of annotation data?",
+      "options": {
+        "A": "To make images look more colorful",
+        "B": "To train AI and machine learning models to identify and interpret visual data",
+        "C": "To reduce the number of images in a dataset",
+        "D": "To convert images into videos"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which annotation method is most accurate for complex tasks but slow and time consuming?",
+      "options": {
+        "A": "Manual annotation",
+        "B": "AI labeling",
+        "C": "Batch processing",
+        "D": "Serverless API"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which annotation method is fastest and highly scalable for straightforward datasets?",
+      "options": {
+        "A": "Manual annotation",
+        "B": "AI labeling",
+        "C": "Polygon masking only",
+        "D": "Null annotation"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the best practical approach to annotation according to the material?",
+      "options": {
+        "A": "Use AI labeling only and never review results",
+        "B": "Use manual labeling only for every image",
+        "C": "Use AI labeling for initial labeling and manual review for validation",
+        "D": "Skip labeling if the model is modern"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which annotation type is quickest and easiest to draw?",
+      "options": {
+        "A": "Bounding box",
+        "B": "Polygon",
+        "C": "Mask",
+        "D": "Keypoint skeleton"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which annotation type is more precise than a bounding box and can slightly improve performance?",
+      "options": {
+        "A": "Class label",
+        "B": "Polygon",
+        "C": "Null mark",
+        "D": "REST API"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which annotation type gives the highest accuracy for complex pixel-level boundaries?",
+      "options": {
+        "A": "Bounding box",
+        "B": "Classification label",
+        "C": "Mask",
+        "D": "Dataset version"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Segmentation tasks usually require which annotation types for precise object separation?",
+      "options": {
+        "A": "Bounding boxes only",
+        "B": "Polygons or masks",
+        "C": "Text labels only",
+        "D": "CSV files only"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In Roboflow, where can you access the labeling interface?",
+      "options": {
+        "A": "By selecting an image from the Assign or Dataset pages",
+        "B": "Only through a command prompt",
+        "C": "Only after deployment",
+        "D": "From the billing page"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the Drag and Select tool allow you to do?",
+      "options": {
+        "A": "Train a new model",
+        "B": "Select, edit, drag annotations, pan the canvas, and deselect boxes",
+        "C": "Deploy to a cloud API",
+        "D": "Calculate mAP"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the main function of the bounding box annotation tool?",
+      "options": {
+        "A": "Draw rectangular object annotations",
+        "B": "Paint pixel-precise masks",
+        "C": "Start a batch processing job",
+        "D": "Choose a model size"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the polygon annotation tool draw?",
+      "options": {
+        "A": "New polygonal annotations",
+        "B": "REST API endpoints",
+        "C": "Training loss graphs",
+        "D": "Model checkpoints"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the brush annotation tool create?",
+      "options": {
+        "A": "Pixel-precise mask annotations",
+        "B": "Bounding boxes only",
+        "C": "Dataset versions only",
+        "D": "Hosted API keys"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In the brush tool, what do Add and Subtract modes do?",
+      "options": {
+        "A": "Train and deploy a model",
+        "B": "Add to or erase from the current mask",
+        "C": "Increase and decrease image resolution",
+        "D": "Approve or reject model metrics"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Smart Polygon used for?",
+      "options": {
+        "A": "Drawing Smart Polygon annotations that can be refined",
+        "B": "Creating a REST API key",
+        "C": "Running batch jobs",
+        "D": "Testing a video stream"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In Smart Polygon, what does a green dot indicate?",
+      "options": {
+        "A": "Removing part of an area",
+        "B": "Adding a new area of interest",
+        "C": "Training is complete",
+        "D": "The model failed"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In Smart Polygon, what does a red dot indicate?",
+      "options": {
+        "A": "Removing parts from the selected area",
+        "B": "Adding a new class",
+        "C": "Starting cloud deployment",
+        "D": "Increasing model size"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which settings can refine Smart Polygon output?",
+      "options": {
+        "A": "Convex Hull, Smooth, and Complex",
+        "B": "Nano, Small, and Base",
+        "C": "Precision, Recall, and mAP",
+        "D": "REST, SDK, and API"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does Label Assist do?",
+      "options": {
+        "A": "Automatically suggests bounding box labels using model predictions",
+        "B": "Deletes all annotations",
+        "C": "Compresses images for storage",
+        "D": "Deploys models to a private cloud server"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Mark Null used for?",
+      "options": {
+        "A": "Training from a checkpoint",
+        "B": "Labeling background/null images or clearing annotations",
+        "C": "Selecting a model architecture",
+        "D": "Running WebRTC video streams"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which Roboflow training option is ideal for production-ready models?",
+      "options": {
+        "A": "Roboflow Train",
+        "B": "Roboflow Instant",
+        "C": "Null Annotation",
+        "D": "Batch Upload"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which Roboflow training option trains models in a few minutes and is ideal for testing?",
+      "options": {
+        "A": "Roboflow Train",
+        "B": "Roboflow Instant",
+        "C": "Dedicated Deployment",
+        "D": "Model API Endpoint"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does Neural Architecture Search do?",
+      "options": {
+        "A": "Discovers novel model architectures and fine tunes at the same time",
+        "B": "Deletes bad annotations",
+        "C": "Streams webcam video to the cloud",
+        "D": "Creates a confusion matrix only"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What must you generate first before training a computer vision model in Roboflow?",
+      "options": {
+        "A": "A dataset version",
+        "B": "A billing report",
+        "C": "A video stream",
+        "D": "A JavaScript bundle"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which button starts configuration for a training job?",
+      "options": {
+        "A": "Custom Train",
+        "B": "Mark Null",
+        "C": "Visualize",
+        "D": "Batch Processing"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a model architecture?",
+      "options": {
+        "A": "The machine learning technology used to train the model",
+        "B": "The folder where images are stored",
+        "C": "The final API URL",
+        "D": "The list of annotators"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "For object detection, which architecture is described as offering the best accuracy?",
+      "options": {
+        "A": "RF-DETR",
+        "B": "CLIP only",
+        "C": "YOLO-NAS only",
+        "D": "Roboflow Instant"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "For instance segmentation, which architecture is described as offering the best accuracy?",
+      "options": {
+        "A": "RF-DETR Seg Preview",
+        "B": "RF-DETR Nano only",
+        "C": "Serverless Hosted API",
+        "D": "Batch Processing"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which model sizes are listed for RF-DETR?",
+      "options": {
+        "A": "Tiny, Lite, Pro, Ultra",
+        "B": "Nano, Small, Medium, Base",
+        "C": "Low, Normal, High, Extreme",
+        "D": "A, B, C, D"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does training from a checkpoint mean in context?",
+      "options": {
+        "A": "Starting training from a selected previously learned starting point",
+        "B": "Deleting all model progress",
+        "C": "Uploading a video file",
+        "D": "Testing only on Visualize"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What happens after clicking Start Training?",
+      "options": {
+        "A": "The dataset is zipped and prepared for training in the Roboflow cloud",
+        "B": "All annotations are deleted",
+        "C": "The model is immediately deployed to CCTV",
+        "D": "The browser downloads all images"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the training summary show before training starts?",
+      "options": {
+        "A": "Estimated duration and credit cost",
+        "B": "Student grades",
+        "C": "Confusion matrix scenarios only",
+        "D": "HTML code"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which loss measures how accurately the model locates objects?",
+      "options": {
+        "A": "Box loss",
+        "B": "Class loss",
+        "C": "Objectness loss",
+        "D": "Recall loss"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which loss measures how correctly the model identifies object classes?",
+      "options": {
+        "A": "Box loss",
+        "B": "Class loss",
+        "C": "Objectness loss",
+        "D": "mAP loss"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which loss measures whether the model reliably detects object presence?",
+      "options": {
+        "A": "Box loss",
+        "B": "Class loss",
+        "C": "Objectness loss",
+        "D": "Precision loss"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "For box, class, and objectness losses, what generally indicates better training progress?",
+      "options": {
+        "A": "Higher losses",
+        "B": "Lower losses",
+        "C": "No loss values",
+        "D": "Random loss values"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What should you do first after training a model?",
+      "options": {
+        "A": "View the metrics",
+        "B": "Delete the dataset",
+        "C": "Disable labels",
+        "D": "Change every class name"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does mAP measure?",
+      "options": {
+        "A": "The performance of computer vision models",
+        "B": "The size of image files",
+        "C": "The number of users online",
+        "D": "The age of a dataset"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Mean Average Precision is the average of what metric across all classes?",
+      "options": {
+        "A": "Average Precision",
+        "B": "Average Recall",
+        "C": "Average Loss",
+        "D": "Average File Size"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does precision focus on avoiding?",
+      "options": {
+        "A": "False positives",
+        "B": "False negatives",
+        "C": "Large files",
+        "D": "Slow uploads"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does recall focus on avoiding?",
+      "options": {
+        "A": "False positives",
+        "B": "False negatives",
+        "C": "Large masks",
+        "D": "Low resolution"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Where can you quickly test a model on an image in Roboflow?",
+      "options": {
+        "A": "Visualize page",
+        "B": "Billing page",
+        "C": "Account settings",
+        "D": "Dataset delete screen"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why is Visualize useful before building application logic in Workflows?",
+      "options": {
+        "A": "It runs quick checks on model performance",
+        "B": "It replaces all evaluation metrics",
+        "C": "It deploys a private server",
+        "D": "It removes the need for testing"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which deployment method is ideal when the deployment device has a persistent internet connection?",
+      "options": {
+        "A": "Serverless Hosted API",
+        "B": "Offline-only spreadsheet",
+        "C": "Manual annotation",
+        "D": "Null annotation"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What can the Serverless Hosted API be used with?",
+      "options": {
+        "A": "Workflows, REST API, and Inference Python SDK",
+        "B": "Only printed images",
+        "C": "Only local video files",
+        "D": "Only null images"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the file upload limit mentioned for the Serverless Hosted API?",
+      "options": {
+        "A": "5MB",
+        "B": "10MB",
+        "C": "20MB",
+        "D": "100MB"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What technology does the Serverless Video Streaming API use?",
+      "options": {
+        "A": "WebRTC",
+        "B": "FTP",
+        "C": "SMTP",
+        "D": "Bluetooth only"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which input sources are supported by the Serverless Video Streaming API?",
+      "options": {
+        "A": "Webcam, RTSP streams, and video files",
+        "B": "Only PDF files",
+        "C": "Only CSV files",
+        "D": "Only text prompts"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is RTSP described as?",
+      "options": {
+        "A": "A way to access a live video stream from a camera over the internet or a local network",
+        "B": "A type of mask annotation",
+        "C": "A model size",
+        "D": "A metric for false positives"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What are Dedicated Deployments?",
+      "options": {
+        "A": "Private cloud servers managed by Roboflow for running computer vision models",
+        "B": "A manual labeling mode",
+        "C": "A file compression method",
+        "D": "A confusion matrix label"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which model/application types can Dedicated Deployments run?",
+      "options": {
+        "A": "Object detection, segmentation, classification, keypoint detection, foundation models, and Workflows",
+        "B": "Only text documents",
+        "C": "Only spreadsheets",
+        "D": "Only audio files"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is Batch Processing best for?",
+      "options": {
+        "A": "Asynchronously processing large amounts of images or stored videos",
+        "B": "Manually drawing one box at a time",
+        "C": "Deleting all predictions",
+        "D": "Replacing metrics"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Where do you start creating a Batch Processing job?",
+      "options": {
+        "A": "Deployments sidebar, then Batch Processing tab",
+        "B": "The browser home page",
+        "C": "The account profile photo",
+        "D": "The Mark Null tool"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What must you select first when configuring a batch processing job?",
+      "options": {
+        "A": "A Workflow",
+        "B": "A password",
+        "C": "A classroom",
+        "D": "A polygon color"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "Matching/Identification: The confusion-matrix result when the model predicts an object and the object is actually present.",
+      "correctAnswers": [
+        "True Positive",
+        "TP"
+      ]
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "Matching/Identification: The confusion-matrix result when the model predicts an object but the object is not actually present.",
+      "correctAnswers": [
+        "False Positive",
+        "FP"
+      ]
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "Matching/Identification: The confusion-matrix result when the model predicts no object and no object is actually present.",
+      "correctAnswers": [
+        "True Negative",
+        "TN"
+      ]
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "Matching/Identification: The confusion-matrix result when the model predicts no object but the object is actually present.",
+      "correctAnswers": [
+        "False Negative",
+        "FN"
+      ]
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "The model predicts a dog, and there is actually a dog in the image.",
+      "correctAnswers": [
+        "True Positive",
+        "TP"
+      ],
+      "hint": "Answer with TP, FP, TN, or FN. TP = predicted present and actually present; FP = predicted present but absent; TN = predicted absent and actually absent; FN = predicted absent but actually present."
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "The model predicts a cat, but there is actually no cat in the image.",
+      "correctAnswers": [
+        "False Positive",
+        "FP"
+      ],
+      "hint": "Answer with TP, FP, TN, or FN. TP = predicted present and actually present; FP = predicted present but absent; TN = predicted absent and actually absent; FN = predicted absent but actually present."
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "The model says there is no car, and there is indeed no car in the image.",
+      "correctAnswers": [
+        "True Negative",
+        "TN"
+      ],
+      "hint": "Answer with TP, FP, TN, or FN. TP = predicted present and actually present; FP = predicted present but absent; TN = predicted absent and actually absent; FN = predicted absent but actually present."
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "The model says there is no person, but there is actually a person in the image.",
+      "correctAnswers": [
+        "False Negative",
+        "FN"
+      ],
+      "hint": "Answer with TP, FP, TN, or FN. TP = predicted present and actually present; FP = predicted present but absent; TN = predicted absent and actually absent; FN = predicted absent but actually present."
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "A medical test predicts a disease, and the patient actually has the disease.",
+      "correctAnswers": [
+        "True Positive",
+        "TP"
+      ],
+      "hint": "Answer with TP, FP, TN, or FN. TP = predicted present and actually present; FP = predicted present but absent; TN = predicted absent and actually absent; FN = predicted absent but actually present."
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "The model detects a fire alarm when there is actually no fire in the scene.",
+      "correctAnswers": [
+        "False Positive",
+        "FP"
+      ],
+      "hint": "Answer with TP, FP, TN, or FN. TP = predicted present and actually present; FP = predicted present but absent; TN = predicted absent and actually absent; FN = predicted absent but actually present."
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "The system correctly identifies that no intruder is present in a security feed.",
+      "correctAnswers": [
+        "True Negative",
+        "TN"
+      ],
+      "hint": "Answer with TP, FP, TN, or FN. TP = predicted present and actually present; FP = predicted present but absent; TN = predicted absent and actually absent; FN = predicted absent but actually present."
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "A medical model predicts no disease, but the patient actually has the disease.",
+      "correctAnswers": [
+        "False Negative",
+        "FN"
+      ],
+      "hint": "Answer with TP, FP, TN, or FN. TP = predicted present and actually present; FP = predicted present but absent; TN = predicted absent and actually absent; FN = predicted absent but actually present."
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "The system correctly flags a spam email as spam.",
+      "correctAnswers": [
+        "True Positive",
+        "TP"
+      ],
+      "hint": "Answer with TP, FP, TN, or FN. TP = predicted present and actually present; FP = predicted present but absent; TN = predicted absent and actually absent; FN = predicted absent but actually present."
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "The system labels a normal email as spam.",
+      "correctAnswers": [
+        "False Positive",
+        "FP"
+      ],
+      "hint": "Answer with TP, FP, TN, or FN. TP = predicted present and actually present; FP = predicted present but absent; TN = predicted absent and actually absent; FN = predicted absent but actually present."
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "Identification: The metric that asks, of all predicted objects, how many were actually correct.",
+      "correctAnswers": [
+        "Precision"
+      ]
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "Identification: The metric that asks, of all real objects, how many were successfully detected.",
+      "correctAnswers": [
+        "Recall"
+      ]
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "Identification: The metric equal to the average of Average Precision across all classes.",
+      "correctAnswers": [
+        "Mean Average Precision",
+        "mAP",
+        "MAP"
+      ]
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "Identification: The annotation tool used to paint pixel-precise masks.",
+      "correctAnswers": [
+        "Brush Annotation Tool",
+        "Brush"
+      ]
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "Identification: The Roboflow feature that suggests labels using model predictions.",
+      "correctAnswers": [
+        "Label Assist"
+      ]
+    },
+    {
+      "type": "fill_in_blank",
+      "question": "Identification: The deployment option for asynchronous large-batch image or stored-video processing.",
+      "correctAnswers": [
+        "Batch Processing"
+      ]
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain why combining AI labeling with manual validation is often better than using only one annotation method.",
+      "expectedConcepts": [
+        "AI labeling is fast",
+        "manual validation improves accuracy",
+        "good for initial labels then review",
+        "balances speed and quality"
+      ],
+      "hint": "Hint: Compare speed/scalability with accuracy/context checking."
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Compare bounding boxes, polygons, and masks. Explain when each annotation type is most appropriate.",
+      "expectedConcepts": [
+        "bounding boxes are quick",
+        "polygons are more precise",
+        "masks are pixel-level",
+        "segmentation requires polygons or masks"
+      ],
+      "hint": "Hint: Order them from fastest/easiest to most precise/pixel-level."
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "A model has high precision but low recall. Explain what this means and what kind of error the model is probably still making often.",
+      "expectedConcepts": [
+        "precision avoids false positives",
+        "recall detects real objects",
+        "low recall means missed objects",
+        "false negatives"
+      ],
+      "hint": "Hint: Precision is about predicted objects being correct; recall is about finding all real objects."
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Describe the major steps for training a Roboflow model from dataset preparation to starting the training job.",
+      "expectedConcepts": [
+        "generate dataset version",
+        "custom train",
+        "select architecture",
+        "choose model size",
+        "select checkpoint",
+        "start training"
+      ],
+      "hint": "Hint: Start with dataset version, then Custom Train settings, then Start Training."
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain why viewing metrics after training is necessary before deployment.",
+      "expectedConcepts": [
+        "evaluate performance",
+        "mAP",
+        "precision",
+        "recall",
+        "detect weaknesses",
+        "fine tuning before deployment"
+      ],
+      "hint": "Hint: Mention mAP, precision, recall, and finding weaknesses before production."
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Choose between Serverless Hosted API, Serverless Video Streaming API, Dedicated Deployment, and Batch Processing for a real use case. Justify your choice.",
+      "expectedConcepts": [
+        "deployment requirement",
+        "persistent internet",
+        "live video or batch data",
+        "private cloud or serverless",
+        "workflow suitability"
+      ],
+      "hint": "Hint: Match the deployment option to internet availability, live video, privacy, or large asynchronous batches."
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain the difference between box loss, class loss, and objectness loss during object detection training.",
+      "expectedConcepts": [
+        "box loss locates objects",
+        "class loss identifies class",
+        "objectness loss detects presence",
+        "lower losses improve predictions"
+      ],
+      "hint": "Hint: Think location, category, and object presence."
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "A security camera model misses a person in a restricted area. Identify the confusion-matrix result and explain why it is dangerous.",
+      "expectedConcepts": [
+        "false negative",
+        "model predicted no person",
+        "person actually present",
+        "missed threat"
+      ],
+      "hint": "Hint: The model says no object/person, but the object/person is actually present."
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Explain how Visualize, Workflows, and deployment connect in a practical Roboflow project.",
+      "expectedConcepts": [
+        "Visualize tests model quickly",
+        "Workflows build application logic",
+        "deployment runs inference",
+        "test before production"
+      ],
+      "hint": "Hint: Visualize checks the model, Workflows build logic, deployment runs it in real use."
+    },
+    {
+      "type": "short_answer_ai",
+      "question": "Give a practical study explanation of the complete Roboflow model lifecycle covered in the finals document.",
+      "expectedConcepts": [
+        "annotation",
+        "dataset version",
+        "training",
+        "metrics/evaluation",
+        "testing",
+        "deployment"
+      ],
+      "hint": "Hint: Walk through annotation, dataset versioning, training, metrics, testing, and deployment."
+    }
+  ]
+}

@@ -12,5 +12,26 @@
     "description": "Adaptive and Agile SDLC models including Scrum, Kanban, Lean, XP, RAD, Crystal, and FDD.",
     "icon": "SE",
     "file": "software-engineering-reviewer.json"
+  },
+  {
+    "id": "itp13-information-assurance-security-1",
+    "title": "QUIZ 1: INFORMATION ASSURANCE & SECURITY 1",
+    "description": "Assets, risks, countermeasures, information assurance policies, assessment, and evaluation.",
+    "icon": "IA",
+    "file": "ITP13.json"
+  },
+  {
+    "id": "itp13-information-assurance-security-1-quiz-2",
+    "title": "QUIZ 2: INFORMATION ASSURANCE & SECURITY 1",
+    "description": "Information assurance assets, risks, policies, controls, assessment, and evaluation.",
+    "icon": "IA2",
+    "file": "ITP13-2.json"
+  },
+  {
+    "id": "elective2-finals-reviewer",
+    "title": "Elective 2 Finals Reviewer",
+    "description": "Roboflow annotation, model training, evaluation, deployment, matching identification, and essay reasoning.",
+    "icon": "E2",
+    "file": "elective2-finals-reviewer.json"
   }
 ]
