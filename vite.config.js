@@ -28,6 +28,8 @@ export default defineConfig(({ mode }) => {
   const model = env.AI_MODEL || env.VITE_AI_MODEL || "nvidia/llama-3.3-nemotron-super-49b-v1";
 
   return {
+    base: "/quiz-reviewer/",
+    build: { rollupOptions: { input: "dev.html" } },
     plugins: [
       react(),
       {

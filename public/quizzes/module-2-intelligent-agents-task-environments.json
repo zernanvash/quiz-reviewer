@@ -1,0 +1,1140 @@
+{
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "What is the organising idea of the course?",
+      "options": {
+        "A": "The agent abstraction",
+        "B": "The Turing test",
+        "C": "The transformer architecture",
+        "D": "The physical symbol system hypothesis"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the agent abstraction say about an intelligent system?",
+      "options": {
+        "A": "It receives percepts and emits actions",
+        "B": "It must use machine learning",
+        "C": "It must imitate people",
+        "D": "It must be fully observable"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Under the agent abstraction, system quality is a property of: ",
+      "options": {
+        "A": "The actions it chooses",
+        "B": "The complexity of its internal machinery",
+        "C": "The number of rules it contains",
+        "D": "How human its reasoning appears"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a percept?",
+      "options": {
+        "A": "The agent's perceptual input at a given instant",
+        "B": "The complete history of all inputs",
+        "C": "A mapping from histories to actions",
+        "D": "The criterion of success"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a percept sequence?",
+      "options": {
+        "A": "The complete history of everything the agent has perceived",
+        "B": "One perceptual input at an instant",
+        "C": "A sequence of environment states used for grading",
+        "D": "A list of actuators"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the agent function map?",
+      "options": {
+        "A": "Percept sequences to actions",
+        "B": "Percepts to sensors",
+        "C": "Actions to environment states",
+        "D": "States to utilities"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In f: P* -> A, what is P*?",
+      "options": {
+        "A": "The set of all finite percept sequences",
+        "B": "The performance measure",
+        "C": "The agent programme",
+        "D": "The set of actuators"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the agent programme?",
+      "options": {
+        "A": "The concrete implementation of the agent function running on the architecture",
+        "B": "The potentially infinite abstract mapping from histories to actions",
+        "C": "The task environment's success criterion",
+        "D": "The complete percept history"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why can the agent function usually not be written down?",
+      "options": {
+        "A": "It is a potentially infinite object covering every possible history",
+        "B": "It contains no actions",
+        "C": "It exists only for learning agents",
+        "D": "It is identical to the finite programme"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "The agent function is the specification, while the agent programme is the finite artefact that approximates it and actually runs.",
+      "correctAnswer": true
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which systems fit the handout's deliberately generous definition of an agent?",
+      "options": {
+        "A": "Thermostat",
+        "B": "Chess programme",
+        "C": "Warehouse robot",
+        "D": "Language model",
+        "E": "Only a human-like system"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is rationality?",
+      "options": {
+        "A": "For each percept sequence, selecting the action expected to maximise the performance measure given built-in knowledge and percept history",
+        "B": "Always producing the best actual outcome",
+        "C": "Knowing every future event",
+        "D": "Imitating human behaviour"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "An agent looks both ways, crosses, and is struck by falling cargo. According to the handout, it acted: ",
+      "options": {
+        "A": "Rationally, because it maximised expected performance with available information",
+        "B": "Irrationally, because the actual outcome was bad",
+        "C": "Perfectly, because it predicted the cargo",
+        "D": "Neither rationally nor irrationally"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the difference between rationality and perfection?",
+      "options": {
+        "A": "Rationality maximises expected performance; perfection maximises actual performance",
+        "B": "Rationality uses no information; perfection uses percepts",
+        "C": "Rationality is for reflex agents; perfection is for learning agents",
+        "D": "There is no difference"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Rationality is omniscience.",
+      "correctAnswer": false
+    },
+    {
+      "type": "true_false",
+      "question": "Changing the performance measure can make the same behaviour irrational.",
+      "correctAnswer": true
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why may rationality require information gathering and learning?",
+      "options": {
+        "A": "Acting with insufficient information is not rational when more could cheaply be obtained",
+        "B": "The agent must maximise actual outcomes",
+        "C": "Every task environment is fully observable",
+        "D": "The agent programme must be infinite"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Over what should a performance measure be defined?",
+      "options": {
+        "A": "Sequences of environment states",
+        "B": "The agent's action frequency",
+        "C": "The complexity of the programme",
+        "D": "The agent's internal states"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why is measuring dirt collected by a vacuum a trap?",
+      "options": {
+        "A": "The vacuum can eject dirt and collect it again to increase the measure",
+        "B": "Dirt cannot be perceived",
+        "C": "Energy cannot be measured",
+        "D": "The environment is discrete"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which is the corrected vacuum performance measure from the handout?",
+      "options": {
+        "A": "Proportion of floor area clean averaged over eight hours, with an energy penalty",
+        "B": "Amount of dirt collected in eight hours",
+        "C": "Number of vacuum actions",
+        "D": "Complexity of the vacuum programme"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is specification gaming?",
+      "options": {
+        "A": "A system exploits the gap between an easy measure and what is actually wanted",
+        "B": "A competitive multi-agent environment",
+        "C": "A search for desirable states",
+        "D": "A model drifting from reality"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does PEAS stand for?",
+      "options": {
+        "A": "Performance measure, Environment, Actuators, Sensors",
+        "B": "Percepts, Environment, Actions, States",
+        "C": "Performance, Episodicity, Agency, Sensors",
+        "D": "Programme, Environment, Architecture, State"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a task environment?",
+      "options": {
+        "A": "The problem to which a rational agent is the solution, fully described by PEAS",
+        "B": "Only the physical location of an agent",
+        "C": "The internal structure of its programme",
+        "D": "The set of all finite percept sequences"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In a PEAS specification, which line becomes the evaluation metric?",
+      "options": {
+        "A": "Performance measure",
+        "B": "Environment",
+        "C": "Actuators",
+        "D": "Sensors"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In a PEAS specification, which line becomes the data-collection plan?",
+      "options": {
+        "A": "Performance measure",
+        "B": "Environment",
+        "C": "Actuators",
+        "D": "Sensors"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In a PEAS specification, which line becomes the system interface?",
+      "options": {
+        "A": "Performance measure",
+        "B": "Environment",
+        "C": "Actuators",
+        "D": "Sensors"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In a PEAS specification, which line becomes the available feature set?",
+      "options": {
+        "A": "Performance measure",
+        "B": "Environment",
+        "C": "Actuators",
+        "D": "Sensors"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which belong to the automated enrolment adviser's performance measure?",
+      "options": {
+        "A": "Students completing the term without a schedule conflict",
+        "B": "Curriculum prerequisite violations",
+        "C": "Adviser hours saved",
+        "D": "Student-reported clarity",
+        "E": "Camera image"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which belong to the automated enrolment adviser's environment?",
+      "options": {
+        "A": "Student records",
+        "B": "Curriculum map",
+        "C": "Section offerings",
+        "D": "Room and faculty capacity",
+        "E": "Prerequisite rules and enrolment deadlines",
+        "F": "Displayed class label"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which are actuators of the automated enrolment adviser?",
+      "options": {
+        "A": "Proposed schedule",
+        "B": "Flagged conflicts with explanations",
+        "C": "Referral to a human adviser",
+        "D": "Student's completed course list",
+        "E": "Section availability feed"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which are sensors of the automated enrolment adviser?",
+      "options": {
+        "A": "Completed course list",
+        "B": "Current standing",
+        "C": "Declared preferences",
+        "D": "Section availability feed",
+        "E": "Proposed schedule"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which belong to the rice-leaf classifier's performance measure?",
+      "options": {
+        "A": "Balanced accuracy across disease classes",
+        "B": "False-negative rate on the most damaging disease",
+        "C": "Latency under four seconds on a mid-range phone",
+        "D": "Variable daylight",
+        "E": "Phone cameras of differing quality"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which belong to the rice-leaf classifier's environment?",
+      "options": {
+        "A": "Variable daylight",
+        "B": "Wet leaves",
+        "C": "Motion blur",
+        "D": "Different phone-camera quality",
+        "E": "One or more leaves per frame",
+        "F": "Recommended action"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which are actuators of the rice-leaf classifier?",
+      "options": {
+        "A": "Displayed class label with confidence",
+        "B": "Recommended action",
+        "C": "Refusal when confidence is low",
+        "D": "Camera image",
+        "E": "Device location"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which are sensors of the rice-leaf classifier?",
+      "options": {
+        "A": "Camera image",
+        "B": "Optional device location",
+        "C": "Optional timestamp",
+        "D": "Class label",
+        "E": "Recommended action"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why is a refusal action important?",
+      "options": {
+        "A": "It prevents confident answers on inputs the system has never seen",
+        "B": "It makes every environment fully observable",
+        "C": "It removes the need for a performance measure",
+        "D": "It guarantees perfect classification"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A fully observable environment is one where: ",
+      "options": {
+        "A": "Sensors give the complete state",
+        "B": "The world waits during deliberation",
+        "C": "Each decision is independent",
+        "D": "The next state is uncertain"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does partial observability force an agent to do?",
+      "options": {
+        "A": "Maintain internal state",
+        "B": "Use no memory",
+        "C": "Enumerate every continuous state",
+        "D": "Become multi-agent"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which agency classification requires adversarial reasoning?",
+      "options": {
+        "A": "Competitive multi-agent",
+        "B": "Single agent",
+        "C": "Cooperative multi-agent",
+        "D": "Fully observable"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In a deterministic environment: ",
+      "options": {
+        "A": "The next state follows from the current state and action",
+        "B": "The next state requires a probability distribution",
+        "C": "Each decision is independent",
+        "D": "The score changes while the world waits"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What do stochastic environments require?",
+      "options": {
+        "A": "Reasoning about probability distributions over outcomes",
+        "B": "Only condition-action rules",
+        "C": "No internal state",
+        "D": "Enumeration of one outcome"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "An episodic environment is one where: ",
+      "options": {
+        "A": "Each decision is independent",
+        "B": "Current decisions affect future ones",
+        "C": "The world changes during deliberation",
+        "D": "States and actions are continuous"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What do sequential problems require?",
+      "options": {
+        "A": "Lookahead or learned value estimates",
+        "B": "No history",
+        "C": "Only current-percept rules",
+        "D": "No performance measure"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a semi-dynamic environment?",
+      "options": {
+        "A": "The world waits but the score does not",
+        "B": "The world and score both wait",
+        "C": "The world changes during deliberation",
+        "D": "Each decision is independent"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What practical constraint do dynamic environments impose?",
+      "options": {
+        "A": "Real-time constraints that may require a suboptimal answer on time",
+        "B": "A requirement to enumerate every state",
+        "C": "A requirement for human imitation",
+        "D": "A requirement for no learning"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What do continuous spaces rule out?",
+      "options": {
+        "A": "Enumeration",
+        "B": "Optimisation",
+        "C": "Discretisation",
+        "D": "Performance measures"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "How is chess with a clock classified in the worked table?",
+      "options": {
+        "A": "Fully observable",
+        "B": "Multi-agent",
+        "C": "Deterministic",
+        "D": "Sequential",
+        "E": "Semi-dynamic",
+        "F": "Discrete",
+        "G": "Episodic"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "How is poker classified in the worked table?",
+      "options": {
+        "A": "Partially observable",
+        "B": "Multi-agent",
+        "C": "Stochastic",
+        "D": "Sequential",
+        "E": "Static",
+        "F": "Discrete",
+        "G": "Fully observable"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "How is a spam filter classified in the worked table?",
+      "options": {
+        "A": "Fully observable",
+        "B": "Single agent",
+        "C": "Deterministic",
+        "D": "Episodic",
+        "E": "Static",
+        "F": "Discrete",
+        "G": "Sequential"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "How is a jeepney route planner classified in the worked table?",
+      "options": {
+        "A": "Partially observable",
+        "B": "Multi-agent",
+        "C": "Stochastic",
+        "D": "Sequential",
+        "E": "Dynamic",
+        "F": "Mixed",
+        "G": "Static"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "How is a rice-leaf classifier classified in the worked table?",
+      "options": {
+        "A": "Partially observable",
+        "B": "Single agent",
+        "C": "Stochastic",
+        "D": "Episodic",
+        "E": "Static",
+        "F": "Continuous",
+        "G": "Sequential"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "type": "multiple_response",
+      "question": "How is a flood early-warning system classified in the worked table?",
+      "options": {
+        "A": "Partially observable",
+        "B": "Single agent",
+        "C": "Stochastic",
+        "D": "Sequential",
+        "E": "Dynamic",
+        "F": "Continuous",
+        "G": "Fully observable"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why is the spam filter presented as the easiest cell in the task-environment space?",
+      "options": {
+        "A": "It is fully observable, single-agent, deterministic, episodic, static, and discrete",
+        "B": "It is partially observable and dynamic",
+        "C": "It is continuous and sequential",
+        "D": "It requires adversarial reasoning"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does a simple reflex agent use to select an action?",
+      "options": {
+        "A": "The current percept alone and condition-action rules",
+        "B": "A history of every percept",
+        "C": "A utility function",
+        "D": "A description of desirable states and search"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which describe a simple reflex agent?",
+      "options": {
+        "A": "No internal state",
+        "B": "No memory",
+        "C": "Fast",
+        "D": "Trivially explainable",
+        "E": "Correct only when fully observable",
+        "F": "Tracks hidden state"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How does a simple reflex agent characteristically fail in a partially observable environment?",
+      "options": {
+        "A": "It enters an infinite loop because identical percepts produce identical actions",
+        "B": "Its utility becomes infinite",
+        "C": "It changes its performance measure",
+        "D": "It becomes too slow from search"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does a model-based reflex agent add?",
+      "options": {
+        "A": "Internal state and a model of world evolution and action effects",
+        "B": "Only a binary goal",
+        "C": "Only a utility function",
+        "D": "A human interrogator"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the minimum viable architecture for a partially observable environment?",
+      "options": {
+        "A": "Model-based reflex",
+        "B": "Simple reflex",
+        "C": "Goal-based",
+        "D": "Utility-based"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the characteristic engineering risk of a model-based reflex agent?",
+      "options": {
+        "A": "Its model can drift out of correspondence with reality without a direct way to notice",
+        "B": "It has no internal state",
+        "C": "It cannot use past percepts",
+        "D": "It always enters the same infinite loop"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does a goal-based agent add?",
+      "options": {
+        "A": "A description of desirable states and search for an action sequence",
+        "B": "Only current-percept condition-action rules",
+        "C": "A real-valued utility for every state",
+        "D": "No reason for its actions"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What trade-off comes with a goal-based agent?",
+      "options": {
+        "A": "It is more flexible and much slower",
+        "B": "It is faster and has no memory",
+        "C": "It handles uncertainty without a utility function",
+        "D": "It requires a fully observable environment"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why is utility more expressive than a goal?",
+      "options": {
+        "A": "It represents trade-offs among partially satisfied objectives and between certainty and value",
+        "B": "It removes uncertainty",
+        "C": "It needs no performance measure",
+        "D": "It makes all states binary"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does a utility function map?",
+      "options": {
+        "A": "A state to a real number",
+        "B": "A percept sequence to an action",
+        "C": "An action to a sensor",
+        "D": "A goal to a binary rule"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What action does a utility-based agent choose?",
+      "options": {
+        "A": "The action maximising expected utility",
+        "B": "The first action satisfying any rule",
+        "C": "The action that imitates a human",
+        "D": "The action with the most percepts"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which components extend an architecture into a learning agent?",
+      "options": {
+        "A": "Learning element",
+        "B": "Critic",
+        "C": "Problem generator",
+        "D": "External performance standard",
+        "E": "Human interrogator"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the critic do in a learning agent?",
+      "options": {
+        "A": "Reports how the agent is doing against the performance standard",
+        "B": "Chooses every action directly",
+        "C": "Changes the external standard",
+        "D": "Defines the sensors"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the problem generator do?",
+      "options": {
+        "A": "Proposes exploratory actions",
+        "B": "Measures environment states",
+        "C": "Maps every percept sequence to an action",
+        "D": "Prevents all model drift"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why must the learning agent's performance standard remain external?",
+      "options": {
+        "A": "Otherwise it can optimise the criterion instead of the task",
+        "B": "Otherwise it cannot maintain state",
+        "C": "Otherwise the environment becomes stochastic",
+        "D": "Otherwise it becomes a simple reflex agent"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why can plain accuracy be misleading as a performance measure?",
+      "options": {
+        "A": "Classes may be imbalanced",
+        "B": "Accuracy is always an actuator",
+        "C": "Accuracy makes the world dynamic",
+        "D": "Accuracy cannot be expressed as a number"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Every planned feature must be derivable from something listed on the sensors line of PEAS.",
+      "correctAnswer": true
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which design choice turns a fragile demonstration into a deployable system according to the handout?",
+      "options": {
+        "A": "Including an abstain action and reporting how often it fires",
+        "B": "Requiring an answer for every input",
+        "C": "Using accuracy for every problem",
+        "D": "Allowing the agent to change its success criterion"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "short_answer",
+      "question": "Name the agent's perceptual input at a given instant.",
+      "correctAnswers": [
+        "Percept",
+        "A percept"
+      ],
+      "source": "Module 2, key terms",
+      "hint": "Recall the handout term or date.",
+      "hint2": "Percept"
+    },
+    {
+      "type": "short_answer",
+      "question": "Name the complete history of everything an agent has perceived.",
+      "correctAnswers": [
+        "Percept sequence",
+        "The percept sequence"
+      ],
+      "source": "Module 2, key terms",
+      "hint": "Recall the handout term or date.",
+      "hint2": "Percept sequence"
+    },
+    {
+      "type": "short_answer",
+      "question": "What is the abstract mapping from percept sequences to actions called?",
+      "correctAnswers": [
+        "Agent function",
+        "The agent function"
+      ],
+      "source": "Module 2, section 2.1",
+      "hint": "Recall the handout term or date.",
+      "hint2": "Agent function"
+    },
+    {
+      "type": "short_answer",
+      "question": "What is the concrete implementation running on the architecture called?",
+      "correctAnswers": [
+        "Agent programme",
+        "Agent program",
+        "The agent programme",
+        "The agent program"
+      ],
+      "source": "Module 2, section 2.1",
+      "hint": "Recall the handout term or date.",
+      "hint2": "Agent programme"
+    },
+    {
+      "type": "short_answer",
+      "question": "What is the failure called when the measured criterion can be satisfied without achieving what is actually wanted?",
+      "correctAnswers": [
+        "Specification gaming"
+      ],
+      "source": "Module 2, section 2.2",
+      "hint": "Recall the handout term or date.",
+      "hint2": "Specification gaming"
+    },
+    {
+      "type": "enumeration",
+      "question": "Expand PEAS by listing its four headings.",
+      "answerGroups": [
+        [
+          "Performance measure",
+          "Performance"
+        ],
+        [
+          "Environment"
+        ],
+        [
+          "Actuators"
+        ],
+        [
+          "Sensors"
+        ]
+      ],
+      "source": "Module 2, section 2.3",
+      "hint": "4 handout terms; begin with the main category.",
+      "hint2": "Performance measure, Environment, Actuators; plus one."
+    },
+    {
+      "type": "enumeration",
+      "question": "Enumerate the six dimensions of a task environment.",
+      "answerGroups": [
+        [
+          "Observability"
+        ],
+        [
+          "Agency"
+        ],
+        [
+          "Determinism"
+        ],
+        [
+          "Episodicity"
+        ],
+        [
+          "Dynamism"
+        ],
+        [
+          "Continuity"
+        ]
+      ],
+      "source": "Module 2, section 2.4",
+      "hint": "6 handout terms; begin with the main category.",
+      "hint2": "Observability, Agency, Determinism, Episodicity, Dynamism; plus one."
+    },
+    {
+      "type": "enumeration",
+      "question": "Enumerate the four principal agent architectures.",
+      "answerGroups": [
+        [
+          "Simple reflex",
+          "Simple reflex agents",
+          "Simple reflex agent"
+        ],
+        [
+          "Model-based reflex",
+          "Model-based reflex agents",
+          "Model-based reflex agent"
+        ],
+        [
+          "Goal-based",
+          "Goal-based agents",
+          "Goal-based agent"
+        ],
+        [
+          "Utility-based",
+          "Utility-based agents",
+          "Utility-based agent"
+        ]
+      ],
+      "source": "Module 2, section 2.5",
+      "hint": "4 handout terms; begin with the main category.",
+      "hint2": "Simple reflex, Model-based reflex, Goal-based; plus one."
+    },
+    {
+      "type": "enumeration",
+      "question": "List the three components that extend an architecture through learning from experience, feedback and exploration.",
+      "answerGroups": [
+        [
+          "Learning element"
+        ],
+        [
+          "Critic"
+        ],
+        [
+          "Problem generator"
+        ]
+      ],
+      "source": "Module 2, section 2.5",
+      "hint": "3 handout terms; begin with the main category.",
+      "hint2": "Learning element, Critic; plus one."
+    },
+    {
+      "type": "enumeration",
+      "question": "Enumerate the three dynamism categories.",
+      "answerGroups": [
+        [
+          "Static"
+        ],
+        [
+          "Dynamic"
+        ],
+        [
+          "Semi-dynamic",
+          "Semidynamic"
+        ]
+      ],
+      "source": "Module 2, section 2.4",
+      "hint": "3 handout terms; begin with the main category.",
+      "hint2": "Static, Dynamic; plus one."
+    },
+    {
+      "type": "essay",
+      "question": "Explain the difference between agent function and agent programme. Why should internal complexity not determine the evaluation?",
+      "modelAnswer": "The agent function maps percept sequences to actions and specifies what should be done for every possible history. It is potentially infinite. The programme is the finite implementation that approximates it and runs on an architecture. Evaluation concerns the actions selected rather than the complexity of the machinery choosing them.",
+      "rubric": [
+        "Distinguish mathematical specification from implementation.",
+        "Mention percept sequences and potentially infinite histories.",
+        "Judge behaviour rather than internal complexity."
+      ],
+      "source": "Module 2, section 2.1",
+      "hint": "Key distinction + handout example.",
+      "hint2": "The agent function maps percept sequences to actions and specifies what should be done for every possible history."
+    },
+    {
+      "type": "essay",
+      "question": "Explain why rationality is neither omniscience nor perfection, using the falling-cargo example.",
+      "modelAnswer": "Rationality maximises expected performance given the available percept history and built-in knowledge; perfection maximises actual performance. Looking both ways before crossing may be rational even if falling cargo causes a bad outcome. Rationality also depends on the chosen performance measure and may require gathering information or learning when additional information is cheaply available.",
+      "rubric": [
+        "Contrast expected and actual outcomes.",
+        "Apply available information to the cargo example.",
+        "Explain performance measure and information gathering."
+      ],
+      "source": "Module 2, section 2.2",
+      "hint": "Key distinction + handout example.",
+      "hint2": "Rationality maximises expected performance given the available percept history and built-in knowledge; perfection maximises actual performance."
+    },
+    {
+      "type": "essay",
+      "question": "Explain the vacuum's specification-gaming failure and repair its performance measure.",
+      "modelAnswer": "Rewarding dirt collected over eight hours encourages ejecting collected dirt and collecting it again. The measure rewards behaviour rather than the desired world state. Measure the proportion of floor area clean, averaged over eight hours, with a penalty for energy consumed.",
+      "rubric": [
+        "Explain eject-and-recollect gaming.",
+        "Define success over environment states.",
+        "Include averaged clean area, eight hours and energy penalty."
+      ],
+      "source": "Module 2, section 2.2",
+      "hint": "Key distinction + handout example.",
+      "hint2": "Rewarding dirt collected over eight hours encourages ejecting collected dirt and collecting it again."
+    },
+    {
+      "type": "essay",
+      "question": "Write the rice-leaf classifier's complete PEAS specification from the handout, including refusal.",
+      "modelAnswer": "Performance: balanced accuracy across disease classes, false-negative rate on the most damaging disease, and latency under four seconds on a mid-range phone. Environment: variable daylight, wet leaves, motion blur, different camera quality and one or more leaves per frame. Actuators: displayed class label with confidence, recommended action and refusal at low confidence. Sensors: camera image, optionally device location and timestamp.",
+      "rubric": [
+        "Include all four PEAS headings.",
+        "Include balanced accuracy, damaging-disease false negatives and latency.",
+        "Describe field conditions and camera inputs.",
+        "Include refusal as an actuator."
+      ],
+      "source": "Module 2, section 2.3",
+      "hint": "Key distinction + handout example.",
+      "hint2": "Performance: balanced accuracy across disease classes, false-negative rate on the most damaging disease, and latency under four seconds on a mid-range phone."
+    },
+    {
+      "type": "essay",
+      "question": "Compare the four principal architectures and explain what each addition provides.",
+      "modelAnswer": "Simple reflex agents use current-percept condition-action rules without memory, and can loop under partial observability. Model-based reflex agents add internal state and a model of world evolution and action effects, but the model may drift. Goal-based agents represent desirable states and search for an action sequence, adding flexibility at a speed cost. Utility-based agents map states to real values and maximise expected utility, handling conflicting objectives and uncertain outcomes.",
+      "rubric": [
+        "Explain current percept versus internal state.",
+        "Explain model drift and partial observability.",
+        "Contrast binary goals with utility trade-offs.",
+        "Include search cost and expected utility."
+      ],
+      "source": "Module 2, section 2.5",
+      "hint": "Key distinction + handout example.",
+      "hint2": "Simple reflex agents use current-percept condition-action rules without memory, and can loop under partial observability."
+    },
+    {
+      "type": "essay",
+      "question": "Explain how each PEAS heading constrains a project's design and evaluation.",
+      "modelAnswer": "The performance measure becomes the evaluation metric; plain accuracy is misleading with imbalanced classes. The environment becomes the data-collection plan, so variable lighting requires corresponding images. Actuators become the interface and determine whether abstention is allowed. Sensors determine the feature set; every feature must be derivable from the listed sensors.",
+      "rubric": [
+        "Map every heading to its downstream design choice.",
+        "Explain imbalanced classes and variable lighting.",
+        "Explain abstention and sensor-derived features."
+      ],
+      "source": "Module 2, research lens",
+      "hint": "Key distinction + handout example.",
+      "hint2": "The performance measure becomes the evaluation metric; plain accuracy is misleading with imbalanced classes."
+    }
+  ]
+}

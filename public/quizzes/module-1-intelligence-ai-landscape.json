@@ -1,0 +1,980 @@
+{
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "Which definition matches artificial intelligence in the module's key terms?",
+      "options": {
+        "A": "Systems that imitate human conversational behaviour",
+        "B": "The study and construction of systems that perceive an environment and take actions that maximise the chance of achieving a stated objective",
+        "C": "Neural networks of many layers that learn representations",
+        "D": "Knowledge represented explicitly as symbols and rules"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is an intelligent agent?",
+      "options": {
+        "A": "Anything that perceives its environment through sensors and acts upon it through actuators",
+        "B": "A system that has passed the Turing test",
+        "C": "A deep network trained on a very large corpus",
+        "D": "A system that matches human competence across all cognitive tasks"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A claim that a system reasons the way a person does belongs to which classical definition?",
+      "options": {
+        "A": "Thinking humanly",
+        "B": "Acting humanly",
+        "C": "Thinking rationally",
+        "D": "Acting rationally"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A claim that a system's observable behaviour is indistinguishable from a person's belongs to which definition?",
+      "options": {
+        "A": "Thinking humanly",
+        "B": "Acting humanly",
+        "C": "Thinking rationally",
+        "D": "Acting rationally"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A system judged by whether logic defines its reasoning as correct is:",
+      "options": {
+        "A": "Thinking humanly",
+        "B": "Acting humanly",
+        "C": "Thinking rationally",
+        "D": "Acting rationally"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A system that does the thing most likely to achieve its objective, given what it knows, is:",
+      "options": {
+        "A": "Thinking humanly",
+        "B": "Acting humanly",
+        "C": "Thinking rationally",
+        "D": "Acting rationally"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which are the two axes Russell and Norvig use to organise definitions of AI?",
+      "options": {
+        "A": "Thought or behaviour",
+        "B": "Human performance or an ideal standard of rationality",
+        "C": "Symbols or neural networks",
+        "D": "Narrow or general scope"
+      },
+      "correctAnswer": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How is a thinking-humanly claim verified?",
+      "options": {
+        "A": "By output alone",
+        "B": "By psychological experiment and brain imaging",
+        "C": "By an objective function and held-out performance",
+        "D": "By automated theorem proving"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A vendor says a hiring system ranks candidates to maximise expected job performance. What evidence should be requested?",
+      "options": {
+        "A": "Brain imaging",
+        "B": "Its objective function, fitted data, and held-out performance against a baseline",
+        "C": "A live demonstration on chosen inputs",
+        "D": "Evidence that it hesitates like a person"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Why does the course take the rational-agent position?",
+      "options": {
+        "A": "It is more general than laws of thought",
+        "B": "It is more tractable than modelling human cognition",
+        "C": "It is auditable",
+        "D": "It requires solving psychology first"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why is acting rationally more general than the laws-of-thought position?",
+      "options": {
+        "A": "Acting well sometimes requires acting without a proof",
+        "B": "It imitates human errors",
+        "C": "It uses only machine learning",
+        "D": "It requires brain imaging"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which containment relationship is correct?",
+      "options": {
+        "A": "AI is inside machine learning, which is inside deep learning",
+        "B": "Deep learning is inside machine learning, which is inside AI",
+        "C": "Generative AI contains all of artificial intelligence",
+        "D": "Machine learning and AI are interchangeable"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is machine learning?",
+      "options": {
+        "A": "AI in which behaviour is derived from data rather than specified by hand",
+        "B": "AI that explicitly represents symbols and rules",
+        "C": "Any system that creates new content",
+        "D": "The full range of human cognitive competence"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What distinguishes deep learning within machine learning?",
+      "options": {
+        "A": "It uses search and constraints only",
+        "B": "It uses many-layer neural networks to learn representations as well as decisions",
+        "C": "Its behaviour is fully specified by hand",
+        "D": "It always produces new content"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Generative artificial intelligence refers to systems that:",
+      "options": {
+        "A": "Produce new content, typically using large deep networks trained on very large corpora",
+        "B": "Prove theorems with explicit rules only",
+        "C": "Match human competence across every cognitive task",
+        "D": "Solve only constraint-satisfaction problems"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is symbolic artificial intelligence sometimes called?",
+      "options": {
+        "A": "Artificial general intelligence",
+        "B": "Good old-fashioned AI",
+        "C": "Generative modelling",
+        "D": "Cognitive imaging"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which fields sit inside AI but outside machine learning?",
+      "options": {
+        "A": "Search",
+        "B": "Planning",
+        "C": "Knowledge representation",
+        "D": "Automated reasoning",
+        "E": "Deep learning"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "If correctness is defined by constraints that can be written down, how should the problem be framed?",
+      "options": {
+        "A": "As a search or constraint problem",
+        "B": "As a learning problem",
+        "C": "As generative AI",
+        "D": "As cognitive modelling"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "If correctness is agreement with examples that can be collected but cannot be characterised in rules, how should the problem be framed?",
+      "options": {
+        "A": "As theorem proving",
+        "B": "As a learning problem",
+        "C": "As means-ends analysis",
+        "D": "As a physical symbol system"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "An examination timetabling system with no conflicting cohorts is primarily a:",
+      "options": {
+        "A": "Deep-learning problem",
+        "B": "Constraint-satisfaction problem",
+        "C": "Generative-modelling problem",
+        "D": "Cognitive-modelling problem"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What did McCulloch and Pitts publish in 1943?",
+      "options": {
+        "A": "The transformer architecture",
+        "B": "A formal model of the neuron using simple threshold units",
+        "C": "The imitation game",
+        "D": "The General Problem Solver"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What did Turing's 1950 paper propose?",
+      "options": {
+        "A": "The imitation game and answers to nine objections",
+        "B": "The physical symbol system hypothesis",
+        "C": "The perceptron's limitations",
+        "D": "The transformer architecture"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Where and when was the term artificial intelligence coined?",
+      "options": {
+        "A": "At the Dartmouth summer workshop in 1956",
+        "B": "In the ALPAC report in 1966",
+        "C": "In the Lighthill report in 1973",
+        "D": "At ImageNet in 2012"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Who organised the 1956 Dartmouth workshop?",
+      "options": {
+        "A": "McCarthy",
+        "B": "Minsky",
+        "C": "Rochester",
+        "D": "Shannon",
+        "E": "Newell",
+        "F": "Simon"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What did the Logic Theorist do?",
+      "options": {
+        "A": "Diagnosed bacterial infections",
+        "B": "Proved theorems from Principia Mathematica",
+        "C": "Configured computer orders",
+        "D": "Inferred molecular structure"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What did the General Problem Solver formalise?",
+      "options": {
+        "A": "Means-ends analysis",
+        "B": "Backpropagation",
+        "C": "Attention",
+        "D": "Mass spectrometry"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Who articulated the physical symbol system hypothesis?",
+      "options": {
+        "A": "McCulloch and Pitts",
+        "B": "Newell and Simon",
+        "C": "Minsky and Papert",
+        "D": "McCarthy and Shannon"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What was the physical symbol system hypothesis?",
+      "options": {
+        "A": "A physical symbol system has the necessary and sufficient means for general intelligent action",
+        "B": "Many-layer networks can learn representations",
+        "C": "Attention can replace recurrence",
+        "D": "Human conversation is the ideal performance measure"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What happened after the 1966 ALPAC report?",
+      "options": {
+        "A": "Machine-translation funding promised on imminent success was cut off",
+        "B": "The expert-system industry began",
+        "C": "British AI funding increased",
+        "D": "The transformer era began"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How did Minsky and Papert's 1969 work contribute to neglect of neural approaches?",
+      "options": {
+        "A": "Its correct analysis of perceptron limitations was read as a verdict on neural approaches generally",
+        "B": "It introduced attention",
+        "C": "It proved rules were incorrect",
+        "D": "It withdrew British funding"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What followed the 1973 Lighthill report?",
+      "options": {
+        "A": "Withdrawal of British AI funding",
+        "B": "The ImageNet breakthrough",
+        "C": "The public release of language models",
+        "D": "The Dartmouth workshop"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What strategy powered the expert-system boom?",
+      "options": {
+        "A": "Encoding specialist knowledge as production rules",
+        "B": "Seeking only general reasoning",
+        "C": "Training transformers on very large corpora",
+        "D": "Imitating human hesitation"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Match DENDRAL to its task.",
+      "options": {
+        "A": "Diagnosed bacterial infections",
+        "B": "Configured computer orders",
+        "C": "Inferred molecular structure from mass spectrometry data",
+        "D": "Played chess"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Match MYCIN to its task.",
+      "options": {
+        "A": "Diagnosed bacterial infections and recommended antibiotics",
+        "B": "Inferred molecular structure",
+        "C": "Configured computer orders",
+        "D": "Translated language"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Match R1 to its task at Digital Equipment Corporation.",
+      "options": {
+        "A": "Speech recognition",
+        "B": "Configuring computer orders",
+        "C": "Image classification",
+        "D": "Information retrieval"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Why did the commercial expert-system industry contract?",
+      "options": {
+        "A": "Knowledge acquisition was slow",
+        "B": "Rule bases were brittle at their edges",
+        "C": "Rule bases were expensive to maintain as domains shifted",
+        "D": "General workstations overtook specialised Lisp hardware",
+        "E": "Rule-based reasoning was proved incorrect"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What changed during the statistical turn from 1993 to 2017?",
+      "options": {
+        "A": "Measurable-error statistical methods displaced hand-built symbolic systems in several fields",
+        "B": "All symbolic technology disappeared",
+        "C": "AI became general",
+        "D": "Research returned to imitation alone"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How did Deep Blue defeat Kasparov in 1997?",
+      "options": {
+        "A": "Search and evaluation",
+        "B": "Human-like chess reasoning",
+        "C": "A transformer",
+        "D": "A production-rule medical system"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which three conditions converged for the 2012 deep-learning turn?",
+      "options": {
+        "A": "Large labelled datasets",
+        "B": "Graphics hardware that made training feasible",
+        "C": "Algorithmic refinements accumulated since 1986 backpropagation papers",
+        "D": "A passed Turing test"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why did the 2012 ImageNet result matter?",
+      "options": {
+        "A": "Its error-rate improvement was too large to attribute to tuning",
+        "B": "It was the first neural network",
+        "C": "It needed no data",
+        "D": "It proved general intelligence"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What did the transformer architecture introduced in 2017 replace with attention?",
+      "options": {
+        "A": "Recurrence",
+        "B": "Search",
+        "C": "Logic",
+        "D": "Evaluation"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which large-scale problems accompanied the transformer era?",
+      "options": {
+        "A": "Fluent output that is confidently wrong",
+        "B": "Training data of uncertain provenance",
+        "C": "Capability claims outrunning available evaluation",
+        "D": "The disappearance of all narrow systems"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What recurring sequence produced both AI winters?",
+      "options": {
+        "A": "A real result was overgeneralised, funded on inflated claims, then defunded when the gap became undeniable",
+        "B": "A false result replaced a true one",
+        "C": "Algorithms failed because no computers existed",
+        "D": "General intelligence was deployed and withdrawn"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which project requirements does the module present as discipline recommended by AI history?",
+      "options": {
+        "A": "A stated baseline",
+        "B": "Reported dispersion",
+        "C": "An explicit statement of prohibited uses",
+        "D": "A chosen-input demonstration"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How does the Turing test work?",
+      "options": {
+        "A": "A text-based interrogator tries to distinguish a human from a machine",
+        "B": "A machine proves a theorem",
+        "C": "A system maximises a published objective",
+        "D": "Brain imaging compares human and machine reasoning"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which properties originally made the Turing test useful?",
+      "options": {
+        "A": "It is behavioural and needs no theory of thinking",
+        "B": "It is adversarial and resists cherry-picked demonstrations",
+        "C": "It measures a published objective function",
+        "D": "It guarantees understanding"
+      },
+      "correctAnswer": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Why was the Turing test largely set aside as a research target?",
+      "options": {
+        "A": "It rewards imitation of human error, hesitation, and ignorance and optimises for deception",
+        "B": "Turing withdrew it",
+        "C": "It cannot be administered",
+        "D": "It measures only logic"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does Searle's Chinese Room objection argue?",
+      "options": {
+        "A": "Rule-governed symbol manipulation does not produce understanding, however convincing the output",
+        "B": "A physical symbol system is sufficient for intelligence",
+        "C": "All language models are general intelligence",
+        "D": "Human judges are perfectly reliable"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the empirical objection to the Turing test?",
+      "options": {
+        "A": "It measures the interrogator's susceptibility as much as system capability",
+        "B": "It requires too much training data",
+        "C": "It is a search problem",
+        "D": "It uses an ideal standard of rationality"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What replaced the Turing test in contemporary evaluation?",
+      "options": {
+        "A": "Task-specific benchmarks with published protocols",
+        "B": "Chosen-input demonstrations",
+        "C": "Brain imaging alone",
+        "D": "Public capability claims"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is narrow artificial intelligence?",
+      "options": {
+        "A": "A system competent in one task or a narrow family of tasks",
+        "B": "A system matching human competence across all cognitive tasks",
+        "C": "Any explicit rule system",
+        "D": "Any system without learning"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is artificial general intelligence in the handout?",
+      "options": {
+        "A": "A hypothesised system matching human competence across the full range of cognitive tasks",
+        "B": "Every deployed AI system in 2026",
+        "C": "A large language model",
+        "D": "A system trained on more than one dataset"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "true_false",
+      "question": "Every deployed artificial intelligence system in 2026 is narrow.",
+      "correctAnswer": true
+    },
+    {
+      "type": "multiple_response",
+      "question": "Which are examples of narrow AI given in the handout?",
+      "options": {
+        "A": "Spam filters",
+        "B": "Route planners",
+        "C": "Image classifiers",
+        "D": "Language models",
+        "E": "Recommender systems",
+        "F": "Artificial general intelligence"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How does narrow AI handle a new task?",
+      "options": {
+        "A": "It requires retraining or redesign",
+        "B": "It transfers competence unaided",
+        "C": "It becomes general automatically",
+        "D": "It changes its own objective"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a characteristic failure mode of narrow AI?",
+      "options": {
+        "A": "It fails silently outside its training distribution",
+        "B": "It transfers to all novel tasks",
+        "C": "It always refuses uncertain inputs",
+        "D": "It maximises actual outcomes perfectly"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "When is a public capability claim engineering rather than marketing?",
+      "options": {
+        "A": "When a falsifying observation is stated and evidence against it is provided",
+        "B": "When no observation could falsify it",
+        "C": "When it uses deep learning",
+        "D": "When an expert endorses it"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "multiple_response",
+      "question": "What should be identified before choosing a method for a mini-project?",
+      "options": {
+        "A": "The decision currently being made badly",
+        "B": "Who makes it and the cost when it goes wrong",
+        "C": "What the current process achieves as a baseline",
+        "D": "Which technique the team wants to demonstrate"
+      },
+      "correctAnswer": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Where does the module say an intelligent-systems project usually succeed or fail?",
+      "options": {
+        "A": "Problem framing",
+        "B": "Choice of programming language",
+        "C": "Choice of neural-network depth",
+        "D": "Visual design"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did McCulloch and Pitts publish their formal neuron model? Enter the four-digit year.",
+      "correctAnswers": [
+        "1943"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "1943"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did Turing publish the imitation game in Mind? Enter the four-digit year.",
+      "correctAnswers": [
+        "1950"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "1950"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did the Dartmouth summer workshop introduce the term artificial intelligence? Enter the four-digit year.",
+      "correctAnswers": [
+        "1956"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "1956"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did the ALPAC report precede the cut to machine-translation funding? Enter the four-digit year.",
+      "correctAnswers": [
+        "1966"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "1966"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did Minsky and Papert publish the analysis of perceptron limitations? Enter the four-digit year.",
+      "correctAnswers": [
+        "1969"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "1969"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did the Lighthill report precede withdrawal of British AI funding? Enter the four-digit year.",
+      "correctAnswers": [
+        "1973"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "1973"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did the backpropagation papers mentioned in the handout appear? Enter the four-digit year.",
+      "correctAnswers": [
+        "1986"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "1986"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did Deep Blue defeat Kasparov? Enter the four-digit year.",
+      "correctAnswers": [
+        "1997"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "1997"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did the deep convolutional network achieve the decisive ImageNet result? Enter the four-digit year.",
+      "correctAnswers": [
+        "2012"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "2012"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did the transformer architecture introduce attention in place of recurrence? Enter the four-digit year.",
+      "correctAnswers": [
+        "2017"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "2017"
+    },
+    {
+      "type": "short_answer",
+      "question": "In which year did large language models begin reaching general public awareness? Enter the four-digit year.",
+      "correctAnswers": [
+        "2022"
+      ],
+      "source": "Module 1, sections 1.3–1.4",
+      "hint": "Recall the handout term or date.",
+      "hint2": "2022"
+    },
+    {
+      "type": "short_answer",
+      "question": "Identify the tradition that represents knowledge explicitly as symbols and rules.",
+      "correctAnswers": [
+        "Symbolic artificial intelligence",
+        "Symbolic AI",
+        "Good old-fashioned AI"
+      ],
+      "source": "Module 1, key terms",
+      "hint": "Recall the handout term or date.",
+      "hint2": "Symbolic artificial intelligence"
+    },
+    {
+      "type": "short_answer",
+      "question": "What is the current process's measured performance called when evaluating a proposed improvement?",
+      "correctAnswers": [
+        "Baseline",
+        "A baseline"
+      ],
+      "source": "Module 1, research lens",
+      "hint": "Recall the handout term or date.",
+      "hint2": "Baseline"
+    },
+    {
+      "type": "enumeration",
+      "question": "Enumerate the four classical definitions of artificial intelligence.",
+      "answerGroups": [
+        [
+          "Thinking humanly"
+        ],
+        [
+          "Thinking rationally"
+        ],
+        [
+          "Acting humanly"
+        ],
+        [
+          "Acting rationally"
+        ]
+      ],
+      "source": "Module 1, section 1.1",
+      "hint": "4 handout terms; begin with the main category.",
+      "hint2": "Thinking humanly, Thinking rationally, Acting humanly; plus one."
+    },
+    {
+      "type": "enumeration",
+      "question": "Name the four organisers of the Dartmouth workshop.",
+      "answerGroups": [
+        [
+          "McCarthy"
+        ],
+        [
+          "Minsky"
+        ],
+        [
+          "Rochester"
+        ],
+        [
+          "Shannon"
+        ]
+      ],
+      "source": "Module 1, section 1.3",
+      "hint": "4 handout terms; begin with the main category.",
+      "hint2": "McCarthy, Minsky, Rochester; plus one."
+    },
+    {
+      "type": "enumeration",
+      "question": "List the three expert systems discussed in the expert-system boom.",
+      "answerGroups": [
+        [
+          "DENDRAL"
+        ],
+        [
+          "MYCIN"
+        ],
+        [
+          "R1"
+        ]
+      ],
+      "source": "Module 1, section 1.3",
+      "hint": "3 handout terms; begin with the main category.",
+      "hint2": "DENDRAL, MYCIN; plus one."
+    },
+    {
+      "type": "enumeration",
+      "question": "List the four areas inside AI but outside machine learning named in Figure 1.1.",
+      "answerGroups": [
+        [
+          "Search"
+        ],
+        [
+          "Planning"
+        ],
+        [
+          "Knowledge representation"
+        ],
+        [
+          "Automated reasoning"
+        ]
+      ],
+      "source": "Module 1, Figure 1.1",
+      "hint": "4 handout terms; begin with the main category.",
+      "hint2": "Search, Planning, Knowledge representation; plus one."
+    },
+    {
+      "type": "essay",
+      "question": "Explain the two axes behind the four classical definitions of AI and why this course takes the rational-agent position.",
+      "modelAnswer": "The axes are thought versus behaviour and human performance versus an ideal standard of rationality. Their combinations are thinking humanly, thinking rationally, acting humanly and acting rationally. The rational-agent position is more general than laws of thought because acting well can require acting without proof; more tractable than modelling cognition because an objective can be specified without solving psychology; and auditable through the objective, percept history and action set.",
+      "rubric": [
+        "Identify both axes and all four positions.",
+        "Explain generality, tractability and auditability.",
+        "Distinguish evidence about behaviour from claims about human-like reasoning."
+      ],
+      "source": "Module 1, section 1.1",
+      "hint": "Key distinction + handout example.",
+      "hint2": "The axes are thought versus behaviour and human performance versus an ideal standard of rationality."
+    },
+    {
+      "type": "essay",
+      "question": "Explain the pattern behind both AI winters, including the particular causes of the expert-system industry's collapse.",
+      "modelAnswer": "A real technical result was described as a broader capability than the evidence supported, funded on those claims and defunded when the gap became undeniable. Early predictions encountered combinatorial explosion. Expert systems faced slow knowledge acquisition, brittle rule bases and expensive maintenance as domains shifted. General workstations overtook specialised Lisp hardware. The technical results persisted; the inflated descriptions failed.",
+      "rubric": [
+        "Explain real result, inflated claims, funding and defunding.",
+        "Name knowledge acquisition and maintenance problems.",
+        "Include brittle rules and Lisp hardware competition."
+      ],
+      "source": "Module 1, section 1.3",
+      "hint": "Key distinction + handout example.",
+      "hint2": "A real technical result was described as a broader capability than the evidence supported, funded on those claims and defunded when the gap became undeniable."
+    },
+    {
+      "type": "essay",
+      "question": "Describe the Turing test, its two useful properties, two objections, and the evaluation approach that replaced it.",
+      "modelAnswer": "An interrogator communicates by text with a human and a machine and tries to distinguish them; chance-level identification constitutes passing. The test is behavioural and adversarial. It rewards imitation of human limitations and deception. Searle's Chinese Room argues that symbol manipulation does not establish understanding. The empirical objection is that it also measures the interrogator's susceptibility. Contemporary evaluation uses task-specific benchmarks with published protocols.",
+      "rubric": [
+        "Describe the procedure and chance criterion.",
+        "Explain behavioural and adversarial properties.",
+        "Distinguish Chinese Room from the empirical objection.",
+        "Explain task-specific, auditable evaluation."
+      ],
+      "source": "Module 1, section 1.4",
+      "hint": "Key distinction + handout example.",
+      "hint2": "An interrogator communicates by text with a human and a machine and tries to distinguish them; chance-level identification constitutes passing."
+    },
+    {
+      "type": "essay",
+      "question": "Explain why examination timetabling can be an AI problem without machine learning. Connect this to how a project should be framed.",
+      "modelAnswer": "Timetabling correctness can be expressed as constraints, such as avoiding conflicting cohorts. It is a combinatorial constraint problem, rather than pattern extraction from examples. Identify the decision being made badly, who makes it, the costs of errors and what the current process achieves as a baseline before selecting the technique.",
+      "rubric": [
+        "Connect explicit constraints to search or constraint satisfaction.",
+        "Contrast with agreement with collected examples.",
+        "Explain decision, affected people, error costs and baseline."
+      ],
+      "source": "Module 1, sections 1.2 and research lens",
+      "hint": "Key distinction + handout example.",
+      "hint2": "Timetabling correctness can be expressed as constraints, such as avoiding conflicting cohorts."
+    },
+    {
+      "type": "essay",
+      "question": "Compare narrow AI and artificial general intelligence in scope, transfer and status according to the handout.",
+      "modelAnswer": "Narrow AI handles one task or a narrow family and needs retraining or redesign for new tasks. The handout classifies every deployed system in 2026 as narrow, including language models. AGI is hypothesised to match human competence across cognitive tasks and transfer unaided to novel tasks; it has no existing example, agreed test or agreed timeline. Narrow systems may fail silently outside their training distribution.",
+      "rubric": [
+        "Compare scope and transfer.",
+        "State the handout's 2026 classification.",
+        "Describe AGI's hypothetical status and narrow AI's failure boundary."
+      ],
+      "source": "Module 1, section 1.5",
+      "hint": "Key distinction + handout example.",
+      "hint2": "Narrow AI handles one task or a narrow family and needs retraining or redesign for new tasks."
+    }
+  ]
+}

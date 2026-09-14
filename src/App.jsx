@@ -1,9 +1,10 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { evaluateWithAI } from "./ai";
+import { ReviewScreen, lessonReviews } from "./ReviewScreen";
 import { calculateResults, formatDuration, getCorrectAnswerText } from "./quizEngine";
 
 // ─── Screens ────────────────────────────────────────────────────────────────
-const SCREEN = { SELECTION: "selection", QUIZ: "quiz", RESULTS: "results" };
+const SCREEN = { SELECTION: "selection", REVIEW: "review", QUIZ: "quiz", RESULTS: "results" };
 
 export default function App() {
   const [screen, setScreen] = useState(SCREEN.SELECTION);
@@ -334,8 +335,9 @@ export default function App() {
       <div className="bg-pattern" />
 
       {screen === SCREEN.SELECTION && (
-        <SelectionScreen quizzes={allQuizzes} onSelect={selectQuiz} />
+        <SelectionScreen quizzes={allQuizzes} onSelect={selectQuiz} onReview={(meta) => { setQuizMeta(meta); setScreen(SCREEN.REVIEW); window.scrollTo(0, 0); }} />
       )}
+      {screen === SCREEN.REVIEW && <ReviewScreen meta={quizMeta} onStart={() => selectQuiz(quizMeta)} onBack={() => { setScreen(SCREEN.SELECTION); window.scrollTo(0, 0); }} />}
       {screen === SCREEN.QUIZ && (
         <QuizScreen
           questions={questions}
@@ -367,7 +369,7 @@ export default function App() {
 }
 
 // ─── Selection Screen ────────────────────────────────────────────────────────
-function SelectionScreen({ quizzes, onSelect }) {
+function SelectionScreen({ quizzes, onSelect, onReview }) {
   return (
     <div className="screen">
       <div className="container">
@@ -390,16 +392,17 @@ function SelectionScreen({ quizzes, onSelect }) {
             </div>
           ) : (
             quizzes.map((quiz) => (
-              <button key={quiz.id} className="quiz-card" onClick={() => onSelect(quiz)}>
+              <article key={quiz.id} className="quiz-card">
                 <div className="quiz-card-header">
                   <div className="quiz-icon">{quiz.icon}</div>
                   <div><h3>{quiz.title}</h3></div>
                 </div>
                 <p>{quiz.description}</p>
                 <div className="quiz-meta">
-                  <span className="quiz-badge">Click to start</span>
+                  {lessonReviews[quiz.id] && <button className="btn btn-secondary" onClick={() => onReview(quiz)}>Quick Review</button>}
+                  <button className="btn btn-primary" onClick={() => onSelect(quiz)}>Start Mock Exam</button>
                 </div>
-              </button>
+              </article>
             ))
           )}
         </div>
@@ -411,6 +414,10 @@ function SelectionScreen({ quizzes, onSelect }) {
 // ─── Quiz Screen ─────────────────────────────────────────────────────────────
 function getQuestionSection(question) {
   switch (question?.type) {
+    case "enumeration":
+      return "Enumeration";
+    case "essay":
+      return "Essay / Self-review";
     case "multiple_choice":
     case "multiple_response":
     case "true_false":
@@ -515,6 +522,7 @@ function QuizScreen({ questions, currentIndex, userAnswers, timerDisplay, quizTi
         <div className="question-text">{question.question}</div>
         <div className="options-list">
           <QuestionInput
+            key={question.question}
             question={question}
             userAnswer={userAnswers[currentIndex]}
             onAnswer={onAnswer}
@@ -563,6 +571,23 @@ function QuizScreen({ questions, currentIndex, userAnswers, timerDisplay, quizTi
 
 // ─── Question Input ───────────────────────────────────────────────────────────
 function QuestionInput({ question, userAnswer, onAnswer, onToggleMulti }) {
+  const [hintLevel, setHintLevel] = useState(0);
+  const hintText = hintLevel === 1 ? question.hint : hintLevel === 2 ? (question.hint2 || question.hint) : null;
+  const Hint = () => question.hint ? (
+    <div className="hint-box">
+      <button type="button" className="hint-button" onClick={() => setHintLevel((level) => Math.min(2, level + 1))} disabled={hintLevel >= 2}>
+        {hintLevel === 0 ? "💡 Hint 1" : hintLevel === 1 ? "💡 Hint 2" : "💡 Hints complete"}
+      </button>
+      {hintText && <p>{hintText}</p>}
+    </div>
+  ) : null;
+  if (question.type === "essay" || question.type === "enumeration") {
+    return <>
+      <p className="question-hint">{question.type === "essay" ? "Write in your own words. Compare with the handout-based model answer and checklist after submission. Essays are not included in the automatic score." : `List ${question.answerGroups.length} items, one per line or separated by semicolons. Any order is accepted; use the handout's terms.`}</p>
+      <Hint />
+      <textarea className="short-answer-input" aria-label={question.type === "essay" ? "Essay answer" : "Enumeration answer"} rows={question.type === "essay" ? 8 : Math.min(8, question.answerGroups.length + 1)} value={userAnswer || ""} onChange={(e) => onAnswer(e.target.value)} />
+    </>;
+  }
   if (question.type === "multiple_response") {
     const selected = Array.isArray(userAnswer) ? userAnswer : [];
     return (
@@ -622,14 +647,7 @@ function QuestionInput({ question, userAnswer, onAnswer, onToggleMulti }) {
 
     return (
       <>
-        {question.hint && (
-          <div className="question-hint">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" />
-            </svg>
-            {question.hint}
-          </div>
-        )}
+        <Hint />
         <textarea
           className="short-answer-input"
           placeholder="Type your explanation here..."
@@ -665,14 +683,7 @@ function QuestionInput({ question, userAnswer, onAnswer, onToggleMulti }) {
   // short_answer / fill_in_blank
   return (
     <>
-      {question.hint && (
-        <div className="question-hint">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" />
-          </svg>
-          {question.hint}
-        </div>
-      )}
+      <Hint />
       <input
         type="text"
         className="text-input"
@@ -734,6 +745,7 @@ function ResultsScreen({ results, onRetake, onBack }) {
 
         <div className="results-section">
           <h3>Detailed Review</h3>
+          {results.essayCount > 0 && <p>{results.essayCount} essays for self-review. The percentage includes only automatically graded questions.</p>}
           <div className="results-details">
             {results.questions.map((q, idx) => (
               <ResultItem key={idx} q={q} idx={idx} />
@@ -762,6 +774,17 @@ function ResultsScreen({ results, onRetake, onBack }) {
 }
 
 function ResultItem({ q, idx }) {
+  if (q.type === "essay") {
+    return <div className="result-item">
+      <h4>{idx + 1}. {q.question}</h4>
+      <p>Essay — self-review, not automatically graded</p>
+      <p style={{ whiteSpace: "pre-wrap" }}>Your answer: {q.userAnswer || "Not answered"}</p>
+      <p><strong>Model answer:</strong> {q.modelAnswer}</p>
+      <strong>Check your explanation against these points:</strong>
+      <ul>{q.rubric.map((point) => <li key={point}>{point}</li>)}</ul>
+      <p>{q.source}</p>
+    </div>;
+  }
   const icon = q.isCorrect ? "✓" : "✗";
   const statusClass = q.isCorrect ? "correct" : "incorrect";
 

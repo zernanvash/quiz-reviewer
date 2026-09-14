@@ -4,6 +4,12 @@ export function checkAnswer(question) {
   if (!question.userAnswer && question.type !== "short_answer_ai") return false;
 
   switch (question.type) {
+    case "enumeration": {
+      const normalize = (s) => s.replace(/^\s*\d+[.)]\s*/, "").trim().toLowerCase().replace(/[-–—]/g, " ").replace(/\s+/g, " ");
+      const items = String(question.userAnswer).split(/[\n;]+/).map(normalize).filter(Boolean);
+      const groups = question.answerGroups || [];
+      return items.length === groups.length && new Set(items).size === items.length && groups.every((aliases) => items.some((item) => aliases.some((alias) => normalize(alias) === item)));
+    }
     case "multiple_response": {
       if (!Array.isArray(question.userAnswer) || !question.correctAnswer) return false;
       if (question.userAnswer.length !== question.correctAnswer.length) return false;
@@ -39,15 +45,17 @@ export function checkAnswer(question) {
 
 export function calculateResults(questions, startTime, endTime, title) {
   const scored = questions.map((q) => ({ ...q, isCorrect: checkAnswer(q) }));
-  const correctCount = scored.filter((q) => q.isCorrect).length;
+  const graded = scored.filter((q) => q.type !== "essay");
+  const correctCount = graded.filter((q) => q.isCorrect).length;
   const totalQuestions = scored.length;
-  const percentage = totalQuestions > 0 ? (correctCount / totalQuestions) * 100 : 0;
+  const percentage = graded.length > 0 ? (correctCount / graded.length) * 100 : 0;
 
   return {
     title,
     totalQuestions,
     correctCount,
-    incorrectCount: totalQuestions - correctCount,
+    incorrectCount: graded.length - correctCount,
+    essayCount: totalQuestions - graded.length,
     percentage: Math.round(percentage * 10) / 10,
     duration: endTime - startTime,
     questions: scored,
@@ -63,6 +71,10 @@ export function formatDuration(ms) {
 
 export function getCorrectAnswerText(question) {
   switch (question.type) {
+    case "enumeration":
+      return question.answerGroups.map((group) => group[0]).join("; ");
+    case "essay":
+      return question.modelAnswer;
     case "multiple_choice":
       return question.correctAnswer
         ? `${question.correctAnswer}. ${question.options[question.correctAnswer]}`
