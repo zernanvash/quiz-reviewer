@@ -1,4 +1,6 @@
 [
   {"id":"module-1-intelligence-ai-landscape","title":"Elective 3 — Module 1","description":"Intelligence, Artificial Intelligence and the Landscape of Intelligent Systems","icon":"M1","file":"module-1-intelligence-ai-landscape.json"},
-  {"id":"module-2-intelligent-agents-task-environments","title":"Elective 3 — Module 2","description":"Intelligent Agents and Task Environments","icon":"M2","file":"module-2-intelligent-agents-task-environments.json"}
+  {"id":"module-2-intelligent-agents-task-environments","title":"Elective 3 — Module 2","description":"Intelligent Agents and Task Environments","icon":"M2","file":"module-2-intelligent-agents-task-environments.json"},
+  {"id":"module-1-from-module","title":"Elective 3 — Module 1 [FROM MODULE]","description":"The exact Check your understanding questions from Module 1: 10 multiple-choice and 4 written questions.","icon":"M1","file":"module-1-from-module.json"},
+  {"id":"module-2-from-module","title":"Elective 3 — Module 2 [FROM MODULE]","description":"The exact Check your understanding questions from Module 2: 10 multiple-choice and 4 written questions.","icon":"M2","file":"module-2-from-module.json"}
 ]

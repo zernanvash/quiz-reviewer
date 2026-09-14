@@ -11,7 +11,11 @@ const results = calculateResults([{ type: 'short_answer', correctAnswers: ['1956
 assert.equal(results.percentage, 100);
 assert.equal(results.incorrectCount, 0);
 assert.equal(results.essayCount, 1);
-for (const name of ['module-1-intelligence-ai-landscape', 'module-2-intelligent-agents-task-environments']) {
+const catalog = JSON.parse(readFileSync('public/quizzes/index.json', 'utf8'));
+assert.equal(catalog.length, 4);
+assert.equal(readFileSync('public/quizzes/index.json', 'utf8'), readFileSync('quizzes/index.json', 'utf8'));
+for (const { file } of catalog) {
+  const name = file.replace(/\.json$/, '');
   const content = readFileSync(`public/quizzes/${name}.json`, 'utf8');
   assert.equal(content, readFileSync(`quizzes/${name}.json`, 'utf8'));
   const { questions } = JSON.parse(content);
@@ -21,5 +25,10 @@ for (const name of ['module-1-intelligence-ai-landscape', 'module-2-intelligent-
     assert.equal(checkAnswer({ ...q, userAnswer: answer }), true, q.question);
   }
   console.log(`${name}: ${questions.length} questions checked`);
+}
+for (const name of ['module-1-from-module', 'module-2-from-module']) {
+  const { questions } = JSON.parse(readFileSync(`public/quizzes/${name}.json`, 'utf8'));
+  assert.equal(questions.filter(q => q.type === 'multiple_choice').length, 10);
+  assert.equal(questions.filter(q => q.type === 'essay').length, 4);
 }
 console.log('Enumeration edge cases and essay score exclusion passed.');
