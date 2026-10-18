@@ -113,6 +113,69 @@ export const lessonReviews = {
       ["External standard", "Any architecture can learn. Keep its success criterion external, or it optimises the criterion instead of the task."],
     ]],
   ],
+  "semis-connecting-networks": [
+    ["Electrical quantities and units", [
+      ["Charge (Q)", "Amount of electric charge, measured in coulombs (C). Moving charge creates current."],
+      ["Voltage (V)", "Potential energy difference per charge between two points. 1 V = 1 J/C; V = ΔE/Q."],
+      ["Current (I)", "Rate of charge flow. I = ΔQ/Δt; 1 A = 1 C/s. Conventional current runs from positive to negative outside the source."],
+      ["Resistance (R)", "Opposition to current, measured in ohms (Ω). At fixed voltage, greater resistance means less current."],
+      ["Prefixes", "k = 1,000; M = 1,000,000; m = 0.001; µ = 0.000001. Convert mA to A before circuit calculations."],
+    ]],
+    ["Ohm's Law and power", [
+      ["Three forms", "V = IR; I = V/R; R = V/I. Use the form with the requested unknown."],
+      ["What changes?", "At fixed R, I rises with V. At fixed V, I falls as R rises. An ideal resistor has a straight V-versus-I line with slope R."],
+      ["Power", "P = VI = I²R = V²/R, measured in watts. Resistors commonly turn electrical energy into heat."],
+      ["Rating", "Choose a resistor rated above expected dissipation, allowing for temperature and operating conditions. 0.3 W exceeds a 0.25 W rating."],
+      ["Quick examples", "9 V / 1.5 kΩ = 6 mA. A 12 V drop across 1 kΩ dissipates 0.144 W."],
+    ]],
+    ["Series, parallel and dividers", [
+      ["Series", "One path: same current, voltage drops add, Rtotal = R1 + R2 + … . One open stops the path."],
+      ["Parallel", "Shared two nodes: same voltage, branch currents add, 1/Rtotal = 1/R1 + 1/R2 + … . One open branch need not stop the others."],
+      ["Two parallel resistors", "Rtotal = R1R2/(R1 + R2). Two equal resistors give half the resistance of either one."],
+      ["Sanity check", "A positive-resistance parallel equivalent is below the smallest branch resistance."],
+      ["Unloaded divider", "With R1 above the output and R2 below: Vout = Vin × R2/(R1 + R2). Equal R1 and R2 give half Vin."],
+      ["Loaded divider", "A load across R2 lowers the effective lower resistance and can lower Vout. A divider is not automatically a power supply."],
+    ]],
+    ["LEDs and resistor selection", [
+      ["LED polarity", "Anode is commonly the longer new lead; cathode is commonly the shorter lead and flat package edge. Check the datasheet if uncertain."],
+      ["Current limit", "A series resistor protects the LED and output pin. It can be on either side of the LED in the same path."],
+      ["LED formula", "R = (Vs − Vf)/I, with I in amperes. At 5 V, 2 V forward drop and 10 mA: R = 300 Ω ideal."],
+      ["Resistor specs", "Check nominal resistance, tolerance, wattage, working voltage and temperature. ±10% at 1 kΩ spans 900–1,100 Ω."],
+      ["Color bands", "Find the isolated tolerance band and read toward it. Four-band: band 3 is multiplier; five-band: band 3 is a digit."],
+      ["Gold and silver", "Multiplier position: gold ×0.1, silver ×0.01. Final tolerance band: gold ±5%, silver ±10%."],
+      ["Standard values", "E12 has 12 values per decade and is often associated with 10% ranges; E24 has 24 and is common with 5% values."],
+    ]],
+    ["Measurement, breadboards and diagrams", [
+      ["Voltage", "Meter probes go in parallel across two points; use the voltage jack and correct AC/DC mode."],
+      ["Current", "Open the path and insert the ammeter in series. Its low internal resistance makes current mode across a supply dangerous."],
+      ["Resistance and continuity", "Normally power down and isolate as appropriate. A continuity beep means low resistance under the meter's threshold."],
+      ["Breadboard", "Five-hole groups on each side of the center trench connect internally; opposite sides are separated. Edge power rails may be split."],
+      ["Schematic junction", "A dot at meeting wires means one node. Under the course convention, crossing lines without a dot do not join."],
+      ["Wiring habit", "Copy electrical nodes from the schematic, not its physical layout. Verify supply, ground, rail continuity and polarity."],
+    ]],
+    ["Components in the kit", [
+      ["Capacitor / inductor", "A capacitor stores energy in an electric field (Q = CV); an inductor stores energy in a magnetic field."],
+      ["Diode / flyback", "A diode chiefly conducts forward. Across a DC inductive load, a reverse-biased flyback diode clamps the switch-off spike."],
+      ["Transistor / H-bridge", "A transistor switches a load needing more current than an Arduino pin can supply. An H-bridge reverses DC motor polarity and direction."],
+      ["Potentiometer / pull-down", "A potentiometer's middle wiper provides adjustable voltage or resistance. A pull-down holds an open digital input LOW."],
+      ["LDR / optocoupler", "An LDR's resistance usually falls as light rises. An optocoupler transfers a signal with light across an isolation barrier."],
+      ["Servo / tilt / LCD", "A typical positional micro servo moves toward a commanded angle; a mechanical tilt switch is on/off and may bounce; a 16 × 2 LCD shows 16 columns and 2 rows of characters."],
+    ]],
+    ["Arduino Uno quick facts", [
+      ["Board and ports", "Classic Uno uses ATmega328P. USB uploads sketches and can supply power; barrel input is commonly recommended at 7–12 V."],
+      ["Pins", "Digital pins 0–13 handle input/output; the onboard LED is associated with pin 13. Analog inputs are A0–A5."],
+      ["ADC", "Default 10-bit resolution gives 1,024 nominal codes, 0–1,023. Resolution is not the same as accuracy."],
+      ["Current limits", "Normal design commonly keeps continuous current at or below 20 mA per digital pin. 40 mA is an absolute maximum, not a target."],
+      ["Board labels", "AREF sets an external ADC reference; TX/RX LEDs indicate serial activity; ON LED indicates power. Reset restarts the stored sketch."],
+      ["Signals and loads", "PWM rapidly switches a digital output with controlled duty cycle. Motors and other high-current loads need a suitable driver and often a separate supply."],
+    ]],
+    ["Before you answer a calculation", [
+      ["Work sequence", "Write known values → convert units → choose formula → substitute → check whether the result is reasonable."],
+      ["Parallel check", "Equivalent resistance must be below every branch resistance."],
+      ["Divider check", "Output across R2 is a fraction of Vin in the unloaded two-resistor circuit."],
+      ["Safety check", "Power down before moving wires. Check polarity, common ground, meter mode and current limits."],
+    ]],
+  ],
 };
 
 export function ReviewScreen({ meta, onStart, onBack }) {
@@ -124,7 +187,7 @@ export function ReviewScreen({ meta, onStart, onBack }) {
         <p className="review-eyebrow">QUICK REVIEW</p>
         <h1>{meta.title}</h1>
         <p>{meta.description}</p>
-        <p>Skim the key terms, then try recalling them before your mock exam. Based only on your module handout.</p>
+        <p>Skim the key terms, then try recalling them before your mock exam. Based on the provided study materials.</p>
       </header>
       {sections.map(([title, rows]) => <section className="review-section" key={title}>
         <h2>{title}</h2>

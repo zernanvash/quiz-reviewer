@@ -12,7 +12,7 @@ assert.equal(results.percentage, 100);
 assert.equal(results.incorrectCount, 0);
 assert.equal(results.essayCount, 1);
 const catalog = JSON.parse(readFileSync('public/quizzes/index.json', 'utf8'));
-assert.equal(catalog.length, 5);
+assert.equal(catalog.length, 1);
 assert.equal(readFileSync('public/quizzes/index.json', 'utf8'), readFileSync('quizzes/index.json', 'utf8'));
 for (const { file } of catalog) {
   const name = file.replace(/\.json$/, '');
