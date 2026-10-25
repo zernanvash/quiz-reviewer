@@ -1,3 +1,4 @@
 [
-  {"id":"semis-connecting-networks","title":"SEMIS Connecting Networks","description":"Electrical fundamentals, circuit calculations, resistor selection, components, measurement, breadboards and Arduino Uno.","icon":"CN","file":"semis-connecting-networks.json"}
+  {"id":"semis-connecting-networks","title":"SEMIS Connecting Networks","description":"Electrical fundamentals, circuit calculations, resistor selection, components, measurement, breadboards and Arduino Uno.","icon":"CN","file":"semis-connecting-networks.json"},
+  {"id":"connecting-networks-na-legit","title":"Connecting Networks na Legit","description":"CSP19 Semifinals Exam: electrical units, Ohm's Law, power, series and parallel networks, voltage dividers, LEDs, measurement, components and Arduino Uno.","icon":"CN2","file":"connecting-networks-na-legit.json"}
 ]
